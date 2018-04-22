@@ -1,2 +1,200 @@
-Hello World
-Hello world
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
+    <title>Lin Chen-Hsin - Front End Developer</title>
+    <link rel='shortcut icon' type='image/x-icon' href='image/favicon.ico' />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/set1.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="loader">
+        <div class="main-wrapper">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Lin Chen-Hsin</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="#sp-skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#sp-portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#sp-contact">Contact</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light btn">Get Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="side-nav" id="mobile-demo">
+        <li>
+            <a href="#sp-skills">Skills</a>
+        </li>
+        <li>
+            <a href="#sp-portfolio">Portfolio</a>
+        </li>
+        <li>
+            <a href="#sp-contact">Contact</a>
+        </li>
+        <li>
+            <a class="waves-effect waves-light btn">Get Resume</a>
+        </li>
+    </ul>
+
+    <section class="header">
+        <div id="header-background-main"></div>
+        <div id="header-background-overlap"></div>
+        <div class="wrapper" id="bg-waypoint">
+            <h1>LIN CHEN-HSIN</h1>
+            <p>
+                Front End Developer
+            </p>
+            <a href="#sp-skills">
+                Find Out More
+            </a>
+            <!-- or
+            <a href="game">
+                Play a Game
+            </a> -->
+        </div>
+    </section>
+
+    <section class="skills section scrollspy" id="sp-skills">
+        <h2>My Skills</h2>
+    </section>
+
+    <section class="portfolio section scrollspy" id="sp-portfolio">
+        <h2>My Portfolio</h2>
+        <div class="container">
+            <div class="row">
+                <div class="grid">
+                    <div class="col s12 m4">
+                        <figure class="effect-chico">
+                            <img src="/image/furniture_viewer.png" alt="Furniture Viewer">
+                            <figcaption>
+                                <h5>
+                                    <span>Furniture Viewer</span>
+                                </h5>
+                                <p>Click me!</p>
+                                <a target="_blank" href="http://beta.magixhome.com/3d/products/?model=376&autoRotate=true">View more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col s12 m4">
+                        <figure class="effect-chico">
+                            <img src="/image/scene_editor.png" alt="Scene Editor">
+                            <figcaption>
+                                <h5>
+                                    <span>Scene Editor</span>
+                                </h5>
+                                <p>Click me!</p>
+                                <a target="_blank" href="http://beta.magixhome.com/3d/?scene=182&isEditor=true">View more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col s12 m4">
+                        <figure class="effect-chico">
+                            <img src="/image/coming_soon.jpg" alt="Coming Soon">
+                            <figcaption>
+                                <h5>
+                                    <span>Coming Soon</span>
+                                </h5>
+                                <!-- <p>Click me!</p> -->
+                                <a href="#">View more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="contact section scrollspy" id="sp-contact">
+        <h2>My Contact</h2>
+        <a href='mailto:linchenhsin.dev@gmail.com'>
+            <i class="material-icons">email</i>
+            linchenhsin.dev@gmail.com
+        </a>
+    </section>
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/jquery.waypoints.min.js"></script>
+    <script src="js/lib/tether.min.js"></script>
+    <script src="js/lib/materialize.min.js"></script>
+
+    <script src="js/lib/threejs/three.min.js"></script>
+    <script src="js/lib/threejs/libs/tween.min.js"></script>
+    <script src="js/lib/threejs/renderers/CSS3DRenderer.js"></script>
+    <script src="js/lib/threejs/renderers/CanvasRenderer.js"></script>
+    <script src="js/lib/threejs/renderers/Projector.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+
+</html>
