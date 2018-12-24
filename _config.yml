@@ -1,1 +1,26 @@
-theme: jekyll-theme-cayman
+title: Eric Han
+url: "https://ankitsultana.com"
+baseurl: ""
+
+markdown: kramdown
+#ins_logo: "./NUS_logo.jpg"
+
+tracking_id: #
+
+footer: yes
+footer_url: "https://github.com/ankitsultana"
+footer_text: "Page design by Ankit Sultana"
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+nav:
+ - name: "Resources"
+   link: "/"
+ - name: "Resume"
+   link: "resume.pdf"
+ - name: "Contact"
+   link: "contact"
+ - name: "About"
+   link: "/"
