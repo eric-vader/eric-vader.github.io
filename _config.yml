@@ -4,6 +4,7 @@ baseurl: ""
 
 markdown: kramdown
 #ins_logo: "./NUS_logo.jpg"
+mathjax: true
 
 tracking_id: #
 
@@ -17,10 +18,11 @@ sass:
 
 nav:
  - name: "Resources"
-   link: "/"
+   link: "Introduction"
  - name: "Resume"
    link: "resume.pdf"
  - name: "Contact"
    link: "contact"
  - name: "About"
    link: "/"
+
