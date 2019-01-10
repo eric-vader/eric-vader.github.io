@@ -17,8 +17,10 @@ sass:
     sass_dir: _sass
 
 nav:
- - name: "Resources"
+ - name: "Introduction"
    link: "Introduction"
+ - name: "Kernel"
+   link: "Kernel"
  - name: "Resume"
    link: "resume.pdf"
  - name: "Contact"
