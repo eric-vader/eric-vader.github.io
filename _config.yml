@@ -17,6 +17,8 @@ sass:
     sass_dir: _sass
 
 nav:
+ - name: "CS6216"
+   link: "CS6216"
  - name: "Introduction"
    link: "Introduction"
  - name: "Kernel"
