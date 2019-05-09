@@ -16,6 +16,8 @@ markdown: kramdown
 #ins_logo: "./NUS_logo.jpg"
 mathjax: true
 
+tracking_id: #
+
 footer: yes
 footer_url: "https://github.com/ankitsultana"
 footer_text: "Page design by Ankit Sultana"
@@ -43,13 +45,8 @@ nav:
 twitter_username: eric_vader
 favicon_location: /favicon.ico
 
-whitelist: [jekyll-analytics]
-
 plugins:
   - jekyll-seo-tag
-  - jekyll-analytics
   
-jekyll_analytics:
-  GoogleAnalytics:
-    id: UA-139914752-1
-    anonymizeIp: false
+  
+
