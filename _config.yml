@@ -1,4 +1,6 @@
 title: Eric Han
+description: A PhD Students' resume, Research Notes and Teaching Notes.
+author: eric-vader
 url: "https://eric-han.com"
 baseurl: ""
 
@@ -16,7 +18,7 @@ mathjax: true
 
 tracking_id: #
 
-footer: no
+footer: yes
 footer_url: "https://github.com/ankitsultana"
 footer_text: "Page design by Ankit Sultana"
 

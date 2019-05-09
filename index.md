@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Eric Han
 ---
 
 ## About Me
