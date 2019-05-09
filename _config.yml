@@ -47,6 +47,9 @@ favicon_location: /favicon.ico
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-analytics
   
-  
-
+jekyll_analytics:
+  GoogleAnalytics:
+    id: UA-139914752-1
+    anonymizeIp: false

@@ -3,8 +3,6 @@ layout: default
 is_contact: true
 ---
 
-<!-- foo@xyz.com](mailto:foo@xyz.com) -->
-
 1. Office Email: Refer to [NUS Computing - HAN Liang Wee Eric](https://www.comp.nus.edu.sg/cs/bio/ehan/)
 1. Office Phone: [+65-66017892](tel:+65-660 17892)
 
