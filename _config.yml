@@ -2,13 +2,21 @@ title: Eric Han
 url: "https://eric-han.com"
 baseurl: ""
 
+logo: eh.png
+social:
+  name: Eric Han
+  links:
+    - https://sg.linkedin.com/in/eric-han-lw
+    - https://github.com/eric-vader
+    - https://bitbucket.org/eric_vader
+
 markdown: kramdown
 #ins_logo: "./NUS_logo.jpg"
 mathjax: true
 
 tracking_id: #
 
-footer: yes
+footer: no
 footer_url: "https://github.com/ankitsultana"
 footer_text: "Page design by Ankit Sultana"
 
@@ -33,4 +41,10 @@ nav:
    link: "/"
 
 twitter_username: eric_vader
-favicon_location: favicon.ico
+favicon_location: /favicon.ico
+
+plugins:
+  - jekyll-seo-tag
+  
+  
+
