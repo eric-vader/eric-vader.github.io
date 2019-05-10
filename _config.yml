@@ -1,6 +1,6 @@
 title: Eric Han
 description: A PhD Students' resume, Research Notes and Teaching Notes.
-author: eric-vader
+author: eric han
 url: "https://eric-han.com"
 baseurl: ""
 
@@ -12,11 +12,18 @@ social:
     - https://github.com/eric-vader
     - https://bitbucket.org/eric_vader
 
+defaults:
+  -
+    scope:
+      path: "*"
+    values:
+      layout: "default"
+
 markdown: kramdown
 #ins_logo: "./NUS_logo.jpg"
 mathjax: true
 
-tracking_id: #
+favicon: yes
 
 footer: yes
 footer_url: "https://github.com/ankitsultana"
@@ -27,26 +34,26 @@ sass:
     sass_dir: _sass
 
 nav:
- - name: "CS6216"
-   link: "CS6216"
- - name: "Introduction"
-   link: "Introduction"
- - name: "Kernel"
-   link: "Kernel"
- - name: "Feature Selection"
-   link: "Feature Selection"
-# - name: "Resume"
-#   link: "misc/resume.pdf"
+ - name: "About"
+   link: ""
  - name: "Contact"
    link: "contact"
- - name: "About"
-   link: "/"
+ - name: "Research"
+   link: "research"
+ - name: "Teaching"
+   link: "teaching"
 
-twitter_username: eric_vader
-favicon_location: /favicon.ico
+collections:
+  steps:
+    title: Steps
+    output: false
+  research:
+    title: Research
+    output: false
 
 plugins:
   - jekyll-seo-tag
-  
-  
 
+img_path: img
+
+# whitelist: [jekyll-analytics]

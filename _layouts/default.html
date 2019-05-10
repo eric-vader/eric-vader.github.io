@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-{% seo %}
+{% seo title=false %}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139914752-1"></script>
@@ -12,6 +12,8 @@
       gtag('js', new Date());
       gtag('config', 'UA-139914752-1');
     </script>
+
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +32,7 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 
-    {% if site.favicon_location %}
+    {% if site.favicon == true %}
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -51,9 +53,9 @@
             <ul id="navlist" class="alignable pull-right navbar-ul">
                 {% for x in site.nav %}
                     {% if x.name == "Resume" %}
-                        <li class="alignable pull-left nav-list"><a target="_blank" href="{{ x.link }}">{{ x.name }}</a>
+                        <li class="alignable pull-left nav-list"><a target="_blank" href="/{{ x.link }}">{{ x.name }}</a>
                     {% else %}
-                        <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
+                        <li class="alignable pull-left nav-list"><a href="/{{ x.link }}">{{ x.name }}</a>
                     {% endif %}
                     {% if forloop.last == false %}
                         /
@@ -64,16 +66,12 @@
         </div>
         <div style="clear:both"></div>
         <hr>
-        {% if page.is_contact == true %}
-            <div class="container content contact">
-        {% else %}
             <div class="container content">
-        {% endif %}
                 {{ content }}
                 {% if site.footer == true %}
                     <hr />
                     <p style="text-align: center; margin-bottom: 10px">
-                    <a href="{{ site.footer_url }}" style="color: black"><small>{{ site.footer_text }}</small></a>
+                        <a href="{{ site.footer_url }}" style="color: black"><small>{{ site.footer_text }}</small></a>
                     </p>
                 {% endif %}
             </div>

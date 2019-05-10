@@ -1,6 +1,7 @@
 ---
 layout: default
 is_contact: true
+title: Contacts
 ---
 
 1. Office Email: Refer to [NUS Computing - HAN Liang Wee Eric](https://www.comp.nus.edu.sg/cs/bio/ehan/)

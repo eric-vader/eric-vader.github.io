@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% seo %}
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139914752-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-139914752-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ site.author }}">
+
+    {% if page.url == "/404.html" %}
+        <meta http-equiv="refresh" content="5; url=/">
+    {% endif %}
+    {% if page.url %}
+        {% assign url = site.url | append: site.baseurl | append: page.url %}
+    {% else %}
+        {% assign url = site.url | append: site.baseurl | append: page.url %}
+    {% endif %}
+
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+
+    {% if site.favicon == true %}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4e4e4e">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+    {% endif %}
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar container">
+            {% if site.ins_logo %}
+                <img id="ins-logo" src="{{ site.ins_logo }}" />
+            {% endif %}
+            <a id="author-name" class="alignable pull-left" href="{{ site.baseurl }}">{{ site.title }}</a>
+            <ul id="navlist" class="alignable pull-right navbar-ul">
+                {% for x in site.nav %}
+                    {% if x.name == "Resume" %}
+                        <li class="alignable pull-left nav-list"><a target="_blank" href="{{ x.link }}">{{ x.name }}</a>
+                    {% else %}
+                        <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
+                    {% endif %}
+                    {% if forloop.last == false %}
+                        /
+                    {% endif %}
+                        </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div style="clear:both"></div>
+        <hr>
+            <div class="container content">
+                {{ content }}
+                {% if site.footer == true %}
+                    <hr />
+                    <p style="text-align: center; margin-bottom: 10px">
+                    <a href="{{ site.footer_url }}" style="color: black"><small>{{ site.footer_text }}</small></a>
+                    </p>
+                {% endif %}
+            </div>
+    </div>
+</body>
+<footer>
+</footer>
