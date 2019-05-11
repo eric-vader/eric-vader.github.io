@@ -13,7 +13,12 @@
       gtag('config', 'UA-139914752-1');
     </script>
 
-    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% if page.url == "/" %}
+        <title>{{ site.title }}</title>
+    {% else %}
+        <title>{{ page.title }} | {{ site.title }}</title>
+    {% endif %}
+    
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
