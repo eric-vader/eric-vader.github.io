@@ -21,9 +21,9 @@ My research interests are:
 
 Period | Degree | Institution
 ----:|-----------|:----------:
-13/Aug/18 - May/23| [Doctor in Philosophy (PhD) in Computer Science](https://www.comp.nus.edu.sg/programmes/pg/phdcs/)| [![National University of Singapore]({{site.img_path}}/nus_logo.png){:style="width:100px;"}](http://nus.edu.sg/)
-12/Aug/13 - 31/Jan/18 | [Bachelor of Computing (Computer Science) with Honours](https://www.comp.nus.edu.sg/cugresource/per-cohort/cs/cs-13-14/) ([Highest Distinction](http://www.nus.edu.sg/nusbulletin/faculty-of-science/undergraduate-education/degree-requirements/curriculum-structure-and-graduation-requirements/degree-classification/)) | [![National University of Singapore]({{site.img_path}}/nus_logo.png){:style="width:100px;"}](http://nus.edu.sg/)
-11/Jan/16 - 11/May/16 | [Student Exchange to USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ([GPA: 4.0/4.0](https://arr.usc.edu/services/grades/gradinghandbook/gradingpolicies.html)) | [![University of Southern California]({{site.img_path}}/usc_logo.png){:style="width:100px;"}](https://www.usc.edu/)
+13/Aug/18 - May/23| [Doctor in Philosophy (PhD) in Computer Science](https://www.comp.nus.edu.sg/programmes/pg/phdcs/)| [![National University of Singapore]({{site.img_path}}/nus_logo.png){:style="width:50px;"}](http://nus.edu.sg/)
+12/Aug/13 - 31/Jan/18 | [Bachelor of Computing (Computer Science) with Honours](https://www.comp.nus.edu.sg/cugresource/per-cohort/cs/cs-13-14/) ([Highest Distinction](http://www.nus.edu.sg/nusbulletin/faculty-of-science/undergraduate-education/degree-requirements/curriculum-structure-and-graduation-requirements/degree-classification/)) | [![National University of Singapore]({{site.img_path}}/nus_logo.png){:style="width:50px;"}](http://nus.edu.sg/)
+11/Jan/16 - 11/May/16 | [Student Exchange to USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ([GPA: 4.0/4.0](https://arr.usc.edu/services/grades/gradinghandbook/gradingpolicies.html)) | [![University of Southern California]({{site.img_path}}/usc_logo.png){:style="width:50px;"}](https://www.usc.edu/)
 
 ## Awards
 
