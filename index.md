@@ -34,6 +34,14 @@ Date | Award | Category
 15/Jan/18 | [Dean's List](https://www.comp.nus.edu.sg/programmes/ug/honour/deans/) | [Named to Dean's List for meritorious performance in S1 AY2017/18](https://www.comp.nus.edu.sg/images/resources/DL1710.websiteupdate.pdf)
 25/Jul/12 | [A*STAR Undergraduate Scholarship](https://www.a-star.edu.sg/Scholarships/For-Undergraduate-Studies/A-STAR-Undergraduate-Scholarship-AUS) | [Awarded Scholarship, Class of 2012](https://www.a-star.edu.sg/Portals/81/Users/032/44/544/AUS%20awardees.pdf)
 
+## Experience
+
+Period | Position | Role | Organization
+----:|------------|------|:----------:
+14/Jan/13 - 13/Jul/13| Research Intern ([DC Group](https://www.a-star.edu.sg/ihpc/Research/Computing-Science-CS/Distributed-Computing-DC-Group/Overview)) | Route My Day Project - Recommends routes and point-of-interests to users | [![A*STAR IHPC]({{site.img_path}}/ihpc_logo.png){:style="width:60px;"}](http://nus.edu.sg/) 
+10/Feb/11 - 9/Dec/12| [Second Sergeant (2SG) Trainer](https://www.mindef.gov.sg/web/portal/mindef/about-us/saf-rank-insignias) | Managed and trained men/cadets | [![National University of Singapore]({{site.img_path}}/mindef_logo.png){:style="width:80px;"}](http://nus.edu.sg/)
+
+
 ## Gallery
 
 {% raw %}
