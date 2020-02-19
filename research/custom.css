@@ -1,3 +1,6 @@
 #notebook-container {
     box-shadow: None;
 }
+#notebook {
+    padding: 0 !important;
+}
