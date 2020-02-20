@@ -1,0 +1,12 @@
+pages:
+- title: Introduction
+  url: Introduction.html
+
+- title: Kernel
+  url: Kernel.html
+
+- title: Feature Selection
+  url: Feature Selection.html
+  
+- title: Curse of Dimensionality
+  url: Curse of Dimensionality.html

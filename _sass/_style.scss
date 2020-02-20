@@ -12,7 +12,6 @@ html {
 body {
     margin: 0;
     font-family: "Inconsolata";
-    height: 100%;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
@@ -29,24 +28,64 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
-.dropdown {
-  position: relative;
-  display: inline-block;
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.iframe-container{
+   min-height: 500px;
+   background:#fff url("/img/Spinner-1s-200px.gif") no-repeat center center !important;
+   background-position: center;
 }
 
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: $accent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid $accent;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  display: inline-block;
+    position: fixed; /* Set the navbar to fixed position */
+  z-index: 99999;
+}
+
+/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
   z-index: 1;
 }
 
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: $accent;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: $accent;
 }
 
 /*
@@ -99,7 +138,7 @@ a:hover {
     margin: auto;
 }
 .wrapper {
-    min-height: 100%;
+    min-height: 75%;
 }
 
 /* Institute Image */
