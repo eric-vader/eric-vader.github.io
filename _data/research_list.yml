@@ -10,3 +10,6 @@ pages:
   
 - title: Curse of Dimensionality
   url: Curse of Dimensionality.html
+
+- title: Combinatorial Bayesian Optimization
+  url: Combinatorial Bayesian Optimization.html
