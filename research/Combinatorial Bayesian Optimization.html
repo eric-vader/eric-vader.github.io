@@ -13017,45 +13017,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
 
 
 <style type="text/css">
@@ -13116,44 +13077,50 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Combinatorial-Bayesian-Optimization">Combinatorial Bayesian Optimization<a class="anchor-link" href="#Combinatorial-Bayesian-Optimization">&#182;</a></h1><p>In this article, we will study the methods concerning Bayesian Optimization on Discrete Spaces. In this literature review, we seek to compare the following papers:</p>
-<ol>
-<li><a href="https://arxiv.org/pdf/1907.01329.pdf">Dec 2019 - Mixed-Variable Bayesian Optimization</a></li>
-<li><a href="https://arxiv.org/pdf/1902.00448.pdf">Oct 2019 - Combinatorial Bayesian Optimization using the Graph Cartesian Product</a></li>
-<li><a href="https://arxiv.org/pdf/1806.08838">Oct 2018 - Bayesian Optimization of Combinatorial Structures</a></li>
-<li><a href="http://proceedings.mlr.press/v70/jenatton17a.html">Aug 2017 - Bayesian Optimization with Tree-structured Dependencies</a></li>
-</ol>
-<h2 id="Avaliable-Code">Avaliable Code<a class="anchor-link" href="#Avaliable-Code">&#182;</a></h2><p>The following table summarizes the published code that accompanies the paper:</p>
+<h1 id="Combinatorial-Bayesian-Optimization">Combinatorial Bayesian Optimization<a class="anchor-link" href="#Combinatorial-Bayesian-Optimization">&#182;</a></h1><p>In this article, we will study the methods concerning Bayesian Optimization on Discrete Spaces. In this literature review, we seek to compare the following papers, summarized below:</p>
 <table>
 <thead><tr>
-<th style="text-align:right">Title</th>
+<th style="text-align:right">Paper Title</th>
 <th style="text-align:center">Code</th>
+<th style="text-align:left">Date Published</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:right">Mixed Variable BO</td>
-<td style="text-align:center"></td>
+<td style="text-align:right"><a href="https://arxiv.org/pdf/1907.01329.pdf">Mixed-Variable Bayesian Optimization (MiVaBo)</a></td>
+<td style="text-align:center">No code published</td>
+<td style="text-align:left">Dec 2019</td>
 </tr>
 <tr>
-<td style="text-align:right">Combinatorial BO using Graph Cartesian Product</td>
-<td style="text-align:center">It quantifies smoothness of functions on combinatorial search spaces by utilizing a combinatorial graph</td>
+<td style="text-align:right"><a href="https://arxiv.org/pdf/1902.00448.pdf">Combinatorial Bayesian Optimization using the Graph Cartesian Product (COMBO)</a></td>
+<td style="text-align:center"><a href="https://github.com/QUVA-Lab/COMBO">https://github.com/QUVA-Lab/COMBO</a></td>
+<td style="text-align:left">Oct 2019</td>
 </tr>
 <tr>
-<td style="text-align:right">BO of Combinatorial Structures</td>
-<td style="text-align:center">Uses semidefinite programming to tackle the combinatorial explosion</td>
+<td style="text-align:right"><a href="https://arxiv.org/pdf/1806.08838">Bayesian Optimization of Combinatorial Structures (BOCS)</a></td>
+<td style="text-align:center"><a href="https://github.com/baptistar/BOCS">https://github.com/baptistar/BOCS</a></td>
+<td style="text-align:left">Oct 2018</td>
 </tr>
 <tr>
-<td style="text-align:right">BO w Tree-structured Dependencies</td>
+<td style="text-align:right"><a href="http://proceedings.mlr.press/v70/jenatton17a.html">Bayesian Optimization with Tree-structured Dependencies (BO-Tree Struct)</a></td>
+<td style="text-align:center">No code published</td>
+<td style="text-align:left">Aug 2017</td>
 </tr>
 </tbody>
 </table>
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>Most BO methods have been focused on continuous search spaces due to the underlying assumption of using GPs as the prior, which relies on the smoothness defined by a kernel to model the uncertainty. There have been attempts to tackle this problem simply using continous kernels, and rounding up the result. However, this scheme is awkward and leads to unwanted artifacts.</p>
+<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>Most BO methods have been focused on continuous search spaces due to the underlying assumption of using GPs as the prior, which relies on the <em>smoothness defined by a kernel</em> to model the uncertainty. There have been attempts to tackle this problem simply using continous kernels, and augment the result to become discrete. However, some combinations of discrete variables are <em>impossible configurations</em> and it is not captured the model. It faces the problem of <em>combinatorial explosion</em>, as instead of modelling the structural dependencies, BO embedd the discrete variables into a $\mathbb{R}^d$ box. These method work but it heavily relies on the discretization used, for example the discretization granulaity: too small and the input space is large vs too large the input space may contain poorly performing values of continuous inputs.</p>
+<p>Optimizations over structured domains was raised as an important open problems at NIPS 2017 Workshop.</p>
 <p>Contrasting with traditional BO, real world problems can have a mix of both ordinal and categorical variables. This results in unique problems:</p>
 <ol>
-<li>Problems have black-box objectives for which gradient-based optimizers are not amenable. </li>
+<li>Problems have black-box objectives for which gradient-based optimizers are not amenable.</li>
 <li>Have expensive evaluation procedures for which methods with low sample efficiency such as evolution, genetic algorithms are unsuitable.</li>
 <li>Have noisy and highly non-linear objectives for which simple and exact solutions are inaccurate.</li>
+</ol>
+<p>In summary, the important considerations to designing a successful mixed variable BO:</p>
+<ol>
+<li>How to encode the relationships between the variables (both discrete and continuous), that allows <em>information sharing</em></li>
+<li>How to optimize the discrete variables (Select the next discrete values) w high sample and computational efficiency</li>
+<li>How to encode the constraints between the variables, allowing the model to exploit them</li>
 </ol>
 <h3 id="Applications">Applications<a class="anchor-link" href="#Applications">&#182;</a></h3><p>We list the applications of combinatorial BO (The links are given for those with avaliable references):</p>
 <ol>
@@ -13161,10 +13128,133 @@ div#notebook {
 <li>Optimal architecture of deep neural network</li>
 <li>Optimization of compilers to embed software on hardware</li>
 <li><a href="http://openaccess.thecvf.com/content_cvpr_2015/html/Zhang_Improving_Object_Detection_2015_CVPR_paper.html">Object location in images</a></li>
-<li>Drugs discovery</li>
-<li>Cross-validation of hyperparameters in mixed integer solvers</li>
-<li>Food safety Control</li>
-<li>Model sparsification in multi-component systems</li>
+<li><a href="https://castlelab.princeton.edu/html/Papers/Negoescu%20Frazier%20Powell_drug_discovery_JOC_August10_2010.pdf">Drugs discovery</a></li>
+<li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.213.426&amp;rep=rep1&amp;type=pdf">Cross-validation of hyperparameters in mixed integer solvers</a></li>
+<li><a href="https://papers.nips.cc/paper/4522-practical-bayesian-optimization-of-machine-learning-algorithms.pdf">Fine-tune hyperparameters</a></li>
+<li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.416.4465&amp;rep=rep1&amp;type=pdf">Food safety Control</a></li>
+<li><a href="https://kiwi.oden.utexas.edu/papers/optimal-decoupling-MDO-UQ.pdf">Model sparsification in multi-component systems</a></li>
+<li>Deciding where to place bike stations among locations offered by the communal administration to optimize its utility.</li>
+<li><a href="http://www.nowpublishers.com/article/DownloadSummary/MAL-006">Deciding on a deep neural network architecture where the parameters may depend on the number of layers</a></li>
+<li>Tuning neural network - continuous variables: learning rate, momentum and discrete variables: kernel size, stride and padding. </li>
+<li><a href="https://dl.acm.org/doi/pdf/10.1145/1102351.1102385">Sensor placements</a></li>
+</ol>
+<h3 id="Related-Work-for-optimization-of-black-box-functions">Related Work for optimization of black-box functions<a class="anchor-link" href="#Related-Work-for-optimization-of-black-box-functions">&#182;</a></h3><p>We focus on discussion of methods for optimization of black-box functions.</p>
+<h4 id="Traditional-Methods">Traditional Methods<a class="anchor-link" href="#Traditional-Methods">&#182;</a></h4><p>We list random search based methods, which are not designed to be sample efficient and may not converge to a global optimum:</p>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Local_search_(optimization">Local Search: Random Optimization, Random Search, Hill Climbing, Simulated annealing, etc...</a>)<ol>
+<li>Not sample efficient</li>
+<li>Do not converge to global optimum</li>
+</ol>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Evolutionary_algorithm">Evolutionary algorithms</a><ol>
+<li>Not sample efficient</li>
+<li>Do not converge to global optimum</li>
+</ol>
+</li>
+</ol>
+<p>Related BO methods:</p>
+<ol>
+<li><a href="https://automl.github.io/SMAC3/stable/">SMAC</a>, which is a BO that uses random forests as a surrogate model, which accommodates for mixed variable inputs. However, there are limitations as the frequentist uncertainty estimate provided by RF may suffer from variance degradation. <ol>
+<li>Cannot handle general constraints over the discrete variables</li>
+</ol>
+</li>
+<li><a href="https://optunity.readthedocs.io/en/latest/user/solvers/TPE.html">TPE</a>, which uses a non-parametric kernel density estimator to identify inputs that are likely to improve upon and unlikely to perform worse than the best input found so far. <ol>
+<li>Cannot handle general constraints over the discrete variables</li>
+</ol>
+</li>
+</ol>
+<p>Ideas for GP per leaf:</p>
+<ol>
+<li><a href="https://www.cs.ubc.ca/~hutter/nips2011workshop/papers_and_posters/Bergstra-abstract.pdf">Hyper-parameter optimization using BO</a></li>
+</ol>
+<h4 id="Other-State-of-the-art-approaches">Other State of the art approaches<a class="anchor-link" href="#Other-State-of-the-art-approaches">&#182;</a></h4><ol>
+<li><a href="https://arxiv.org/pdf/1603.06560.pdf">Hyperband</a>, is a variant of random search that exploits cheap but less accurate approximations of the objective to dynamically allocate resources for function evaluations.</li>
+<li><a href="http://proceedings.mlr.press/v80/falkner18a/falkner18a.pdf">BOHB</a>, is the model based counterpart of HB, based on TPE. </li>
+<li><a href="https://arxiv.org/pdf/1409.4011.pdf">Arc-Kernel</a> - first proposed by Hutter &amp; Osborne(2013). A new kernel designed to encode information about which parameters are relevant in a given structure.</li>
+</ol>
+<h3 id="Problem-Statement">Problem Statement<a class="anchor-link" href="#Problem-Statement">&#182;</a></h3><p>Both COMBO and BO-Tree-Struct adopted the standard BO problem, with no explict distinction between discrete and continuous variables:</p>
+<blockquote>$$\min_{x\in\mathcal{X}} f(x)$$<p>Finding the global optimum of a black-box function over a search space $\mathcal{X}$.</p>
+</blockquote>
+<p>BOCS defined the domain of $\mathcal{X}$ to be $\mathcal{D}$ which is discrete and structured. They focused specifically where the domain is</p>
+<blockquote>$$\mathcal{D}=\{0,1\}^d$$
+</blockquote>
+<p>Finally, MiVaBo defined the the problem with constraints and explictly seprated the discrete and continuous variables:</p>
+<blockquote>$$\mathcal{X} \subseteq \mathcal{X}^c \times \mathcal{X}^d, g^c(x)\geq 0, g^d(x)\geq 0$$
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Summary-of-methods">Summary of methods<a class="anchor-link" href="#Summary-of-methods">&#182;</a></h2><h3 id="Methods-compared">Methods compared<a class="anchor-link" href="#Methods-compared">&#182;</a></h3><table>
+<thead><tr>
+<th style="text-align:right">Title</th>
+<th style="text-align:center">Key Idea</th>
+<th style="text-align:center">Compared to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">MiVaBo</td>
+<td style="text-align:center">Decouples the continuous and discrete components of the function using feature expansion</td>
+<td style="text-align:center">SMAC, Random Search, GP-UCB(rounding), GP-UCB-SA</td>
+</tr>
+<tr>
+<td style="text-align:right">COMBO</td>
+<td style="text-align:center">Use a combinatorial graph to quantify smoothness on combinatorial search spaces</td>
+<td style="text-align:center">SMAC, TPE, SA, BOCS</td>
+</tr>
+<tr>
+<td style="text-align:right">BOCS</td>
+<td style="text-align:center">Uses a generative model, of up to order $2$</td>
+<td style="text-align:center">GP-EI, SMAC, PS, SA, Random Search, OLS</td>
+</tr>
+<tr>
+<td style="text-align:right">BO-Tree Struct</td>
+<td style="text-align:center">Use a surrogate tree model where GPs are at the leafs</td>
+<td style="text-align:center">Arc-Kernel, Independent, SMAC, Random Search, GP-Marginal</td>
+</tr>
+</tbody>
+</table>
+<p>Additional Notes:</p>
+<ul>
+<li><strong>Independent</strong> is a baseline that consider an independent GP for every leaf</li>
+<li><strong>PS</strong>L Sequential Monte Carlo particle search is an evolutionary algorithm that maintains a population of candidate solution</li>
+<li><strong>OLS</strong> is Oblivious local search where it evaluates in every iteration all points with hamming distance one from its current point and adopts the best.</li>
+</ul>
+<h3 id="Dataset-compared">Dataset compared<a class="anchor-link" href="#Dataset-compared">&#182;</a></h3><table>
+<thead><tr>
+<th style="text-align:right">Title</th>
+<th style="text-align:center">Dataset used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">MiVaBo</td>
+<td style="text-align:center">Tuning XGBoost parameters(10), Tuning VAE(28)</td>
+</tr>
+<tr>
+<td style="text-align:right">COMBO</td>
+<td style="text-align:center">Contamination control(12 Binary), Ising sparsification(24), Branin(2), Pest Control(21), SAT(28,43,60), NAS(31)</td>
+</tr>
+<tr>
+<td style="text-align:right">BOCS</td>
+<td style="text-align:center">Binary Quadratic Programming(10), Sparsification of Ising Models(24), Contamination Control(25), Areo-structural Multi-Component Problem(21)</td>
+</tr>
+<tr>
+<td style="text-align:right">BO-Tree Struct</td>
+<td style="text-align:center">Synthetic Trees($\leq 17$), Neural Network(4 - but structural)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Contributions">Contributions<a class="anchor-link" href="#Contributions">&#182;</a></h3><p>In this section, we discuss the key contributions of each of the paper:</p>
+<ol>
+<li>MiVaBo - Algorithm that efficiently optimizes (mixed) functions subject to constraints, relying on linear surrogate model that decouples using expressive feature expansion. First method to be able to handle constraints over discrete domains.</li>
+<li>COMBO - Introduced combinatorial graphs to introduce smoothness on combinatorial spaces. Algorithm to scale to higher dimensional problems. Itroduced individual scale parameters for each variable, allowing the kernel to be more flexible.</li>
+<li>BOCS - Approximate optimizer that borrows some ideas from convex optimization, on a model that captures the interaction of structural elements.</li>
+<li>BO-Tree Struct - Leverage conditional dependencues between variables (Hyper param), leveraging a tree structured surrogate model with GPs at the leafs. Also acquisition function that exploits the tree structure and EI.</li>
 </ol>
 
 </div>
@@ -13173,64 +13263,67 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Summary-of-methods">Summary of methods<a class="anchor-link" href="#Summary-of-methods">&#182;</a></h2><table>
-<thead><tr>
-<th style="text-align:right">Title</th>
-<th style="text-align:center">Key Idea</th>
-<th>Contributions</th>
-<th>Significance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">Mixed Variable BO</td>
-<td style="text-align:center"></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align:right">Combinatorial BO using Graph Cartesian Product</td>
-<td style="text-align:center">It quantifies smoothness of functions on combinatorial search spaces by utilizing a combinatorial graph</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align:right">BO of Combinatorial Structures</td>
-<td style="text-align:center">Uses semidefinite programming to tackle the combinatorial explosion</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align:right">BO w Tree-structured Dependencies</td>
-<td style="text-align:center"></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h3 id="Contributions">Contributions<a class="anchor-link" href="#Contributions">&#182;</a></h3><h3 id="Significance">Significance<a class="anchor-link" href="#Significance">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>D</p>
+<h2 id="Method">Method<a class="anchor-link" href="#Method">&#182;</a></h2><p>In this section, we will provide a description of the key operating principle of each method with a comparison of the advantages and disadvantages.</p>
+<h3 id="MiVaBo">MiVaBo<a class="anchor-link" href="#MiVaBo">&#182;</a></h3><p>The method considers breaking down the problem into 2 distinct parts - discrete and continous parts. For continous part, a randomized approximation of GP based on Monte Carlo integration is used (uses low effective dimensionality). For discrete parts (like BOCS), a second order expandsion of the discrete variables. Mixing them, both discrete and continous variables are stacked. The stacking would allow the each to be optimized seprately: discrete - binary integer quadratic program (using CPLEX, Gurobi, etc), continous - commonly used BO optimizers (L-BFGS, DIRECT). The optimization is done by iterating between optimizing the discrete and continous variables. This method converges to global optimum via looking at the problem from linear parameterized multi-armed bandits.</p>
+<p>Significance:</p>
+<ol>
+<li>No-regret convergence to global minimum</li>
+<li>Flexible as the components can be changed (ie. the optimizations can be tweaked)</li>
+</ol>
+<p>Limitations:</p>
+<ol>
+<li>Proof does not really work on alternating optimization like used in the algorithm.</li>
+<li>Feature expansion does not really work well in higher dimensional spaces and priors would need to incorprated. </li>
+</ol>
+<p>Comments:</p>
+<blockquote><p>Where is the constraints used?
+Method is similar to BOCS, but not cited nor discussed??</p>
+</blockquote>
+<h3 id="COMBO">COMBO<a class="anchor-link" href="#COMBO">&#182;</a></h3><p>The method constructs the combinatorial graph from the discrete variables, by modelling the variables in a graph depending on the properties of the discrete variables (considering ordinal or categorical)
+<img src="COMBO.png" alt="image.png">
+A GP surrogate model is defined over the graph using Graph Fourier Transforms, specifically it uses ARD diffusion kernel to get around the intractability of computing the eigensystem from the graph.</p>
+<p>Significance:</p>
+<ol>
+<li>Performs implicit variable selection</li>
+<li>Natural metric using hamming distance on categorical spaces.</li>
+<li>Able to scale to higher dimensions using ARD kernel</li>
+</ol>
+<p>Limitations:</p>
+<ol>
+<li>Modelling is focused on fully discrete case</li>
+<li>Unnatural metric using hamming distance on ordinal spaces </li>
+</ol>
+<p>Comments:</p>
+<blockquote><p>Unnatural metric using hamming distance on ordinal spaces, which should be modelled using a continous distribution instead.
+There will be much power that can be unlocked by considering continous distribution.
+The categorical spaces approach is correct, but not ordinal.</p>
+</blockquote>
+<h3 id="BOCS">BOCS<a class="anchor-link" href="#BOCS">&#182;</a></h3><p>The technique used is similar to how the discrete parts is MiVaBO, they have used second order modelling of the interactions which according to some papers produce a good trade off between expressiveness and the ease of training. The technique uses sparse Bayesian linear regression, instead of GPs. It finds an approximate solution of the furthest x, given a sample of the best paramters to the linear regression.</p>
+<p>Significance:</p>
+<ol>
+<li>Able to control the trade off between expressiveness and ease of training, mainly due to setting of 2nd order of interactions.</li>
+<li>Able to handle sparse data</li>
+</ol>
+<p>Limitations:</p>
+<ol>
+<li>(Comment from COMBO) Requires users to specify the highest order of interactions among categorical variables (Any higher order interactions are ignored), which restrict its applications to problems with low order interactions between variables</li>
+<li>(Comment from COMBO) Parametric nature of the surrogatre model having excessively large number of parameters.</li>
+</ol>
+<h3 id="BO-Tree-Struct">BO-Tree Struct<a class="anchor-link" href="#BO-Tree-Struct">&#182;</a></h3><p>The method models the dependencies of the variables in the program into a decision tree, resulting from the insight that conditional dependencies between hyperparameters can be exploited. The method is tractable as there is a weight vector that would allow the model to couple inference for some paths but still be able to scale to higher-dimensionality. It introduce smoothness by using GPs at the leafs. The optimization to get the next $x$ is done by performing optimization to find the best path then finding the best $x$ on that path.</p>
+<p>Significance:</p>
+<ol>
+<li>Allows explicit setting of $c$ to allow the method to use some prior domain knowledge, so that the conditional relationships can be efficiently encoded. </li>
+<li>Flexible on how the path and kernel can interact, can be changed to use other definitions.</li>
+</ol>
+<p>Limitations:</p>
+<ol>
+<li>Fundamentally linear interactions, but can be extended. But not both?</li>
+</ol>
+<blockquote><p>The interactions type are standard, which means its either linear or nonlinear interactions. There cannot be a setting that get both.</p>
+</blockquote>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
