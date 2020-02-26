@@ -4,3 +4,7 @@
 #notebook {
     padding: 0 !important;
 }
+div.output_stderr {
+    display: none;
+    visibility: hidden;
+}
