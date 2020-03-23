@@ -13147,7 +13147,7 @@ div#notebook {
 </tr>
 </tbody>
 </table>
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>Most BO methods have been focused on continuous search spaces due to the underlying assumption of using GPs as the prior, which relies on the <em>smoothness defined by a kernel</em> to model the uncertainty. There have been attempts to tackle this problem simply using continous kernels, and augment the result to become discrete. However, some combinations of discrete variables are <em>impossible configurations</em> and it is not captured the model. It faces the problem of <em>combinatorial explosion</em>, as instead of modelling the structural dependencies, BO embedd the discrete variables into a $\mathbb{R}^d$ box. These method work but it heavily relies on the discretization used, for example the discretization granulaity: too small and the input space is large vs too large the input space may contain poorly performing values of continuous inputs.</p>
+<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>Most BO methods have been focused on continuous search spaces due to the underlying assumption of using GPs as the prior, which relies on the <em>smoothness defined by a kernel</em> to model the uncertainty. There have been attempts to tackle this problem simply using continous kernels, and augment the result to become discrete. However, some combinations of discrete variables are <em>impossible configurations</em> and it is not captured the model. It faces the problem of <em>combinatorial explosion</em>, as instead of modelling the structural dependencies, BO embed the discrete variables into a $\mathbb{R}^d$ box. These methods work, but heavily rely on the discretization used, for example the discretization granulaity: too small and the input space is large vs too large the input space may contain poorly performing values of continuous inputs.</p>
 <p>Optimizations over structured domains was raised as an important open problems at NIPS 2017 Workshop.</p>
 <p>Contrasting with traditional BO, real world problems can have a mix of both ordinal and categorical variables. This results in unique problems:</p>
 <ol>
@@ -13182,12 +13182,12 @@ div#notebook {
 <ol>
 <li><a href="https://en.wikipedia.org/wiki/Local_search_(optimization">Local Search: Random Optimization, Random Search, Hill Climbing, Simulated annealing, etc...</a>)<ol>
 <li>Not sample efficient</li>
-<li>Do not converge to global optimum</li>
+<li>Generally may not converge to global optimum (Sometimes convergence is guaranteed)</li>
 </ol>
 </li>
 <li><a href="https://en.wikipedia.org/wiki/Evolutionary_algorithm">Evolutionary algorithms</a><ol>
 <li>Not sample efficient</li>
-<li>Do not converge to global optimum</li>
+<li>Generally may not converge to global optimum (Sometimes convergence is guaranteed)</li>
 </ol>
 </li>
 </ol>
@@ -13202,7 +13202,7 @@ div#notebook {
 </ol>
 </li>
 </ol>
-<p>Ideas for GP per leaf:</p>
+<p>Implementation ideas:</p>
 <ol>
 <li><a href="https://www.cs.ubc.ca/~hutter/nips2011workshop/papers_and_posters/Bergstra-abstract.pdf">Hyper-parameter optimization using BO</a></li>
 </ol>
@@ -13211,13 +13211,13 @@ div#notebook {
 <li><a href="http://proceedings.mlr.press/v80/falkner18a/falkner18a.pdf">BOHB</a>, is the model based counterpart of HB, based on TPE. </li>
 <li><a href="https://arxiv.org/pdf/1409.4011.pdf">Arc-Kernel</a> - first proposed by Hutter &amp; Osborne(2013). A new kernel designed to encode information about which parameters are relevant in a given structure.</li>
 </ol>
-<h3 id="Problem-Statement">Problem Statement<a class="anchor-link" href="#Problem-Statement">&#182;</a></h3><p>Both COMBO and BO-Tree-Struct adopted the standard BO problem, with no explict distinction between discrete and continuous variables. We note that even though COMBO only handle discrete spaces, the problem as stated by COMBO is the standard BO setting:</p>
+<h3 id="Problem-Statement">Problem Statement<a class="anchor-link" href="#Problem-Statement">&#182;</a></h3><p>Both COMBO and BO-Tree-Struct adopted the standard BO problem, with no explict distinction between discrete and continuous variables. We note that even though COMBO only handle discrete spaces (ie. $\{0,1\}^d$), the problem as stated by COMBO is the standard BO setting:</p>
 <blockquote>$$\min_{x\in\mathcal{X}} f(x)$$<p>Finding the global optimum of a black-box function over a search space $\mathcal{X}$.</p>
 </blockquote>
 <p>BOCS defined the domain of $\mathcal{X}$ to be $\mathcal{D}$ which is discrete and structured. They focused specifically where the domain is</p>
 <blockquote>$$\mathcal{D}=\{0,1\}^d$$
 </blockquote>
-<p>Finally, MiVaBo defined the the problem with constraints and explictly seprated the discrete and continuous variables:</p>
+<p>Finally, MiVaBo defined the the problem with constraints and explictly seprated the discrete and continuous variables, including linear/quadratic constraints ($g^c, g^d$) into the problem statment.</p>
 <blockquote>$$\mathcal{X} \subseteq \mathcal{X}^c \times \mathcal{X}^d, g^c(x)\geq 0, g^d(x)\geq 0$$
 </blockquote>
 
@@ -13259,9 +13259,9 @@ div#notebook {
 </table>
 <p>Additional Notes:</p>
 <ul>
-<li><strong>Independent</strong> is a baseline that consider an independent GP for every leaf. ie. It takes into account the tree structure but does not allow any sharing of information across different paths.</li>
-<li><strong>PS</strong>L Sequential Monte Carlo particle search is an evolutionary algorithm that maintains a population of candidate solution</li>
-<li><strong>OLS</strong> is Oblivious local search where it evaluates in every iteration all points with hamming distance one from its current point and adopts the best.</li>
+<li><strong>Independent</strong> is a baseline that consider an independent GP for every leaf of BO-Tree Struct. ie. It takes into account the tree structure but does not allow any sharing of information across different paths.</li>
+<li><strong>PS</strong>L Sequential Monte Carlo particle search is an evolutionary algorithm that maintains a population of candidate solutions</li>
+<li><strong>OLS</strong> is Oblivious local search where it evaluates in every iteration all points with Hamming distance one from its current point and adopts the best.</li>
 </ul>
 <h3 id="Dataset-compared">Dataset compared<a class="anchor-link" href="#Dataset-compared">&#182;</a></h3><table>
 <thead><tr>
@@ -13303,7 +13303,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Method">Method<a class="anchor-link" href="#Method">&#182;</a></h2><p>In this section, we will provide a description of the key operating principle of each method with a comparison of the advantages and disadvantages.</p>
-<h3 id="MiVaBo">MiVaBo<a class="anchor-link" href="#MiVaBo">&#182;</a></h3><p>The method considers breaking down the problem into 2 distinct parts - discrete and continous parts. For continous part, a randomized approximation of GP based on Monte Carlo integration is used (uses low effective dimensionality). For discrete parts (like BOCS), a second order expandsion of the discrete variables. Mixing them, both discrete and continous variables are stacked. The stacking would allow the each to be optimized seprately: discrete - binary integer quadratic program (using CPLEX, Gurobi, etc), continous - commonly used BO optimizers (L-BFGS, DIRECT). The optimization is done by iterating between optimizing the discrete and continous variables. This method converges to global optimum via looking at the problem from linear parameterized multi-armed bandits.</p>
+<h3 id="MiVaBo">MiVaBo<a class="anchor-link" href="#MiVaBo">&#182;</a></h3><p>The method considers breaking down the problem into 2 distinct parts - discrete and continous parts. For the continous part, a randomized approximation of GP based on Monte Carlo integration is used (uses low effective dimensionality). For discrete parts (like BOCS), a second order expandsion of the discrete variables. Mixing them, both discrete and continous variables are stacked. The stacking would allow the each to be optimized seprately: discrete - binary integer quadratic program (using CPLEX, Gurobi, etc), continous - commonly used BO optimizers (L-BFGS, DIRECT). The optimization is done by iterating between optimizing the discrete and continous variables. This method converges to global optimum via looking at the problem from linear parameterized multi-armed bandits.</p>
 <p>The modelling works like a framework, marrying discrete and continous using the following (d,c,m represents discrete, continous and mixed from the interaction of the 2 components):
 $$
 f(x) = \sum_{j\in \{d,c,m\}} {w^j\phi^j(x^j)}
@@ -13312,7 +13312,7 @@ The discrete and continous parts are implementations of existing methods that fo
 $$
 \phi^m(x^d, x^c) \triangleq [\phi^d_i(x^d)\cdot \phi^c_j(x^c)]^T_{1\leq i \leq M_d, 1\leq j \leq M_c}
 $$
-For acquisition function, the authors proposed 2 schemes - alternating optimization and dual decomposition. Alternating optimization would be alternating between optimizing the discrete and continous variables conditioned on the other. Dual decomposition would apply Lagrangian optimization over $f(x) = \sum_{j\in {d,c,m}} {w^j\phi^j(x^j)}, with theoretical properties.</p>
+For acquisition function, the authors proposed 2 schemes - alternating optimization and dual decomposition. Alternating optimization would be alternating between optimizing the discrete and continous variables conditioned on the other. Dual decomposition would apply Lagrangian optimization over $f(x) = \sum_{j\in \{d,c,m\}} {w^j\phi^j(x^j)}$, with theoretical properties.</p>
 <h4 id="Significance">Significance<a class="anchor-link" href="#Significance">&#182;</a></h4><ol>
 <li>No-regret convergence to global minimum</li>
 <li>Flexible as the components can be changed (ie. the optimizations can be tweaked)</li>
@@ -13321,40 +13321,45 @@ For acquisition function, the authors proposed 2 schemes - alternating optimizat
 <h4 id="Limitations">Limitations<a class="anchor-link" href="#Limitations">&#182;</a></h4><ol>
 <li>Proof does not really work on alternating optimization like used in the algorithm.</li>
 <li>Feature expansion does not really work well in higher dimensional spaces and priors would need to incorprated. </li>
+<li>Need to be converted to a string of binary Random Variables for non-binary discrete variables.</li>
 </ol>
-<h4 id="Comments">Comments<a class="anchor-link" href="#Comments">&#182;</a></h4><blockquote><p>Where is the constraints used?
-Method is similar to BOCS, but not cited nor discussed??</p>
+<h4 id="Comments">Comments<a class="anchor-link" href="#Comments">&#182;</a></h4><blockquote><p>Method is similar to BOCS, but it is cited ambiguously.</p>
 </blockquote>
 <h3 id="COMBO">COMBO<a class="anchor-link" href="#COMBO">&#182;</a></h3><p>The method constructs the combinatorial graph from the discrete variables, by modelling the variables in a graph depending on the properties of the discrete variables (considering ordinal or categorical). A GP surrogate model is defined over the graph using Graph Fourier Transforms, specifically it uses ARD diffusion kernel to get around the intractability of computing the eigensystem from the graph.</p>
 <p>The model works by first considering a ordered sub-graph for every ordinal variable and complete sub-graph for every categorical variable. Then, the cartesian product is computed over the sub-graphs. An illustration is given below. Then a kernel is defined over the graph structure using Graph Fourier Transforms (GFT).
 <img src="COMBO.png" alt="image.png">
-The next best $x$ is found by exploring acquisition values on adjacent vertices, the exploration continues recursively on the adjacent vertices until no neighbours' acquisition values are higher than at the current vertex.</p>
+The next best $x$ is found by the following procedure:</p>
+<ol>
+<li>Evaluating 20000 randomly selected vertices.</li>
+<li>20 vertices with highest acquisition values are used as initial points for acquisition function optimization.</li>
+<li>Exploring acquisition values on adjacent vertices, the exploration continues recursively on the adjacent vertices until no neighbours' acquisition values are higher than at the current vertex. (Breadth-first local search)</li>
+</ol>
 <p>The full algorithm is given below:
 <img src="COMBO-algo.png" alt="COMBO-algo.png"></p>
 <blockquote><p>GFT can represent any graph signal as a linear combination of graph Fourier bases.</p>
 </blockquote>
 <h4 id="Significance">Significance<a class="anchor-link" href="#Significance">&#182;</a></h4><ol>
 <li>Performs implicit variable selection</li>
-<li>Natural metric using hamming distance on categorical spaces.</li>
+<li>Natural metric using Hamming distance on categorical spaces.</li>
 <li>Able to scale to higher dimensions using ARD kernel</li>
 </ol>
 <h4 id="Limitations">Limitations<a class="anchor-link" href="#Limitations">&#182;</a></h4><ol>
 <li>Modelling is focused on fully discrete case</li>
-<li>Unnatural metric using hamming distance on ordinal spaces </li>
+<li>Unnatural metric using Hamming distance on ordinal spaces </li>
 </ol>
-<h4 id="Comments">Comments<a class="anchor-link" href="#Comments">&#182;</a></h4><blockquote><p>Unnatural metric using hamming distance on ordinal spaces, which should be modelled using a continous distribution instead.
+<h4 id="Comments">Comments<a class="anchor-link" href="#Comments">&#182;</a></h4><blockquote><p>Unnatural metric using Hamming distance on ordinal spaces, which should be modelled using a continous distribution instead.
 There will be much power that can be unlocked by considering continous distribution.
 The categorical spaces approach is correct, but not ordinal.
 Using GFT, maybe there would be some penalty, question is what is the penalty if it exist?</p>
 </blockquote>
-<h3 id="BOCS">BOCS<a class="anchor-link" href="#BOCS">&#182;</a></h3><p>The technique used is similar to how the discrete parts is MiVaBO, they have used second order modelling of the interactions which according to some papers produce a good trade off between expressiveness and the ease of training. The technique uses sparse Bayesian linear regression, instead of GPs. Finding the next best $x$, it finds an approximate optima, considering regularization.</p>
+<h3 id="BOCS">BOCS<a class="anchor-link" href="#BOCS">&#182;</a></h3><p>The technique used is similar to the discrete part of MiVaBO; they have used second order modelling of the interactions which according to some papers produce a good trade off between expressiveness and the ease of training. The technique uses sparse Bayesian linear regression, instead of GPs. Finding the next best $x$, it finds an approximate optima, considering regularization.</p>
 <p>The model works by using linear regression, shown below. In the paper they are careful to account for regularization, by sampling model parameters from the posterior over $\alpha$ and $\sigma^2$ (Noise).
 $$
-f(x) = \alpha_0 + \sum_j{\alpha_j x_j} + \sum_{i,j&gt;i}{\alpha_{i,j}x_i x_j}
+f_{\alpha}(x) = \alpha_0 + \sum_j{\alpha_j x_j} + \sum_{i,j&gt;i}{\alpha_{i,j}x_i x_j}
 $$
-For acquisition function, they find the bext best $x$ by solving the following. Note that $\lambda P(x)$ is for regularization. By expanding $P(x)$, we can solve a simple binary quadratic program of the expanded form.
+For acquisition function, they find the bext best $x$ by solving the following. Note that $\lambda P(x)$ is for regularization; it can be defined differently to achieve different goals. In BOCS, the authors used the L1 Norm  $||x||_1$ (another possible definition is L2 Norm). By expanding $P(x)$, we can solve a simple binary quadratic program of the expanded form.
 $$
-\arg\max_{x\in D} {f(x)} - \lambda P(x)
+\arg\max_{x\in D} {f_{\alpha}(x)} - \lambda P(x)
 $$</p>
 <h4 id="Significance">Significance<a class="anchor-link" href="#Significance">&#182;</a></h4><ol>
 <li>Able to control the trade off between expressiveness and ease of training, mainly due to setting of 2nd order of interactions.</li>
@@ -13363,9 +13368,16 @@ $$</p>
 <h4 id="Limitations">Limitations<a class="anchor-link" href="#Limitations">&#182;</a></h4><ol>
 <li>(Comment from COMBO) Requires users to specify the highest order of interactions among categorical variables (Any higher order interactions are ignored), which restrict its applications to problems with low order interactions between variables</li>
 <li>(Comment from COMBO) Parametric nature of the surrogatre model having excessively large number of parameters.</li>
+<li>Model is inherently designed to be binary Variables only.</li>
 </ol>
 <h3 id="BO-Tree-Struct">BO-Tree Struct<a class="anchor-link" href="#BO-Tree-Struct">&#182;</a></h3><p>The method models the dependencies of the variables in the program into a decision tree, resulting from the insight that conditional dependencies between hyperparameters can be exploited. The method is tractable as there is a weight vector that would allow the model to couple inference for some paths but still be able to scale to higher-dimensionality. It introduce smoothness by using GPs at the leafs. The optimization to get the next $x$ is done by performing optimization to find the best path then finding the best $x$ on that path.</p>
-<p>The model works by using linear functions $c^Tr$, where $c$ is a weight matrix applied on the feature vector $r$. $r$ is used to encode both numerical and categorical parameters. The acquisition function is performed efficiently by using 2 steps, first finding the best path:
+<p>The model works by using linear functions $c^Tr$:
+$$
+y_i \sim N(g_{p_i}(x_i)+z_{p_i}^T c, \sigma^2)\\
+c\sim N(0,\Sigma_c)\\
+g_p(.)\sim GP
+$$
+Here, $c$ is a weight matrix applied on the feature vector $r$ and $z$ is a binary mask that activates the weights if the inner node decision variables on the path to leaf node $p$. $r$ is used to encode both numerical and categorical parameters. The acquisition function is performed efficiently by using 2 steps, first finding the best path:
 $$
 p_* = \arg\max_{p\in P} \alpha\left(p\mid D_n\right)
 $$
@@ -13373,7 +13385,7 @@ Then, using $p_*$, find the next best $x$.
 $$
 x_* \in \arg\max_{x\in X_{p_*}} \alpha\left(x,p_*\mid D_n\right)
 $$</p>
-<p>An illustration of functions with tree-structured conditional relationships. ps. Each inner node is a binary variable, and a path in those trees represents successive binary decisions. The leaves contain univariate quadratic functions that are shifted by different constant terms.</p>
+<p>An illustration of functions with tree-structured conditional relationships. Each inner node is a binary variable, and a path in those trees represents successive binary decisions. The leaves contain univariate quadratic functions that are shifted by different constant terms.</p>
 <p><img src="BO-Tree.png" alt="BO-Tree.png"></p>
 <h4 id="Significance">Significance<a class="anchor-link" href="#Significance">&#182;</a></h4><ol>
 <li>Allows explicit setting of $c$, to allow the method to use some prior domain knowledge, so that the conditional relationships can be efficiently encoded. (ie. when $c=0$, it can be seen as an independent model, or we can define a prior for $c$)</li>
@@ -13397,7 +13409,7 @@ $$</li>
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython2"><pre><span></span> 
 </pre></div>
 
     </div>
