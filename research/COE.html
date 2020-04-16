@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Combinatorial Bayesian Optimization</title>
+<title>COE</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13017,45 +13017,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
 
 
 <style type="text/css">
@@ -13116,303 +13077,384 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Combinatorial-Bayesian-Optimization">Combinatorial Bayesian Optimization<a class="anchor-link" href="#Combinatorial-Bayesian-Optimization">&#182;</a></h1><p>In this article, we will study the methods concerning Bayesian Optimization on Discrete Spaces. In this literature review, we seek to compare the following papers, summarized below:</p>
-<table>
-<thead><tr>
-<th style="text-align:right">Paper Title</th>
-<th style="text-align:center">Code</th>
-<th style="text-align:left">Date Published</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right"><a href="https://arxiv.org/pdf/1907.01329.pdf">Mixed-Variable Bayesian Optimization (MiVaBo)</a></td>
-<td style="text-align:center">No code published</td>
-<td style="text-align:left">Dec 2019</td>
-</tr>
-<tr>
-<td style="text-align:right"><a href="https://arxiv.org/pdf/1902.00448.pdf">Combinatorial Bayesian Optimization using the Graph Cartesian Product (COMBO)</a></td>
-<td style="text-align:center"><a href="https://github.com/QUVA-Lab/COMBO">https://github.com/QUVA-Lab/COMBO</a></td>
-<td style="text-align:left">Oct 2019</td>
-</tr>
-<tr>
-<td style="text-align:right"><a href="https://arxiv.org/pdf/1806.08838">Bayesian Optimization of Combinatorial Structures (BOCS)</a></td>
-<td style="text-align:center"><a href="https://github.com/baptistar/BOCS">https://github.com/baptistar/BOCS</a></td>
-<td style="text-align:left">Oct 2018</td>
-</tr>
-<tr>
-<td style="text-align:right"><a href="http://proceedings.mlr.press/v70/jenatton17a.html">Bayesian Optimization with Tree-structured Dependencies (BO-Tree Struct)</a></td>
-<td style="text-align:center">No code published</td>
-<td style="text-align:left">Aug 2017</td>
-</tr>
-</tbody>
-</table>
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>Most BO methods have been focused on continuous search spaces due to the underlying assumption of using GPs as the prior, which relies on the <em>smoothness defined by a kernel</em> to model the uncertainty. There have been attempts to tackle this problem simply using continous kernels, and augment the result to become discrete. However, some combinations of discrete variables are <em>impossible configurations</em> and it is not captured the model. It faces the problem of <em>combinatorial explosion</em>, as instead of modelling the structural dependencies, BO embed the discrete variables into a $\mathbb{R}^d$ box. These methods work, but heavily rely on the discretization used, for example the discretization granulaity: too small and the input space is large vs too large the input space may contain poorly performing values of continuous inputs.</p>
-<p>Optimizations over structured domains was raised as an important open problems at NIPS 2017 Workshop.</p>
-<p>Contrasting with traditional BO, real world problems can have a mix of both ordinal and categorical variables. This results in unique problems:</p>
-<ol>
-<li>Problems have black-box objectives for which gradient-based optimizers are not amenable.</li>
-<li>Have expensive evaluation procedures for which methods with low sample efficiency such as evolution, genetic algorithms are unsuitable.</li>
-<li>Have noisy and highly non-linear objectives for which simple and exact solutions are inaccurate.</li>
-</ol>
-<p>In summary, the important considerations to designing a successful mixed variable BO:</p>
-<ol>
-<li>How to encode the relationships between the variables (both discrete and continuous), that allows <em>information sharing</em></li>
-<li>How to optimize the discrete variables (Select the next discrete values) w high sample and computational efficiency</li>
-<li>How to encode the constraints between the variables, allowing the model to exploit them</li>
-</ol>
-<h3 id="Applications">Applications<a class="anchor-link" href="#Applications">&#182;</a></h3><p>We list the applications of combinatorial BO (The links are given for those with avaliable references):</p>
-<ol>
-<li>Optimal chipset configuration</li>
-<li>Optimal architecture of deep neural network</li>
-<li>Optimization of compilers to embed software on hardware</li>
-<li><a href="http://openaccess.thecvf.com/content_cvpr_2015/html/Zhang_Improving_Object_Detection_2015_CVPR_paper.html">Object location in images</a></li>
-<li><a href="https://castlelab.princeton.edu/html/Papers/Negoescu%20Frazier%20Powell_drug_discovery_JOC_August10_2010.pdf">Drugs discovery</a></li>
-<li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.213.426&amp;rep=rep1&amp;type=pdf">Cross-validation of hyperparameters in mixed integer solvers</a></li>
-<li><a href="https://papers.nips.cc/paper/4522-practical-bayesian-optimization-of-machine-learning-algorithms.pdf">Fine-tune hyperparameters</a></li>
-<li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.416.4465&amp;rep=rep1&amp;type=pdf">Food safety Control</a></li>
-<li><a href="https://kiwi.oden.utexas.edu/papers/optimal-decoupling-MDO-UQ.pdf">Model sparsification in multi-component systems</a></li>
-<li>Deciding where to place bike stations among locations offered by the communal administration to optimize its utility.</li>
-<li><a href="http://www.nowpublishers.com/article/DownloadSummary/MAL-006">Deciding on a deep neural network architecture where the parameters may depend on the number of layers</a></li>
-<li>Tuning neural network - continuous variables: learning rate, momentum and discrete variables: kernel size, stride and padding. </li>
-<li><a href="https://dl.acm.org/doi/pdf/10.1145/1102351.1102385">Sensor placements</a></li>
-</ol>
-<h3 id="Related-Work-for-optimization-of-black-box-functions">Related Work for optimization of black-box functions<a class="anchor-link" href="#Related-Work-for-optimization-of-black-box-functions">&#182;</a></h3><p>We focus on discussion of methods for optimization of black-box functions.</p>
-<h4 id="Traditional-Methods">Traditional Methods<a class="anchor-link" href="#Traditional-Methods">&#182;</a></h4><p>We list random search based methods, which are not designed to be sample efficient and may not converge to a global optimum:</p>
-<ol>
-<li><a href="https://en.wikipedia.org/wiki/Local_search_(optimization">Local Search: Random Optimization, Random Search, Hill Climbing, Simulated annealing, etc...</a>)<ol>
-<li>Not sample efficient</li>
-<li>Generally may not converge to global optimum (Sometimes convergence is guaranteed)</li>
-</ol>
-</li>
-<li><a href="https://en.wikipedia.org/wiki/Evolutionary_algorithm">Evolutionary algorithms</a><ol>
-<li>Not sample efficient</li>
-<li>Generally may not converge to global optimum (Sometimes convergence is guaranteed)</li>
-</ol>
-</li>
-</ol>
-<p>Related BO methods:</p>
-<ol>
-<li><a href="https://automl.github.io/SMAC3/stable/">SMAC</a>, which is a BO that uses random forests as a surrogate model, which accommodates for mixed variable inputs. However, there are limitations as the frequentist uncertainty estimate provided by RF may suffer from variance degradation. <ol>
-<li>Cannot handle general constraints over the discrete variables</li>
-</ol>
-</li>
-<li><a href="https://optunity.readthedocs.io/en/latest/user/solvers/TPE.html">TPE</a>, which uses a non-parametric kernel density estimator to identify inputs that are likely to improve upon and unlikely to perform worse than the best input found so far. <ol>
-<li>Cannot handle general constraints over the discrete variables</li>
-</ol>
-</li>
-</ol>
-<p>Implementation ideas:</p>
-<ol>
-<li><a href="https://www.cs.ubc.ca/~hutter/nips2011workshop/papers_and_posters/Bergstra-abstract.pdf">Hyper-parameter optimization using BO</a></li>
-</ol>
-<h4 id="Other-State-of-the-art-approaches">Other State of the art approaches<a class="anchor-link" href="#Other-State-of-the-art-approaches">&#182;</a></h4><ol>
-<li><a href="https://arxiv.org/pdf/1603.06560.pdf">Hyperband</a>, is a variant of random search that exploits cheap but less accurate approximations of the objective to dynamically allocate resources for function evaluations.</li>
-<li><a href="http://proceedings.mlr.press/v80/falkner18a/falkner18a.pdf">BOHB</a>, is the model based counterpart of HB, based on TPE. </li>
-<li><a href="https://arxiv.org/pdf/1409.4011.pdf">Arc-Kernel</a> - first proposed by Hutter &amp; Osborne(2013). A new kernel designed to encode information about which parameters are relevant in a given structure.</li>
-</ol>
-<h3 id="Problem-Statement">Problem Statement<a class="anchor-link" href="#Problem-Statement">&#182;</a></h3><p>Both COMBO and BO-Tree-Struct adopted the standard BO problem, with no explict distinction between discrete and continuous variables. We note that even though COMBO only handle discrete spaces (ie. $\{0,1\}^d$), the problem as stated by COMBO is the standard BO setting:</p>
-<blockquote>$$\min_{x\in\mathcal{X}} f(x)$$<p>Finding the global optimum of a black-box function over a search space $\mathcal{X}$.</p>
-</blockquote>
-<p>BOCS defined the domain of $\mathcal{X}$ to be $\mathcal{D}$ which is discrete and structured. They focused specifically where the domain is</p>
-<blockquote>$$\mathcal{D}=\{0,1\}^d$$
-</blockquote>
-<p>Finally, MiVaBo defined the the problem with constraints and explictly seprated the discrete and continuous variables, including linear/quadratic constraints ($g^c, g^d$) into the problem statment.</p>
-<blockquote>$$\mathcal{X} \subseteq \mathcal{X}^c \times \mathcal{X}^d, g^c(x)\geq 0, g^d(x)\geq 0$$
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Summary-of-methods">Summary of methods<a class="anchor-link" href="#Summary-of-methods">&#182;</a></h2><h3 id="Methods-compared">Methods compared<a class="anchor-link" href="#Methods-compared">&#182;</a></h3><table>
-<thead><tr>
-<th style="text-align:right">Title</th>
-<th style="text-align:center">Key Idea</th>
-<th style="text-align:center">Compared to</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">MiVaBo</td>
-<td style="text-align:center">Decouples the continuous and discrete components of the function using feature expansion</td>
-<td style="text-align:center">SMAC, Random Search, GP-UCB(rounding), GP-UCB-SA</td>
-</tr>
-<tr>
-<td style="text-align:right">COMBO</td>
-<td style="text-align:center">Use a combinatorial graph to quantify smoothness on combinatorial search spaces</td>
-<td style="text-align:center">SMAC, TPE, SA, BOCS</td>
-</tr>
-<tr>
-<td style="text-align:right">BOCS</td>
-<td style="text-align:center">Uses regression model of order $2$</td>
-<td style="text-align:center">GP-EI, SMAC, PS, SA, Random Search, OLS</td>
-</tr>
-<tr>
-<td style="text-align:right">BO-Tree Struct</td>
-<td style="text-align:center">Use a surrogate tree model where GPs are at the leafs</td>
-<td style="text-align:center">Arc-Kernel, Independent, SMAC, Random Search, GP-Marginal</td>
-</tr>
-</tbody>
-</table>
-<p>Additional Notes:</p>
-<ul>
-<li><strong>Independent</strong> is a baseline that consider an independent GP for every leaf of BO-Tree Struct. ie. It takes into account the tree structure but does not allow any sharing of information across different paths.</li>
-<li><strong>PS</strong>L Sequential Monte Carlo particle search is an evolutionary algorithm that maintains a population of candidate solutions</li>
-<li><strong>OLS</strong> is Oblivious local search where it evaluates in every iteration all points with Hamming distance one from its current point and adopts the best.</li>
-</ul>
-<h3 id="Dataset-compared">Dataset compared<a class="anchor-link" href="#Dataset-compared">&#182;</a></h3><table>
-<thead><tr>
-<th style="text-align:right">Title</th>
-<th style="text-align:center">Dataset used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">MiVaBo</td>
-<td style="text-align:center">Tuning XGBoost parameters(10), Tuning VAE(28)</td>
-</tr>
-<tr>
-<td style="text-align:right">COMBO</td>
-<td style="text-align:center">Contamination control(12 Binary), Ising sparsification(24), Branin(2), Pest Control(21), SAT(28,43,60), NAS(31)</td>
-</tr>
-<tr>
-<td style="text-align:right">BOCS</td>
-<td style="text-align:center">Binary Quadratic Programming(10), Sparsification of Ising Models(24), Contamination Control(25), Areo-structural Multi-Component Problem(21)</td>
-</tr>
-<tr>
-<td style="text-align:right">BO-Tree Struct</td>
-<td style="text-align:center">Synthetic Trees($\leq 17$), Neural Network(4 - but structural)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="Contributions">Contributions<a class="anchor-link" href="#Contributions">&#182;</a></h3><p>In this section, we discuss the key contributions of each of the paper:</p>
-<ol>
-<li>MiVaBo - Algorithm that efficiently optimizes (mixed) functions subject to constraints, relying on linear surrogate model that decouples using expressive feature expansion. First method to be able to handle constraints over discrete domains.</li>
-<li>COMBO - Introduced combinatorial graphs to introduce smoothness on combinatorial spaces. Algorithm to scale to higher dimensional problems. Itroduced individual scale parameters for each variable, allowing the kernel to be more flexible.</li>
-<li>BOCS - Approximate optimizer that borrows some ideas from convex optimization, on a model that captures the interaction of structural elements.</li>
-<li>BO-Tree Struct - Leverage conditional dependencues between variables (Hyper param), leveraging a tree structured surrogate model with GPs at the leafs. Also acquisition function that exploits the tree structure and EI.</li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Method">Method<a class="anchor-link" href="#Method">&#182;</a></h2><p>In this section, we will provide a description of the key operating principle of each method with a comparison of the advantages and disadvantages.</p>
-<h3 id="MiVaBo">MiVaBo<a class="anchor-link" href="#MiVaBo">&#182;</a></h3><p>The method considers breaking down the problem into 2 distinct parts - discrete and continous parts. For the continous part, a randomized approximation of GP based on Monte Carlo integration is used (uses low effective dimensionality). For discrete parts (like BOCS), a second order expandsion of the discrete variables. Mixing them, both discrete and continous variables are stacked. The stacking would allow the each to be optimized seprately: discrete - binary integer quadratic program (using CPLEX, Gurobi, etc), continous - commonly used BO optimizers (L-BFGS, DIRECT). The optimization is done by iterating between optimizing the discrete and continous variables. This method converges to global optimum via looking at the problem from linear parameterized multi-armed bandits.</p>
-<p>The modelling works like a framework, marrying discrete and continous using the following (d,c,m represents discrete, continous and mixed from the interaction of the 2 components):
-$$
-f(x) = \sum_{j\in \{d,c,m\}} {w^j\phi^j(x^j)}
-$$
-The discrete and continous parts are implementations of existing methods that focus on discrete and continous respectively. The model handles the mixed variable in this manner, by stacking products of all pairwiuse combinations of features of the variable types resulting in $M_d \times M_c$ features:
-$$
-\phi^m(x^d, x^c) \triangleq [\phi^d_i(x^d)\cdot \phi^c_j(x^c)]^T_{1\leq i \leq M_d, 1\leq j \leq M_c}
-$$
-For acquisition function, the authors proposed 2 schemes - alternating optimization and dual decomposition. Alternating optimization would be alternating between optimizing the discrete and continous variables conditioned on the other. Dual decomposition would apply Lagrangian optimization over $f(x) = \sum_{j\in \{d,c,m\}} {w^j\phi^j(x^j)}$, with theoretical properties.</p>
-<h4 id="Significance">Significance<a class="anchor-link" href="#Significance">&#182;</a></h4><ol>
-<li>No-regret convergence to global minimum</li>
-<li>Flexible as the components can be changed (ie. the optimizations can be tweaked)</li>
-<li>Claims to be the first mxed-variable BO method that enjoys theoretical guarantees.</li>
-</ol>
-<h4 id="Limitations">Limitations<a class="anchor-link" href="#Limitations">&#182;</a></h4><ol>
-<li>Proof does not really work on alternating optimization like used in the algorithm.</li>
-<li>Feature expansion does not really work well in higher dimensional spaces and priors would need to incorprated. </li>
-<li>Need to be converted to a string of binary Random Variables for non-binary discrete variables.</li>
-</ol>
-<h4 id="Comments">Comments<a class="anchor-link" href="#Comments">&#182;</a></h4><blockquote><p>Method is similar to BOCS, but it is cited ambiguously.</p>
-</blockquote>
-<h3 id="COMBO">COMBO<a class="anchor-link" href="#COMBO">&#182;</a></h3><p>The method constructs the combinatorial graph from the discrete variables, by modelling the variables in a graph depending on the properties of the discrete variables (considering ordinal or categorical). A GP surrogate model is defined over the graph using Graph Fourier Transforms, specifically it uses ARD diffusion kernel to get around the intractability of computing the eigensystem from the graph.</p>
-<p>The model works by first considering a ordered sub-graph for every ordinal variable and complete sub-graph for every categorical variable. Then, the cartesian product is computed over the sub-graphs. An illustration is given below. Then a kernel is defined over the graph structure using Graph Fourier Transforms (GFT).
-<img src="COMBO.png" alt="image.png">
-The next best $x$ is found by the following procedure:</p>
-<ol>
-<li>Evaluating 20000 randomly selected vertices.</li>
-<li>20 vertices with highest acquisition values are used as initial points for acquisition function optimization.</li>
-<li>Exploring acquisition values on adjacent vertices, the exploration continues recursively on the adjacent vertices until no neighbours' acquisition values are higher than at the current vertex. (Breadth-first local search)</li>
-</ol>
-<p>The full algorithm is given below:
-<img src="COMBO-algo.png" alt="COMBO-algo.png"></p>
-<blockquote><p>GFT can represent any graph signal as a linear combination of graph Fourier bases.</p>
-</blockquote>
-<h4 id="Significance">Significance<a class="anchor-link" href="#Significance">&#182;</a></h4><ol>
-<li>Performs implicit variable selection</li>
-<li>Natural metric using Hamming distance on categorical spaces.</li>
-<li>Able to scale to higher dimensions using ARD kernel</li>
-</ol>
-<h4 id="Limitations">Limitations<a class="anchor-link" href="#Limitations">&#182;</a></h4><ol>
-<li>Modelling is focused on fully discrete case</li>
-<li>Unnatural metric using Hamming distance on ordinal spaces </li>
-</ol>
-<h4 id="Comments">Comments<a class="anchor-link" href="#Comments">&#182;</a></h4><blockquote><p>Unnatural metric using Hamming distance on ordinal spaces, which should be modelled using a continous distribution instead.
-There will be much power that can be unlocked by considering continous distribution.
-The categorical spaces approach is correct, but not ordinal.
-Using GFT, maybe there would be some penalty, question is what is the penalty if it exist?</p>
-</blockquote>
-<h3 id="BOCS">BOCS<a class="anchor-link" href="#BOCS">&#182;</a></h3><p>The technique used is similar to the discrete part of MiVaBO; they have used second order modelling of the interactions which according to some papers produce a good trade off between expressiveness and the ease of training. The technique uses sparse Bayesian linear regression, instead of GPs. Finding the next best $x$, it finds an approximate optima, considering regularization.</p>
-<p>The model works by using linear regression, shown below. In the paper they are careful to account for regularization, by sampling model parameters from the posterior over $\alpha$ and $\sigma^2$ (Noise).
-$$
-f_{\alpha}(x) = \alpha_0 + \sum_j{\alpha_j x_j} + \sum_{i,j&gt;i}{\alpha_{i,j}x_i x_j}
-$$
-For acquisition function, they find the bext best $x$ by solving the following. Note that $\lambda P(x)$ is for regularization; it can be defined differently to achieve different goals. In BOCS, the authors used the L1 Norm  $||x||_1$ (another possible definition is L2 Norm). By expanding $P(x)$, we can solve a simple binary quadratic program of the expanded form.
-$$
-\arg\max_{x\in D} {f_{\alpha}(x)} - \lambda P(x)
-$$</p>
-<h4 id="Significance">Significance<a class="anchor-link" href="#Significance">&#182;</a></h4><ol>
-<li>Able to control the trade off between expressiveness and ease of training, mainly due to setting of 2nd order of interactions.</li>
-<li>Able to handle sparse data</li>
-</ol>
-<h4 id="Limitations">Limitations<a class="anchor-link" href="#Limitations">&#182;</a></h4><ol>
-<li>(Comment from COMBO) Requires users to specify the highest order of interactions among categorical variables (Any higher order interactions are ignored), which restrict its applications to problems with low order interactions between variables</li>
-<li>(Comment from COMBO) Parametric nature of the surrogatre model having excessively large number of parameters.</li>
-<li>Model is inherently designed to be binary Variables only.</li>
-</ol>
-<h3 id="BO-Tree-Struct">BO-Tree Struct<a class="anchor-link" href="#BO-Tree-Struct">&#182;</a></h3><p>The method models the dependencies of the variables in the program into a decision tree, resulting from the insight that conditional dependencies between hyperparameters can be exploited. The method is tractable as there is a weight vector that would allow the model to couple inference for some paths but still be able to scale to higher-dimensionality. It introduce smoothness by using GPs at the leafs. The optimization to get the next $x$ is done by performing optimization to find the best path then finding the best $x$ on that path.</p>
-<p>The model works by using linear functions $c^Tr$:
-$$
-y_i \sim N(g_{p_i}(x_i)+z_{p_i}^T c, \sigma^2)\\
-c\sim N(0,\Sigma_c)\\
-g_p(.)\sim GP
-$$
-Here, $c$ is a weight matrix applied on the feature vector $r$ and $z$ is a binary mask that activates the weights if the inner node decision variables on the path to leaf node $p$. $r$ is used to encode both numerical and categorical parameters. The acquisition function is performed efficiently by using 2 steps, first finding the best path:
-$$
-p_* = \arg\max_{p\in P} \alpha\left(p\mid D_n\right)
-$$
-Then, using $p_*$, find the next best $x$.
-$$
-x_* \in \arg\max_{x\in X_{p_*}} \alpha\left(x,p_*\mid D_n\right)
-$$</p>
-<p>An illustration of functions with tree-structured conditional relationships. Each inner node is a binary variable, and a path in those trees represents successive binary decisions. The leaves contain univariate quadratic functions that are shifted by different constant terms.</p>
-<p><img src="BO-Tree.png" alt="BO-Tree.png"></p>
-<h4 id="Significance">Significance<a class="anchor-link" href="#Significance">&#182;</a></h4><ol>
-<li>Allows explicit setting of $c$, to allow the method to use some prior domain knowledge, so that the conditional relationships can be efficiently encoded. (ie. when $c=0$, it can be seen as an independent model, or we can define a prior for $c$)</li>
-<li>Flexible on how the path and kernel can interact, can be changed to use other definitions.</li>
-</ol>
-<h4 id="Limitations">Limitations<a class="anchor-link" href="#Limitations">&#182;</a></h4><ol>
-<li>Fundamentally linear interactions, but can be extended. But not both?</li>
-<li>Acquisition function can be intermediate, between what is proposed, vs:
-$$
-(x_*, p_*) \in \arg\max_{p\in P, x\in X_{p}} \alpha\left(x,p\mid D_n\right)
-$$</li>
-</ol>
-<blockquote><p>The interactions type are standard, which means its either linear or nonlinear interactions. There cannot be a setting that get both.</p>
-</blockquote>
+<h1 id="COE-Prices">COE Prices<a class="anchor-link" href="#COE-Prices">&#182;</a></h1><p>In this notebook, we analyse the COE prices in Singapore. We are interested to see the relationship between economic growth in Singapore and COE Premium Prices. In addition, we are interested to see if any of the COE metrics are correlated. Lastly, we want to know if there is a annual pattern to COE prices</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;/..&#39;</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">plotly_config</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Math</span><span class="p">,</span> <span class="n">Latex</span>
+<span class="kn">import</span> <span class="nn">GPy</span>
+<span class="n">GPy</span><span class="o">.</span><span class="n">plotting</span><span class="o">.</span><span class="n">change_plotting_library</span><span class="p">(</span><span class="s1">&#39;plotly&#39;</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">chart_studio.plotly</span> <span class="k">as</span> <span class="nn">py</span>
+<span class="kn">import</span> <span class="nn">plotly</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">import</span> <span class="nn">plotly.io</span> <span class="k">as</span> <span class="nn">pio</span>
+<span class="kn">from</span> <span class="nn">plotly</span> <span class="kn">import</span> <span class="n">tools</span>
+<span class="kn">from</span> <span class="nn">plotly.subplots</span> <span class="kn">import</span> <span class="n">make_subplots</span>
+<span class="kn">import</span> <span class="nn">itertools</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/home/Eric_Vader/.conda/envs/research/lib/python3.7/site-packages/plotly/graph_objs/_deprecations.py:385: DeprecationWarning:
+
+plotly.graph_objs.Line is deprecated.
+Please replace it with one of the following more specific types
+  - plotly.graph_objs.scatter.Line
+  - plotly.graph_objs.layout.shape.Line
+  - etc.
+
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">namedtuple</span>
+
+<span class="n">CoeResult</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;CoeResult&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;bidding_datetime&#39;</span><span class="p">,</span> <span class="s1">&#39;quota&#39;</span><span class="p">,</span> <span class="s1">&#39;bids_received&#39;</span><span class="p">,</span> <span class="s1">&#39;bids_success&#39;</span><span class="p">,</span> <span class="s1">&#39;premium&#39;</span><span class="p">])</span>
+<span class="n">coe_targets</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;quota&#39;</span><span class="p">,</span> <span class="s1">&#39;bids_received&#39;</span><span class="p">,</span> <span class="s1">&#39;bids_success&#39;</span><span class="p">,</span> <span class="s1">&#39;premium&#39;</span><span class="p">]</span>
+<span class="n">coe_targets_pretty</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;quota&#39;</span> <span class="p">:</span> <span class="s1">&#39;COE Quota&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;bids_received&#39;</span> <span class="p">:</span> <span class="s1">&#39;Bids Received&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;bids_success&#39;</span> <span class="p">:</span> <span class="s1">&#39;Bids Successful&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;premium&#39;</span> <span class="p">:</span> <span class="s1">&#39;COE Premium&#39;</span>
+<span class="p">}</span>
+<span class="n">coe_cats</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">&#39;Category </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">alpha</span><span class="p">)</span> <span class="k">for</span> <span class="n">alpha</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">]</span> <span class="p">]</span>
+
+<span class="n">coe_results</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;coe_bidding-results.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">coe_csv_file</span><span class="p">:</span>
+    <span class="n">d_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">coe_csv_file</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">d_reader</span><span class="p">:</span>
+        <span class="n">bidding_date_str</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{0}</span><span class="s1">-</span><span class="si">{1:02d}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">],</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;bidding_no&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span> <span class="k">else</span> <span class="mi">15</span><span class="p">)</span> 
+        <span class="n">bidding_datetime</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">bidding_date_str</span><span class="p">,</span> <span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">veh_class</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;vehicle_class&#39;</span><span class="p">]</span>
+        <span class="n">quota</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;quota&#39;</span><span class="p">])</span>
+        <span class="n">bids_received</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;bids_received&#39;</span><span class="p">])</span>
+        <span class="n">bids_success</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;bids_success&#39;</span><span class="p">])</span>
+        <span class="n">premium</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;premium&#39;</span><span class="p">])</span>
+    
+        <span class="n">coe_results</span><span class="p">[</span><span class="n">veh_class</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">CoeResult</span><span class="p">(</span><span class="n">bidding_datetime</span><span class="p">,</span> <span class="n">quota</span><span class="p">,</span> <span class="n">bids_received</span><span class="p">,</span> <span class="n">bids_success</span><span class="p">,</span> <span class="n">premium</span><span class="p">))</span>
+        
+<span class="n">decompose</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">cat</span><span class="p">,</span><span class="n">target</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">r</span><span class="p">:</span><span class="n">r</span><span class="o">.</span><span class="n">_asdict</span><span class="p">()[</span><span class="n">target</span><span class="p">],</span> <span class="n">coe_results</span><span class="p">[</span><span class="n">cat</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">q_translation</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Q1&#39;</span> <span class="p">:</span> <span class="s1">&#39;02-15&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Q2&#39;</span> <span class="p">:</span> <span class="s1">&#39;05-15&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Q3&#39;</span> <span class="p">:</span> <span class="s1">&#39;08-15&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Q4&#39;</span> <span class="p">:</span> <span class="s1">&#39;11-15&#39;</span>
+<span class="p">}</span>
+
+<span class="n">gdp_growth</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;gdp.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">gdp_csv_file</span><span class="p">:</span>
+    <span class="n">d_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">gdp_csv_file</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">d_reader</span><span class="p">:</span>
+        <span class="n">q</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;quarter&#39;</span><span class="p">][</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span>
+        <span class="n">ending_str</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;quarter&#39;</span><span class="p">][:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="n">q_translation</span><span class="p">[</span><span class="n">q</span><span class="p">]</span>
+        <span class="n">ending_datetime</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">ending_str</span><span class="p">,</span> <span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">gdp_growth</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">(</span><span class="n">ending_datetime</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]))</span> <span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">make_subplots</span><span class="p">(</span><span class="n">specs</span><span class="o">=</span><span class="p">[[{</span><span class="s2">&quot;secondary_y&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}]])</span>
+
+<span class="n">coe_dates</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">ea_coe_cat</span> <span class="ow">in</span> <span class="n">coe_cats</span><span class="p">:</span>
+    <span class="n">bidding_datetimes</span> <span class="o">=</span> <span class="n">decompose</span><span class="p">(</span><span class="n">ea_coe_cat</span><span class="p">,</span> <span class="s1">&#39;bidding_datetime&#39;</span><span class="p">)</span>
+    <span class="n">coe_dates</span> <span class="o">+=</span> <span class="n">bidding_datetimes</span>
+    <span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">bidding_datetimes</span><span class="p">,</span> 
+                         <span class="n">y</span><span class="o">=</span><span class="n">decompose</span><span class="p">(</span><span class="n">ea_coe_cat</span><span class="p">,</span> <span class="s1">&#39;premium&#39;</span><span class="p">),</span> 
+                         <span class="n">name</span><span class="o">=</span><span class="n">ea_coe_cat</span><span class="p">,</span>
+                         <span class="n">showlegend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>    
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">trace</span><span class="p">,</span> <span class="n">secondary_y</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">min_coe_date</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">coe_dates</span><span class="p">)</span>
+    
+<span class="n">gdp_growth_filtered</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">min_coe_date</span><span class="p">,</span> <span class="n">gdp_growth</span><span class="p">))</span>
+
+<span class="c1"># Now we add GDP</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>
+    <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">gdp_growth_filtered</span><span class="p">)),</span>
+              <span class="n">y</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">gdp_growth_filtered</span><span class="p">)),</span>
+              <span class="n">name</span><span class="o">=</span><span class="s2">&quot;GDP Growth&quot;</span><span class="p">,</span>
+              <span class="n">showlegend</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+    <span class="n">secondary_y</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+    
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="n">coe_targets_pretty</span><span class="p">[</span><span class="s1">&#39;premium&#39;</span><span class="p">],</span>
+                 <span class="n">xaxis_rangeslider_visible</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                 <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+                 <span class="n">rangeselector</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+                <span class="n">buttons</span><span class="o">=</span><span class="nb">list</span><span class="p">([</span>
+                    <span class="nb">dict</span><span class="p">(</span><span class="n">count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                         <span class="n">label</span><span class="o">=</span><span class="s1">&#39;1m&#39;</span><span class="p">,</span>
+                         <span class="n">step</span><span class="o">=</span><span class="s1">&#39;month&#39;</span><span class="p">,</span>
+                         <span class="n">stepmode</span><span class="o">=</span><span class="s1">&#39;backward&#39;</span><span class="p">),</span>
+                    <span class="nb">dict</span><span class="p">(</span><span class="n">count</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+                         <span class="n">label</span><span class="o">=</span><span class="s1">&#39;6m&#39;</span><span class="p">,</span>
+                         <span class="n">step</span><span class="o">=</span><span class="s1">&#39;month&#39;</span><span class="p">,</span>
+                         <span class="n">stepmode</span><span class="o">=</span><span class="s1">&#39;backward&#39;</span><span class="p">),</span>
+                    <span class="nb">dict</span><span class="p">(</span><span class="n">count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                        <span class="n">label</span><span class="o">=</span><span class="s1">&#39;1y&#39;</span><span class="p">,</span>
+                        <span class="n">step</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span>
+                        <span class="n">stepmode</span><span class="o">=</span><span class="s1">&#39;backward&#39;</span><span class="p">),</span>
+                    <span class="nb">dict</span><span class="p">(</span><span class="n">step</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+            <span class="p">])</span>
+        <span class="p">)),</span> <span class="n">autosize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="s2">&quot;SGD&quot;</span><span class="p">,</span> <span class="n">secondary_y</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">% G</span><span class="s2">rowth of GDP&quot;</span><span class="p">,</span> <span class="n">secondary_y</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;COE_timeline&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe
+            width="100%"
+            height="525px"
+            src="https://plot.ly/~usc_eric_vader/1037.embed"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">make_subplots</span><span class="p">(</span><span class="n">rows</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">coe_cats</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">subplot_titles</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">coe_targets_pretty</span><span class="o">.</span><span class="n">get</span><span class="p">,</span> <span class="n">coe_targets</span><span class="p">)),</span> 
+                    <span class="n">shared_xaxes</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">vertical_spacing</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
+
+<span class="n">color</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;#1f77b4&#39;</span><span class="p">,</span>  <span class="c1"># muted blue</span>
+    <span class="s1">&#39;#ff7f0e&#39;</span><span class="p">,</span>  <span class="c1"># safety orange</span>
+    <span class="s1">&#39;#2ca02c&#39;</span><span class="p">,</span>  <span class="c1"># cooked asparagus green</span>
+    <span class="s1">&#39;#d62728&#39;</span><span class="p">,</span>  <span class="c1"># brick red</span>
+    <span class="s1">&#39;#9467bd&#39;</span><span class="p">,</span>  <span class="c1"># muted purple</span>
+    <span class="s1">&#39;#8c564b&#39;</span><span class="p">,</span>  <span class="c1"># chestnut brown</span>
+    <span class="s1">&#39;#e377c2&#39;</span><span class="p">,</span>  <span class="c1"># raspberry yogurt pink</span>
+    <span class="s1">&#39;#7f7f7f&#39;</span><span class="p">,</span>  <span class="c1"># middle gray</span>
+    <span class="s1">&#39;#bcbd22&#39;</span><span class="p">,</span>  <span class="c1"># curry yellow-green</span>
+    <span class="s1">&#39;#17becf&#39;</span>   <span class="c1"># blue-teal</span>
+<span class="p">]</span>
+
+<span class="n">showlegend_done</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="n">idx</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">ea_coe_t</span> <span class="ow">in</span> <span class="n">coe_targets</span><span class="p">:</span> 
+    <span class="k">for</span> <span class="n">ea_coe_cat</span> <span class="ow">in</span> <span class="n">coe_cats</span><span class="p">:</span>
+        <span class="n">bidding_datetime</span> <span class="o">=</span> <span class="n">decompose</span><span class="p">(</span><span class="n">ea_coe_cat</span><span class="p">,</span> <span class="s1">&#39;bidding_datetime&#39;</span><span class="p">)</span>
+        <span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">bidding_datetime</span><span class="p">,</span>
+                             <span class="n">y</span><span class="o">=</span><span class="n">decompose</span><span class="p">(</span><span class="n">ea_coe_cat</span><span class="p">,</span> <span class="n">ea_coe_t</span><span class="p">),</span> 
+                             <span class="n">name</span><span class="o">=</span><span class="n">ea_coe_cat</span><span class="p">,</span>
+                             <span class="n">showlegend</span><span class="o">=</span><span class="ow">not</span> <span class="n">showlegend_done</span><span class="p">,</span>
+                             <span class="n">marker_color</span><span class="o">=</span><span class="n">color</span><span class="p">[</span><span class="n">coe_cats</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">ea_coe_cat</span><span class="p">)])</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">append_trace</span><span class="p">(</span><span class="n">trace</span><span class="p">,</span> <span class="n">idx</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">showlegend_done</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">idx</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="c1">#fig.add_trace(go.Scatter(x=df.Date, y=df[&#39;AAPL.Low&#39;], name=&quot;AAPL Low&quot;,</span>
+<span class="c1">#                         line_color=&#39;dimgray&#39;))</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="s1">&#39;All COE Metrics throughout time&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">autosize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;COE_metrics&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[5]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe
+            width="100%"
+            height="1000px"
+            src="https://plot.ly/~usc_eric_vader/1076.embed"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Interistingly, there is strong seasonal trend for COE.</p>
+<p>As expected, passenger cars' COE tend to be higher at the end of the year. 
+We think that this is due to the effect of stronger car promotions along with year end bonus
+This is reflected in both Category A and B's increased prices when compared to the average price.</p>
+<p>Similarly, there are also strong correlation with Category C with the financial year, where most companies' financial year ends in the mid year. We can see a distinct seperation of an increase vs decrease in prices when comparing first half and the second half of the year.</p>
+<p>Lastly, Category D refers to motocycle. This tend can be explained by taking the inverse relationship of the COE premium of Cars. It is expected that its the inverse of the trend of cars. As the price of the COE for cars increase, consumers would buy more motocycles. The reverse is true as cars are more desirable.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">avg_cat</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">coe_cats</span><span class="p">:</span>
+
+    <span class="n">coe_result_by_mth</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">ea_coe_result</span> <span class="ow">in</span> <span class="n">coe_results</span><span class="p">[</span><span class="n">cat</span><span class="p">]:</span>
+        <span class="n">coe_result_by_mth</span><span class="p">[</span><span class="n">ea_coe_result</span><span class="o">.</span><span class="n">bidding_datetime</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%b&quot;</span><span class="p">)]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ea_coe_result</span><span class="p">)</span>
+
+    <span class="c1"># Run for every metric </span>
+    <span class="n">ea_coe_target</span> <span class="o">=</span> <span class="s1">&#39;premium&#39;</span>
+    <span class="n">mth_target</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">avg_c</span> <span class="o">=</span> <span class="mi">0</span> 
+    <span class="k">for</span> <span class="n">mth</span> <span class="ow">in</span> <span class="n">coe_result_by_mth</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">ea_coe_result</span> <span class="ow">in</span> <span class="n">coe_result_by_mth</span><span class="p">[</span><span class="n">mth</span><span class="p">]:</span>
+            <span class="n">mth_target</span><span class="p">[</span><span class="n">mth</span><span class="p">]</span> <span class="o">+=</span> <span class="n">ea_coe_result</span><span class="o">.</span><span class="n">_asdict</span><span class="p">()[</span><span class="n">ea_coe_target</span><span class="p">]</span>
+            <span class="n">c</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">avg_c</span> <span class="o">+=</span> <span class="n">c</span>
+        <span class="n">avg_cat</span><span class="p">[</span><span class="n">cat</span><span class="p">]</span> <span class="o">+=</span> <span class="n">mth_target</span><span class="p">[</span><span class="n">mth</span><span class="p">]</span>
+        <span class="n">mth_target</span><span class="p">[</span><span class="n">mth</span><span class="p">]</span> <span class="o">/=</span> <span class="n">c</span>
+    <span class="n">avg_cat</span><span class="p">[</span><span class="n">cat</span><span class="p">]</span> <span class="o">/=</span> <span class="n">avg_c</span>
+
+    <span class="n">keys</span><span class="p">,</span> <span class="n">vals</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">mth_target</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+    <span class="n">vals</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="n">v</span><span class="o">-</span><span class="n">avg_cat</span><span class="p">[</span><span class="n">cat</span><span class="p">])</span><span class="o">/</span><span class="n">avg_cat</span><span class="p">[</span><span class="n">cat</span><span class="p">]</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">vals</span> <span class="p">]</span>
+
+    <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">cat</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">keys</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">vals</span><span class="p">))</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="n">coe_targets_pretty</span><span class="p">[</span><span class="s1">&#39;premium&#39;</span><span class="p">],</span> <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;,.0%&#39;</span><span class="p">))</span>
+
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;COE_by_mth&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[6]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe
+            width="100%"
+            height="525px"
+            src="https://plot.ly/~usc_eric_vader/1091.embed"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+
 </div>
 </div>
 
