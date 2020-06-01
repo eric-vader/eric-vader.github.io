@@ -6,7 +6,7 @@ layout: default
 
 <img class="profile-picture" src="{{site.img_path}}/profile-pic.png">
 
-Hey! I am a 3rd year PhD. Student at [National University of Singapore](http://nus.edu.sg/), [School of Computing](https://www.comp.nus.edu.sg/). You may want to check out my [Linkedin Profile](https://www.linkedin.com/in/eric-han-lw/).
+Hey! I am a 3rd year PhD. Student at [National University of Singapore](http://nus.edu.sg/), [School of Computing](https://www.comp.nus.edu.sg/). The webpage serves as my own personal portal for my research and teaching growth as well as an online resume. You are welcome to check out any of the research articles in the research section. You may want to check out my [Linkedin Profile](https://www.linkedin.com/in/eric-han-lw/).
 
 ## Research
 
