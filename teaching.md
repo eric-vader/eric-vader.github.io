@@ -5,7 +5,7 @@ title: Teaching
 ---
 # Graduate Tutor
 
-Appointed since 13/Aug/18, roles performed:
+Appointed since 8/Aug/18, roles performed:
 
 1. Teach tutorials
 2. Managed consultations (also known as recitations)

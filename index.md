@@ -49,7 +49,7 @@ Date | Award | Category
 
 Period | Position | Project/Role | Organization
 ----:|------------|------|:----------:
-13/Aug/18 | Graduate Tutor | Tutor for Computer Science modules: tutorials, consultations, mark examinations and manage module tools ([See teaching](teaching)) | [![National University of Singapore]({{site.img_path}}/nus_logo.png){:class="small-logo"}](http://nus.edu.sg/)
+8/Aug/18 | Graduate Tutor | Tutor for Computer Science modules: tutorials, consultations, mark examinations and manage module tools ([See teaching](teaching)) | [![National University of Singapore]({{site.img_path}}/nus_logo.png){:class="small-logo"}](http://nus.edu.sg/)
 1/Dec/17 - 26/Apr/18 | Project | Quality Control IT Project (Webapp, Android) | [![Scanteak]({{site.img_path}}/scanteak_logo.png){:class="small-logo"}](http://scanteak.com.sg)
 27/May/16 - 19/Aug/16 | Software Engineering Intern | Designed and deployed Church Management System (CHMS) | [![Church of Singapore Bukit Timah]({{site.img_path}}/cosbt_logo.png){:class="small-logo"}](http://www.cosbt.org.sg/)
 6/May/15 - 31/Dec/15|Research Intern ([DC Group](https://www.a-star.edu.sg/ihpc/Research/Computing-Science-CS/Distributed-Computing-DC-Group/Overview)) | Autonomous Machine Learning using HPC Approaches / A Cloud-based Collaborative Model Building Platform | [![A*STAR IHPC]({{site.img_path}}/ihpc_logo.png){:class="small-logo"}](https://www.a-star.edu.sg/ihpc) 
