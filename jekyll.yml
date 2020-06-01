@@ -1,0 +1,5 @@
+name: jekyll
+channels:
+  - defaults
+dependencies:
+  - conda-forge::rb-jekyll

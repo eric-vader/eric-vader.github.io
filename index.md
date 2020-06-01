@@ -6,24 +6,35 @@ layout: default
 
 <img class="profile-picture" src="{{site.img_path}}/profile-pic.png">
 
-Hey! I am a junior year PhD. Student at [National University of Singapore](http://nus.edu.sg/), [School of Computing](https://www.comp.nus.edu.sg/). This site is under construction, will update the site soon! In the mean time, you may want to check out my [Linkedin Profile](https://www.linkedin.com/in/eric-han-lw/).
+Hey! I am a 3rd year PhD. Student at [National University of Singapore](http://nus.edu.sg/), [School of Computing](https://www.comp.nus.edu.sg/). You may want to check out my [Linkedin Profile](https://www.linkedin.com/in/eric-han-lw/).
 
-## Research Interest
+## Research
 
-My research interests are: 
+My research interest is in high dimensional machine learning, spanning across the following fields: 
 
-* Reinforcement Learning
-* Convex and non-convex optimization
-* Gaussian Processes
 * Bayesian Optimization
+* Gaussian Processes
+* Convex and non-convex optimization
+* Reinforcement Learning
+
+Here are some useful links for conference/journal:
+
+1. Conference Rankings:
+    1. [SoC Conference Rankings](https://mysoc.nus.edu.sg/~cajole/cs_pubranks/conf.html)
+    1. [CORE Research Conference Portal](http://portal.core.edu.au/conf-ranks/)
+1. Journal Rankings:
+    1. [SoC Journal Rankings](https://mysoc.nus.edu.sg/~cajole/cs_pubranks/journal.html)
+    1. [Scimago Journal & Country Rank](https://www.scimagojr.com/journalrank.php)
+1. [Conference call for paper deadlines](https://jackietseng.github.io/conference_call_for_paper/conferences.html)
+
 
 ## Education
 
 Period | Degree | Institution
 ----:|-----------|:----------:
-13/Aug/18 - May/23| [Doctor in Philosophy (PhD) in Computer Science](https://www.comp.nus.edu.sg/programmes/pg/phdcs/)| [![National University of Singapore]({{site.img_path}}/nus_logo.png){:style="width:50px;"}](http://nus.edu.sg/)
-12/Aug/13 - 31/Jan/18 | [Bachelor of Computing (Computer Science) with Honours](https://www.comp.nus.edu.sg/cugresource/per-cohort/cs/cs-13-14/) ([Highest Distinction](http://www.nus.edu.sg/nusbulletin/faculty-of-science/undergraduate-education/degree-requirements/curriculum-structure-and-graduation-requirements/degree-classification/)) | [![National University of Singapore]({{site.img_path}}/nus_logo.png){:style="width:50px;"}](http://nus.edu.sg/)
-11/Jan/16 - 11/May/16 | [Student Exchange to USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ([GPA: 4.0/4.0](https://arr.usc.edu/services/grades/gradinghandbook/gradingpolicies.html)) | [![University of Southern California]({{site.img_path}}/usc_logo.png){:style="width:50px;"}](https://www.usc.edu/)
+13/Aug/18 - May/23| [Doctor in Philosophy (PhD) candidate in Computer Science](https://www.comp.nus.edu.sg/programmes/pg/phdcs/) ([Current CAP: 4.88/5.00](http://www.nus.edu.sg/nusbulletin/school-of-computing/graduate-education/research-programmes/degree-requirements/))| [![National University of Singapore]({{site.img_path}}/nus_logo.png){:class="small-logo"}](http://nus.edu.sg/)
+12/Aug/13 - 31/Jan/18 | [Bachelor of Computing (Computer Science) with Honours](https://www.comp.nus.edu.sg/cugresource/per-cohort/cs/cs-13-14/) ([Highest Distinction](http://www.nus.edu.sg/nusbulletin/faculty-of-science/undergraduate-education/degree-requirements/curriculum-structure-and-graduation-requirements/degree-classification/)) | [![National University of Singapore]({{site.img_path}}/nus_logo.png){:class="small-logo"}](http://nus.edu.sg/)
+11/Jan/16 - 11/May/16 | [Student Exchange to USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ([GPA: 4.0/4.0](https://arr.usc.edu/services/grades/gradinghandbook/gradingpolicies.html)) | [![University of Southern California]({{site.img_path}}/usc_logo.png){:class="small-logo"}](https://www.usc.edu/)
 
 ## Awards
 
@@ -36,10 +47,14 @@ Date | Award | Category
 
 ## Experience
 
-Period | Position | Role | Organization
+Period | Position | Project/Role | Organization
 ----:|------------|------|:----------:
-14/Jan/13 - 13/Jul/13| Research Intern ([DC Group](https://www.a-star.edu.sg/ihpc/Research/Computing-Science-CS/Distributed-Computing-DC-Group/Overview)) | Route My Day Project - Recommends routes and point-of-interests to users | [![A*STAR IHPC]({{site.img_path}}/ihpc_logo.png){:style="width:60px;"}](http://nus.edu.sg/) 
-10/Feb/11 - 9/Dec/12| [Second Sergeant (2SG) Trainer](https://www.mindef.gov.sg/web/portal/mindef/about-us/saf-rank-insignias) | Managed and trained men/cadets | [![National University of Singapore]({{site.img_path}}/mindef_logo.png){:style="width:80px;"}](http://nus.edu.sg/)
+13/Aug/18 | Graduate Tutor | Tutor for Computer Science modules: tutorials, consultations, mark examinations and manage module tools ([See teaching](teaching)) | [![National University of Singapore]({{site.img_path}}/nus_logo.png){:class="small-logo"}](http://nus.edu.sg/)
+1/Dec/17 - 26/Apr/18 | Project | Quality Control IT Project (Webapp, Android) | [![Scanteak]({{site.img_path}}/scanteak_logo.png){:class="small-logo"}](http://scanteak.com.sg)
+27/May/16 - 19/Aug/16 | Software Engineering Intern | Designed and deployed Church Management System (CHMS) | [![Church of Singapore Bukit Timah]({{site.img_path}}/cosbt_logo.png){:class="small-logo"}](http://www.cosbt.org.sg/)
+6/May/15 - 31/Dec/15|Research Intern ([DC Group](https://www.a-star.edu.sg/ihpc/Research/Computing-Science-CS/Distributed-Computing-DC-Group/Overview)) | Autonomous Machine Learning using HPC Approaches / A Cloud-based Collaborative Model Building Platform | [![A*STAR IHPC]({{site.img_path}}/ihpc_logo.png){:class="small-logo"}](https://www.a-star.edu.sg/ihpc) 
+14/Jan/13 - 13/Jul/13| Research Intern ([DC Group](https://www.a-star.edu.sg/ihpc/Research/Computing-Science-CS/Distributed-Computing-DC-Group/Overview)) | Route My Day Project - Recommends routes and point-of-interests to users | [![A*STAR IHPC]({{site.img_path}}/ihpc_logo.png){:class="small-logo"}](https://www.a-star.edu.sg/ihpc) 
+10/Feb/11 - 9/Dec/12| [First Sergeant (1SG) Trainer](https://www.mindef.gov.sg/web/portal/mindef/about-us/saf-rank-insignias) | Managed and trained men/cadets | [![National University of Singapore]({{site.img_path}}/mindef_logo.png){:class="small-logo"}](http://nus.edu.sg/)
 
 
 ## Gallery
