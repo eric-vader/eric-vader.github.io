@@ -1,7 +1,7 @@
 ---
 ---
 <div class="dropdown">
-  <button class="dropbtn">Navigate Research</button>
+  <button class="dropbtn">Research</button>
   <div class="dropdown-content">
    {% for item in site.data.research_list.pages %}
       <a href="javascript:;" onclick='javascript:(function(o){document.getElementById("research_iframe").style.height="1px"; document.getElementById("research_iframe").src = "/research/{{item.url}}"; document.getElementById("research_container").hidden=false}(this));'>{{ item.title }}</a>
