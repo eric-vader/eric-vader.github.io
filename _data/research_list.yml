@@ -13,3 +13,9 @@ pages:
 
 - title: Combinatorial Bayesian Optimization
   url: Combinatorial Bayesian Optimization.html
+  
+- title: DIRECT MP
+  url: DIRECT-MP.html
+  
+- title: Gradient based optimization of kernel hyper-parameters
+  url: Gradient based optimization of kernel hyper-parameters.html
