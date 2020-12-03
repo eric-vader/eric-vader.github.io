@@ -4,6 +4,8 @@
 
 
 .small-logo {
-    max-width: 70px;
-    max-height: 100%;
+    max-width: 100px;  /*width of parent container*/
+    height: 50px; /*height of parent container*/
+    object-fit: contain;
+    position: relative;
 }

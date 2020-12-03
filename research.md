@@ -14,9 +14,15 @@
 </div>
 {% endraw %}
 
-# Research
+{% raw %}
+<div class="filler"></div>
+{% endraw %}
 
-Here is the list of my research notes as direct links. Alternatively, use the dropdown above to navigate!
+---
+
+# My Research Notes - Sitemap
+
+Alternatively, Use the dropdown above to navigate, or use the direct links below:
 
 {% for item in site.data.research_list.pages %}
 1. <a href="/research/{{item.url}}" >{{ item.title }}</a>
