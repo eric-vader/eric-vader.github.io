@@ -33,7 +33,7 @@ My research interest is in high dimensional machine learning, spanning across th
 
 Period | Degree | Institution
 ----:|-----------|:---:
-13.Aug.18 - May.23| [Doctor in Philosophy (PhD) candidate in Computer Science](https://www.comp.nus.edu.sg/programmes/pg/phdcs/) ([Current CAP: 4.9/5.00](http://www.nus.edu.sg/nusbulletin/school-of-computing/graduate-education/research-programmes/degree-requirements/))| [![National University of Singapore]({{site.img_path}}/nus_logo.png){:class="small-logo"}](http://nus.edu.sg/)
+13.Aug.18 - May.23 | [Doctor in Philosophy (PhD) candidate in Computer Science](https://www.comp.nus.edu.sg/programmes/pg/phdcs/) ([Current CAP: 4.92/5.00](http://www.nus.edu.sg/nusbulletin/school-of-computing/graduate-education/research-programmes/degree-requirements/))| [![National University of Singapore]({{site.img_path}}/nus_logo.png){:class="small-logo"}](http://nus.edu.sg/)
 12.Aug.13 - 31.Jan.18 | [Bachelor of Computing (Computer Science) with Honours](https://www.comp.nus.edu.sg/cugresource/per-cohort/cs/cs-13-14/) ([Highest Distinction](http://www.nus.edu.sg/nusbulletin/faculty-of-science/undergraduate-education/degree-requirements/curriculum-structure-and-graduation-requirements/degree-classification/)) | [![National University of Singapore]({{site.img_path}}/nus_logo.png){:class="small-logo"}](http://nus.edu.sg/)
 11.Jan.16 - 11.May.16 | [Student Exchange to USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ([GPA: 4.0/4.0](https://arr.usc.edu/services/grades/gradinghandbook/gradingpolicies.html)) | [![University of Southern California]({{site.img_path}}/usc_logo.png){:class="small-logo"}](https://www.usc.edu/)
 
@@ -41,7 +41,7 @@ Period | Degree | Institution
 
 Date | Title | Venue | Organization |
 ----:|-----------|:----------:|:-:|
-Feb.2021| High-Dimensional Bayesian Optimization via Tree-Structured Additive Models | [Proc. of the 35th AAAI Conference on Artificial Intelligence](https://aaai.org/Conferences/AAAI-21/) |[![National University of Singapore]({{site.img_path}}/AAAI.png){:class="small-logo"}](https://aaai.org/)
+Feb.2021| High-Dimensional Bayesian Optimization via Tree-Structured Additive Models ([arXiv Pre-Print](https://arxiv.org/abs/2012.13088)) | [Proc. of the 35th AAAI Conference on Artificial Intelligence](https://aaai.org/Conferences/AAAI-21/) |[![National University of Singapore]({{site.img_path}}/AAAI.png){:class="small-logo"}](https://aaai.org/)
 
 ## Awards
 
