@@ -16,11 +16,12 @@ Appointed since 8/Aug/18, roles performed:
 ## Modules Taught over the years
 
 1. **CS3203 - Software Engineering Project (8MC)** 
+    1. _AY 2020/21 (Sem 2)_: Supported lectures & consultations, organized tutors, grading and maintained testing tools for module.
     1. _AY 2019/20 (Sem 2)_: Taught consultations, support lectures  and developed testing tools for module.
     1. _AY 2018/19 (Sem 2)_: Taught tutorials, consultations and support lectures.
     1. _AY 2018/19 (Sem 1)_: Taught tutorials and consultations.
 1. **CS2030/CS2030S - Programming Methodology II (4MC)** 
-    1. _AY 2020/21 (Sem 1)_: Supported Labs and developed module tools; Modified Fedora Linux for exam purposes.
+    1. _AY 2020/21 (Sem 1)_: Supported Labs and developed module tools; Created sub-flavor Fedora Linux for exam purposes.
 
 ## Teaching Feedback
 
@@ -36,8 +37,8 @@ Appointed since 8/Aug/18, roles performed:
 
 Academic Year | Module Code | Module Name | Tutorial | Consultations
 :-:|-:|:-|:-:|:-:
+AY 2020/21 (Sem 2) | CS3203 | Software Engineering Project | - | -
+AY 2020/21 (Sem 1) | CS2030/CS2030S | Programming Methodology II | - | -
 AY 2019/20 (Sem 2) | CS3203 | Software Engineering Project | - | 4.6/5.0
 AY 2018/19 (Sem 2) | CS3203 | Software Engineering Project | 4.4/5.0 | 4.8/5.0
 AY 2018/19 (Sem 1) | CS3203 | Software Engineering Project | 4.1/5.0 | 3.3/5.0
-
-
