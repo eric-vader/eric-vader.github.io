@@ -8,17 +8,7 @@ layout: default
 
 Hey! I am a 3rd year PhD. Student at [National University of Singapore](http://nus.edu.sg/), [School of Computing](https://www.comp.nus.edu.sg/). The webpage serves as my own personal portal for my research and teaching growth as well as an online resume. You are welcome to check out any of the research articles in the research section. You may want to check out my [Linkedin Profile](https://www.linkedin.com/in/eric-han-lw/).
 
-## Research
-
-I am interested in scaling machine learning towards higher dimensions in Bayesian Optimization, Gaussian Processes, Convex and non-convex optimization and Reinforcement Learning.
-
-### Publications
-
-Date | Title | Venue | Organization |
-----:|-----------|:----------:|:-:|
-Feb.2021| High-Dimensional Bayesian Optimization via Tree-Structured Additive Models ([AAAI Preliminary Version](https://www.aaai.org/AAAI21Papers/AAAI-863.HanE.pdf), [arXiv Pre-Print](https://arxiv.org/abs/2012.13088)) | [Proc. of the 35th AAAI Conference on Artificial Intelligence](https://aaai.org/Conferences/AAAI-21/) |[![National University of Singapore]({{site.img_path}}/AAAI.png){:class="small-logo"}](https://aaai.org/)
-
-### Useful links for conference/journal:
+## Useful links for conference/journal:
 
 1. Conference Rankings:
     1. [SoC Conference Rankings](https://mysoc.nus.edu.sg/~cajole/cs_pubranks/conf.html)
@@ -29,15 +19,31 @@ Feb.2021| High-Dimensional Bayesian Optimization via Tree-Structured Additive Mo
     1. [Scimago Journal & Country Rank](https://www.scimagojr.com/journalrank.php)
 1. [Conference call for paper deadlines](https://jackietseng.github.io/conference_call_for_paper/conferences.html)
 
+## Research
+
+I am interested in scaling machine learning towards higher dimensions in Bayesian Optimization, Gaussian Processes, Convex and non-convex optimization and Reinforcement Learning.
+
+### Publications
+
+Date | Title | Venue | Organization |
+----:|-----------|:----------:|:-:|
+Feb.2021| [High-Dimensional Bayesian Optimization via Tree-Structured Additive Models](https://ojs.aaai.org/index.php/AAAI/article/view/16933) ([arXiv](https://arxiv.org/abs/2012.13088)) | [Proc. of the 35th AAAI Conference on Artificial Intelligence](https://aaai.org/Conferences/AAAI-21/) |[![National University of Singapore]({{site.img_path}}/AAAI.png){:class="small-logo"}](https://aaai.org/)
+2022 | Adversarial Attacks on Gaussian Process Bandits  ([arXiv](https://arxiv.org/abs/2110.08449)) | on-going research | -
+
+### Academic Activities
+
+Date | Activity | Organization
+----:|----------|:----------:
+3.Aug.21 - 5.Aug.21 | [NUS Computing Research Week 2021](https://researchweek.comp.nus.edu.sg/index_Aug2021.html) - Program Committee, Moderator of the technical panel titled 'Heterogeneity in Federated Learning'. | [![National University of Singapore]({{site.img_path}}/nus_logo.png){:class="small-logo"}](http://nus.edu.sg/)
+9.Sep.19 - 12.Sep.19 | [Gaussian Process Summer School 2019](http://gpss.cc/gpss19/) - Attended the summer school at Sheffield. | [![University of Sheffield]({{site.img_path}}/uos_logo.png){:class="small-logo"}](https://www.sheffield.ac.uk/)
+
 ## Education
 
 Period | Degree | Institution
 ----:|-----------|:---:
-Since 13.Aug.18 | [Doctor in Philosophy (PhD) candidate in Computer Science (Expected Graduation in May.23)](https://www.comp.nus.edu.sg/programmes/pg/phdcs/) ([Current CAP: 4.92/5.00](https://www.nus.edu.sg/registrar/academic-information-policies/graduate/graduate-continuation-and-graduation-requirements))| [![National University of Singapore]({{site.img_path}}/nus_logo.png){:class="small-logo"}](http://nus.edu.sg/)
+13.Aug.18 - 2023 (expected) | [Doctor in Philosophy (PhD) in Computer Science](https://www.comp.nus.edu.sg/programmes/pg/phdcs/) ([Current CAP: 4.92/5.00](https://www.nus.edu.sg/registrar/academic-information-policies/graduate/graduate-continuation-and-graduation-requirements))| [![National University of Singapore]({{site.img_path}}/nus_logo.png){:class="small-logo"}](http://nus.edu.sg/)
 12.Aug.13 - 31.Jan.18 | [Bachelor of Computing (Computer Science) with Honours](https://www.comp.nus.edu.sg/cugresource/per-cohort/cs/cs-13-14/) ([Highest Distinction](http://www.nus.edu.sg/nusbulletin/faculty-of-science/undergraduate-education/degree-requirements/curriculum-structure-and-graduation-requirements/degree-classification/)) | [![National University of Singapore]({{site.img_path}}/nus_logo.png){:class="small-logo"}](http://nus.edu.sg/)
 11.Jan.16 - 11.May.16 | [Student Exchange to USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ([GPA: 4.0/4.0](https://arr.usc.edu/services/grades/gradinghandbook/gradingpolicies.html)) | [![University of Southern California]({{site.img_path}}/usc_logo.png){:class="small-logo"}](https://www.usc.edu/)
-
-
 
 ## Awards
 
