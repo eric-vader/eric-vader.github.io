@@ -31,6 +31,7 @@ Appointed since 8/Aug/18, roles performed:
         * [Tutorial 5 Slides](/teaching/AY2122S2/CS3243/T05_Tutorial_Slides.pdf)
         * [Midterm Solutions Slides](/teaching/AY2122S2/CS3243/Midterm_Tutorial_Slides.pdf)
         * [Tutorial 6 Slides](/teaching/AY2122S2/CS3243/T06_Tutorial_Slides.pdf)
+        * [Tutorial 7 Slides](/teaching/AY2122S2/CS3243/T07_Tutorial_Slides.pdf)
 1. **CS3203 - Software Engineering Project (8MC)** 
     1. _AY 2021/22 (Sem 1)_: Supported lectures & consultations, organized tutors, grading and improved grading and testing tools.
     1. _AY 2020/21 (Sem 2)_: Supported lectures & consultations, organized tutors, grading and maintained testing tools.
