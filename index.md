@@ -50,7 +50,7 @@ Period | Degree | Institution
 
 Date | Award | Category
 ----:|-------|---------
-1.Feb.2022 | Certificate of Accomplishment | Long Service Award; In appreciation of my 5 years of service as a Graduate Tutor.
+1.Feb.22 | Certificate of Accomplishment | Long Service Award; In appreciation of my 5 years of service as a Graduate Tutor.
 21.Jun.18 | [Outstanding Undergraduate Researcher Prize 2017/2018 (Individual)](https://www.nus.edu.sg/registrar/academic-information-policies/education-at-nus/medals-and-prizes-(university-level)/rules-of-award---o#OutstandingUndergraduateResearcherPrize) | [Won for Final Year Project](/misc/List-of-OURP-Winners-AY201718.pdf) - Feature Subset Selection using Reinforcement Learning<!--[](misc/H041790_submission.pdf)-->
 29.Jan.18 | [Certificate of Merit in Algorithms & Theory Focus Area](https://www.comp.nus.edu.sg/programmes/ug/honour/merit/) | Awarded for meritorious performance in the focus area
 15.Jan.18 | [Dean's List](https://www.comp.nus.edu.sg/programmes/ug/honour/deans/) | [Named to Dean's List for meritorious performance in S1 AY2017/18](https://www.comp.nus.edu.sg/images/resources/DL1710.websiteupdate.pdf)
