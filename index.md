@@ -36,7 +36,7 @@ Feb.2021| [High-Dimensional Bayesian Optimization via Tree-Structured Additive M
 Date | Activity | Organization
 ----:|----------|:----------:
 3.Aug.21 - 5.Aug.21 | [NUS Computing Research Week 2021](https://researchweek.comp.nus.edu.sg/index_Aug2021.html) - Program Committee, Moderator of the technical panel titled 'Heterogeneity in Federated Learning'. | [![National University of Singapore]({{site.img_path}}/nus_logo.svg){:class="small-logo"}](http://nus.edu.sg/)
-9.Sep.19 - 12.Sep.19 | [Gaussian Process Summer School 2019](http://gpss.cc/gpss19/) - Attended the summer school at Sheffield. | [![University of Sheffield]({{site.img_path}}/uos_logo.png){:class="small-logo"}](https://www.sheffield.ac.uk/)
+9.Sep.19 - 12.Sep.19 | [Gaussian Process Summer School 2019](http://gpss.cc/gpss19/) - Attended the summer school at Sheffield. | [![University of Sheffield]({{site.img_path}}/uos_logo.svg){:class="small-logo"}](https://www.sheffield.ac.uk/)
 
 ## Education
 
