@@ -29,7 +29,7 @@ I am interested in scaling machine learning towards higher dimensions in Bayesia
 Date | Title | Venue | Organization |
 ----:|-----------|:----------:|:-:|
 Jul.2022 | [Adversarial Attacks on Gaussian Process Bandits](https://proceedings.mlr.press/v162/han22f.html) ([arXiv](https://arxiv.org/abs/2110.08449)) | [Proc. of the 39th International Conference on Machine Learning](https://icml.cc/Conferences/2022) | [![ICML]({{site.img_path}}/icml_logo.svg){:class="small-logo"}](https://icml.cc/)
-Feb.2021| [High-Dimensional Bayesian Optimization via Tree-Structured Additive Models](https://ojs.aaai.org/index.php/AAAI/article/view/16933) ([arXiv](https://arxiv.org/abs/2012.13088)) | [Proc. of the 35th AAAI Conference on Artificial Intelligence](https://aaai.org/Conferences/AAAI-21/) |[![AAAI]({{site.img_path}}/aaai_logo.png){:class="small-logo"}](https://aaai.org/)
+Feb.2021| [High-Dimensional Bayesian Optimization via Tree-Structured Additive Models](https://ojs.aaai.org/index.php/AAAI/article/view/16933) ([arXiv](https://arxiv.org/abs/2012.13088)) | [Proc. of the 35th AAAI Conference on Artificial Intelligence](https://aaai.org/Conferences/AAAI-21/) |[![AAAI]({{site.img_path}}/aaai_logo.svg){:class="small-logo"}](https://aaai.org/)
 
 ### Academic Activities
 
