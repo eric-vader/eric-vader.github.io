@@ -28,8 +28,8 @@ I am interested in scaling machine learning towards higher dimensions in Bayesia
 
 Date | Title | Venue | Organization |
 ----:|-----------|:----------:|:-:|
-Jul.2022 | [Adversarial Attacks on Gaussian Process Bandits](https://proceedings.mlr.press/v162/han22f.html) ([arXiv](https://arxiv.org/abs/2110.08449)) | [Proc. of the 39th International Conference on Machine Learning](https://icml.cc/Conferences/2022) | [![ICML]({{site.img_path}}/icml_logo.svg){:class="small-logo"}](https://icml.cc/)
-Feb.2021| [High-Dimensional Bayesian Optimization via Tree-Structured Additive Models](https://ojs.aaai.org/index.php/AAAI/article/view/16933) ([arXiv](https://arxiv.org/abs/2012.13088)) | [Proc. of the 35th AAAI Conference on Artificial Intelligence](https://aaai.org/Conferences/AAAI-21/) |[![AAAI]({{site.img_path}}/aaai_logo.svg){:class="small-logo"}](https://aaai.org/)
+Jul.2022 | [Adversarial Attacks on Gaussian Process Bandits](https://proceedings.mlr.press/v162/han22f.html) ([arXiv](https://arxiv.org/abs/2110.08449), [slides](publications/Adversarial Attacks on Gaussian Process Bandits/slides_Jun23.pdf), [poster](publications/Adversarial Attacks on Gaussian Process Bandits/poster_2Jul.pdf))<br /> **Eric Han**, Jonathan Scarlett | [Proc. of the 39th International Conference on Machine Learning](https://icml.cc/Conferences/2022) | [![ICML]({{site.img_path}}/icml_logo.svg){:class="small-logo"}](https://icml.cc/)
+Feb.2021| [High-Dimensional Bayesian Optimization via Tree-Structured Additive Models](https://ojs.aaai.org/index.php/AAAI/article/view/16933) ([arXiv](https://arxiv.org/abs/2012.13088), [slides](publications/High-Dimensional Bayesian Optimization via Tree-Structured Additive Models/slides.pdf), [poster](publications/High-Dimensional Bayesian Optimization via Tree-Structured Additive Models/poster.pdf))<br /> **Eric Han**, Ishank Arora, Jonathan Scarlett | [Proc. of the 35th AAAI Conference on Artificial Intelligence](https://aaai.org/Conferences/AAAI-21/) |[![AAAI]({{site.img_path}}/aaai_logo.svg){:class="small-logo"}](https://aaai.org/)
 
 ### Academic Activities
 
@@ -50,7 +50,7 @@ Period | Degree | Institution
 
 Date | Award | Category
 ----:|-------|---------
-1.Feb.22 | Certificate of Accomplishment | Long Service Award; In appreciation of my 5 years of service as a Graduate Tutor.
+1.Feb.22 | Certificate of Accomplishment | Long Service Award; In appreciation of the 5 years of service as a Graduate Tutor.
 21.Jun.18 | [Outstanding Undergraduate Researcher Prize 2017/2018 (Individual)](https://www.nus.edu.sg/registrar/academic-information-policies/education-at-nus/medals-and-prizes-(university-level)/rules-of-award---o#OutstandingUndergraduateResearcherPrize) | [Won for Final Year Project](/misc/List-of-OURP-Winners-AY201718.pdf) - Feature Subset Selection using Reinforcement Learning<!--[](misc/H041790_submission.pdf)-->
 29.Jan.18 | [Certificate of Merit in Algorithms & Theory Focus Area](https://www.comp.nus.edu.sg/programmes/ug/honour/merit/) | Awarded for meritorious performance in the focus area
 15.Jan.18 | [Dean's List](https://www.comp.nus.edu.sg/programmes/ug/honour/deans/) | [Named to Dean's List for meritorious performance in S1 AY2017/18](https://www.comp.nus.edu.sg/images/resources/DL1710.websiteupdate.pdf)
