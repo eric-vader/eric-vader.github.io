@@ -51,7 +51,7 @@ few TAs have been able to do that in my experience and it makes him stand apart 
 ### Effectiveness
 
 Academic Year | Code | Module Name | Score | Nomination | Type
-:-:|-:|:-|:-:|:-:
+:-:|-:|:-|:-:|:-:|-:
 AY2021/22 S2 | CS3243 | Introduction to Artificial Intelligence | 4.5/5.0 | 12/39 (31%) | Tutorial
 AY2021/22 S2 | CS3217 | Software Engineering on Modern Application Platforms | 3.8/5.0 | 0/6 (0%) | Tutorial
 AY2021/22 S1 | CS3203 | Software Engineering Project | 3.7/5.0 | 5/161 (3%) | Lecture
