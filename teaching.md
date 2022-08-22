@@ -8,7 +8,7 @@ title: Teaching
 Appointed since 8/Aug/18, roles performed:
 
 1. Teach tutorials
-2. Managed consultations (also known as recitations)
+2. Managed recitations
 3. Marking students' code and examinations
 4. Assist with lecturer in lectures
 4. Developed module tools
@@ -16,14 +16,52 @@ Appointed since 8/Aug/18, roles performed:
 ## Modules Taught
 
 1. **CS3217 - Software Engineering on Modern Application Platforms (4MC)** 
-    1. _AY 2021/22 (Sem 2)_: Tutorials
-        * [Tutorial 1 Slides](/teaching/AY2122S2/CS3217/T01_Tutorial_Slides.pdf)
-        * [Tutorial 2 Slides](/teaching/AY2122S2/CS3217/T02_Tutorial_Slides.pdf)
-        * Tutorial 3 has no slides.
-        * [Tutorial 4 Slides](/teaching/AY2122S2/CS3217/T04_Tutorial_Slides.pdf)
-        * [Tutorial 5 Slides](/teaching/AY2122S2/CS3217/T05_Tutorial_Slides.pdf)
+    1. _AY 2021/22 S2_: Taught tutorial classes.
 1. **CS3243 - Introduction to Artificial Intelligence (4MC)** 
-    1. _AY 2021/22 (Sem 2)_: Tutorials
+    1. _AY 2022/23 S1_: Teach tutorials, review of learning materials, designing exam questions.
+        * [W3 - Tutorial 1 Slides]()
+    1. _AY 2021/22 S2_: Teach tutorials, grading, organize tutors for assignment grading, designing assignment grading rubrics, designing exam questions.
+1. **CS3203 - Software Engineering Project (8MC)** 
+    1. _AY 2021/22 S1_: Support lectures, teach recitations, organize tutors, grading, improve grading rubrics and improve testing tools.
+    1. _AY 2020/21 S2_: Support lectures, teach recitations, organize tutors, grading, maintain testing tools.
+    1. _AY 2019/20 S2_: Support lectures, teach recitations and develop testing tools.
+    1. _AY 2018/19 S2_: Teach tutorials, recitations and support lectures.
+    1. _AY 2018/19 S1_: Teach tutorials and recitations.
+1. **CS2030/CS2030S - Programming Methodology II (4MC)** 
+    1. _AY 2020/21 S1_: Supported Labs and developed module tools; Created sub-flavor of Fedora Linux for virtual exam needs due to COVID-19.
+
+## Teaching Feedback
+
+{% include carousel.html height="35" unit="%" duration="7" %}
+
+> The best TA i have ever met in my 3 years in NUS. He go above and beyond what is expected of him by the students. He is concern about our wellbeing and often encourage us to do better. 
+> <p style="text-align: right">- Student from AY2018/19 S2</p>
+
+> Eric is a very caring tutor who is always looking out for us and consistently motivate us to excel further. Not only is he very approach, he also teaches very effectively. I was able to learn effectively through his patient and sophisticated guidance. I feel that I could not ask for a better tutor.
+> <p style="text-align: right">- Student from AY2019/20 S2</p>
+
+> Excellent tutor. Goes out of his way to help students. Incredibly easy to approach.
+> <p style="text-align: right">- Student from AY2021/22 S2</p>
+
+> Eric keeps the sessions informal and casual, an environment where the best learning takes place in my opinion. By keeping the
+knowledge–sharing lighthearted, he is able to retain the attention of students well while keeping it entertaining and engaging. Very
+few TAs have been able to do that in my experience and it makes him stand apart as an educator.
+> <p style="text-align: right">- Student from AY2021/22 S2</p>
+
+### Effectiveness
+
+Academic Year | Module Code | Module Name | Score | Nomination | Type
+:-:|-:|:-|:-:|:-:
+AY 2021/22 S2 | CS3243 | Introduction to Artificial Intelligence | 4.5/5.0 | 12/39 | Tutorial
+AY 2021/22 S2 | CS3217 | Software Engineering on Modern Application Platforms | 3.8/5.0 | 0/6 | Tutorial
+AY 2021/22 S1 | CS3203 | Software Engineering Project | 3.7/5.0 | 5/161 | Lecture
+AY 2019/20 S2 | CS3203 | Software Engineering Project | 4.6/5.0 | 8/13 |  Recitation
+AY 2018/19 S2 | CS3203 | Software Engineering Project | 4.4/5.0 | 5/16 | Tutorial
+AY 2018/19 S2 | CS3203 | Software Engineering Project | 4.8/5.0 | 11/18 | Recitation
+AY 2018/19 S1 | CS3203 | Software Engineering Project | 4.1/5.0 | 2/20 | Tutorial
+AY 2018/19 S1 | CS3203 | Software Engineering Project | 3.3/5.0 | 1/3| Recitation
+
+<!-- 
         * [W3 - Tutorial 1 Slides](/teaching/AY2122S2/CS3243/T01_Tutorial_Slides.pdf)
         * [W4 - Tutorial 2 Slides](/teaching/AY2122S2/CS3243/T02_Tutorial_Slides.pdf)
         * [W5 - Tutorial 3 Slides](/teaching/AY2122S2/CS3243/T03_Tutorial_Slides.pdf)
@@ -37,32 +75,11 @@ Appointed since 8/Aug/18, roles performed:
         * W13 - Revision Tutorial:
             * [Slides](/teaching/AY2122S2/CS3243/Revision_Tutorial_Slides.pdf)
             * [Recording](https://youtu.be/LRUJ_4WdmLc)
-1. **CS3203 - Software Engineering Project (8MC)** 
-    1. _AY 2021/22 (Sem 1)_: Supported lectures & consultations, organized tutors, grading and improved grading and testing tools.
-    1. _AY 2020/21 (Sem 2)_: Supported lectures & consultations, organized tutors, grading and maintained testing tools.
-    1. _AY 2019/20 (Sem 2)_: Taught consultations, support lectures  and developed testing tools.
-    1. _AY 2018/19 (Sem 2)_: Taught tutorials, consultations and support lectures.
-    1. _AY 2018/19 (Sem 1)_: Taught tutorials and consultations.
-1. **CS2030/CS2030S - Programming Methodology II (4MC)** 
-    1. _AY 2020/21 (Sem 1)_: Supported Labs and developed module tools; Created sub-flavor Fedora Linux for exam purposes.
+-->
 
-## Teaching Feedback
-
-{% include carousel.html height="35" unit="%" duration="7" %}
-
-> The best TA i have ever met in my 3 years in NUS. He go above and beyond what is expected of him by the students. He is concern about our wellbeing and often encourage us to do better. 
-> <p style="text-align: right">- Student from AY2018/19 (Sem 2)</p>
-
-> Eric is a very caring tutor who is always looking out for us and consistently motivate us to excel further. Not only is he very approach, he also teaches very effectively. I was able to learn effectively through his patient and sophisticated guidance. I feel that I could not ask for a better tutor.
-> <p style="text-align: right">- Student from AY2019/20 (Sem 2)</p>
-
-### Effectiveness
-
-Academic Year | Module Code | Module Name | Tutorial | Consultations
-:-:|-:|:-|:-:|:-:
-AY 2021/22 (Sem 1) | CS3203 | Software Engineering Project | - | -
-AY 2020/21 (Sem 2) | CS3203 | Software Engineering Project | - | -
-AY 2020/21 (Sem 1) | CS2030/CS2030S | Programming Methodology II | - | -
-AY 2019/20 (Sem 2) | CS3203 | Software Engineering Project | - | 4.6/5.0
-AY 2018/19 (Sem 2) | CS3203 | Software Engineering Project | 4.4/5.0 | 4.8/5.0
-AY 2018/19 (Sem 1) | CS3203 | Software Engineering Project | 4.1/5.0 | 3.3/5.0
+<!-- 
+    * [Tutorial 1 Slides](/teaching/AY2122S2/CS3217/T01_Tutorial_Slides.pdf)
+    * [Tutorial 2 Slides](/teaching/AY2122S2/CS3217/T02_Tutorial_Slides.pdf)
+    * Tutorial 3 has no slides.
+    * [Tutorial 4 Slides](/teaching/AY2122S2/CS3217/T04_Tutorial_Slides.pdf)
+    * [Tutorial 5 Slides](/teaching/AY2122S2/CS3217/T05_Tutorial_Slides.pdf) -->
