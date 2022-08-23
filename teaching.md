@@ -19,7 +19,7 @@ Appointed since 8/Aug/18, roles performed:
     1. _AY2021/22 S2_: Taught tutorial classes.
 1. **CS3243 - Introduction to Artificial Intelligence (4MC)** 
     1. _AY2022/23 S1_: Teach tutorials, review of learning materials, designing exam questions.
-        * W3 - Tutorial 1: [Slides](/teaching/AY2223S1/CS3243/T01_Tutorial_Slides.pdf) [Notes](/teaching/AY2223S1/CS3243/T01_Tutorial.pdf)
+        * W3 - Tutorial 1: [Slides](/teaching/AY2223S1/CS3243/T01_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T01_Tutorial.pdf)
     1. _AY2021/22 S2_: Teach tutorials, grading, organize tutors for assignment grading, designing assignment grading rubrics, designing exam questions.
 1. **CS3203 - Software Engineering Project (8MC)** 
     1. _AY2021/22 S1_: Support lectures, teach recitations, organize tutors, grading, improve grading rubrics and improve testing tools.
