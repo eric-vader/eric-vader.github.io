@@ -3,6 +3,11 @@ layout: default
 is_contact: true
 title: Teaching
 ---
+
+# Teaching Philosophy
+
+My philosophy of education is that students who are inquisitive and curious about the subject are effective learners. I believe effective learning is primarily driven by an innate desire to learn the subject rather than a need to learn (secondary). Hence, I am very focused on creating an environment that fosters each student's desire to learn. Specifically, I believe three elements foster a learning-positive environment: (1) Creating a relaxed and safe environment. (2) Engaging students to facilitate learning in and after class. (3) Creating equal opportunities for all students to learn. 
+
 # Graduate Tutor
 
 Appointed since 8/Aug/18, roles performed:
