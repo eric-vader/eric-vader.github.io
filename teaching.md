@@ -28,6 +28,7 @@ Appointed since 8/Aug/18, roles performed:
         * W4 - Tutorial 2: [Slides](/teaching/AY2223S1/CS3243/T02_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T02_Tutorial.pdf)
         * W5 - Tutorial 3: [Slides](/teaching/AY2223S1/CS3243/T03_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T03_Tutorial.pdf)
         * W6 - Tutorial 4: [Slides](/teaching/AY2223S1/CS3243/T04_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T04_Tutorial.pdf)
+        * W7 - Tutorial 5: [Slides](/teaching/AY2223S1/CS3243/T05_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T05_Tutorial.pdf)
     1. _AY2021/22 S2_: Teach tutorials, grading, organize tutors for assignment grading, designing assignment grading rubrics, designing exam questions.
 1. **CS3203 - Software Engineering Project (8MC)** 
     1. _AY2021/22 S1_: Support lectures, teach recitations, organize tutors, grading, improve grading rubrics and improve testing tools.
