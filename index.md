@@ -11,7 +11,7 @@ Hey! I am a 3rd year PhD. Student at [National University of Singapore](http://n
 ## Useful links for conference/journal:
 
 1. Conference Rankings:
-    1. [SoC Conference Rankings](https://mysoc.nus.edu.sg/~cajole/cs_pubranks/conf.html)
+    1. [Internal SoC Conference Rankings](https://mysoc.nus.edu.sg/pg/current-list-of-cs-conferences/)
     1. [CORE Research Conference Portal](http://portal.core.edu.au/conf-ranks/)
     1. [Guide2Research](http://www.guide2research.com/topconf/)
 1. Journal Rankings:
