@@ -50,6 +50,7 @@ Period | Degree | Institution
 
 Date | Award | Category
 ----:|-------|---------
+21.Apr.23 | [Full-Time Teaching Assistant Award](https://www.comp.nus.edu.sg/about/awards/) | Recognition of the high level of commitment to, and achievement of good teaching.
 1.Feb.22 | Certificate of Accomplishment | Long Service Award; In appreciation of the 5 years of service as a Graduate Tutor.
 21.Jun.18 | [Outstanding Undergraduate Researcher Prize 2017/2018 (Individual)](https://www.nus.edu.sg/registrar/academic-information-policies/education-at-nus/medals-and-prizes-(university-level)/rules-of-award---o#OutstandingUndergraduateResearcherPrize) | [Won for Final Year Project](/misc/List-of-OURP-Winners-AY201718.pdf) - Feature Subset Selection using Reinforcement Learning<!--[](misc/H041790_submission.pdf)-->
 29.Jan.18 | [Certificate of Merit in Algorithms & Theory Focus Area](https://www.comp.nus.edu.sg/programmes/ug/honour/merit/) | Awarded for meritorious performance in the focus area
