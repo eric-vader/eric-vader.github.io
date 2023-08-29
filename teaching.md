@@ -8,7 +8,7 @@ title: Teaching
 
 My philosophy of education is that students who are inquisitive and curious about the subject are effective learners. I believe effective learning is primarily driven by an innate desire to learn the subject rather than a need to learn (secondary). Hence, I am very focused on creating an environment that fosters each student's desire to learn. Specifically, I believe three elements foster a learning-positive environment: (1) Creating a relaxed and safe environment. (2) Engaging students to facilitate learning in and after class. (3) Creating equal opportunities for all students to learn. 
 
-# Graduate Tutor
+# Graduate Tutor / Teaching Assistant
 
 Appointed since 8/Aug/18, roles performed:
 
@@ -20,11 +20,10 @@ Appointed since 8/Aug/18, roles performed:
 
 ## Modules Taught
 
-1. **CS3217 - Software Engineering on Modern Application Platforms (4MC)** 
-    1. _AY2021/22 S2_: Taught tutorial classes.
-1. **CS3243 - Introduction to Artificial Intelligence (4MC)** 
-    1. _AY2022/23 S1_: Teach tutorials, review of learning materials, designing exam questions.
-        * W3 - Tutorial 1: [Slides](/teaching/AY2223S1/CS3243/T01_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T01_Tutorial.pdf)
+1. **CS2109s - Introduction to AI and Machine Learning (4MC)** 
+    1. _AY2023/24 S1_: Teach tutorials.
+        * W3 - Tutorial 1: [Slides](#slides), [Notes](#notes)
+        <!-- 
         * W4 - Tutorial 2: [Slides](/teaching/AY2223S1/CS3243/T02_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T02_Tutorial.pdf)
         * W5 - Tutorial 3: [Slides](/teaching/AY2223S1/CS3243/T03_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T03_Tutorial.pdf)
         * W6 - Tutorial 4: [Slides](/teaching/AY2223S1/CS3243/T04_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T04_Tutorial.pdf)
@@ -34,7 +33,11 @@ Appointed since 8/Aug/18, roles performed:
         * W10 - Tutorial 7: [Slides](/teaching/AY2223S1/CS3243/T07_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T07_Tutorial.pdf)
         * W11 - Tutorial 8: [Slides](/teaching/AY2223S1/CS3243/T08_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T08_Tutorial.pdf)
         * W12 - Tutorial 9: [Slides](/teaching/AY2223S1/CS3243/T09_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T09_Tutorial.pdf)
-        * W13 - Tutorial 10: [Slides](/teaching/AY2223S1/CS3243/Revision_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/Revision_Tutorial.pdf)
+        * W13 - Tutorial 10: [Slides](/teaching/AY2223S1/CS3243/Revision_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/Revision_Tutorial.pdf) -->
+1. **CS3217 - Software Engineering on Modern Application Platforms (4MC)** 
+    1. _AY2021/22 S2_: Teach tutorials.
+1. **CS3243 - Introduction to Artificial Intelligence (4MC)** 
+    1. _AY2022/23 S1_: Teach tutorials, review of learning materials, designing exam questions.
     1. _AY2021/22 S2_: Teach tutorials, grading, organize tutors for assignment grading, designing assignment grading rubrics, designing exam questions.
 1. **CS3203 - Software Engineering Project (8MC)** 
     1. _AY2021/22 S1_: Support lectures, teach recitations, organize tutors, grading, improve grading rubrics and improve testing tools.
@@ -55,18 +58,20 @@ Appointed since 8/Aug/18, roles performed:
 > Eric is a very caring tutor who is always looking out for us and consistently motivate us to excel further. Not only is he very approach, he also teaches very effectively. I was able to learn effectively through his patient and sophisticated guidance. I feel that I could not ask for a better tutor.
 > <p style="text-align: right">- Student from AY2019/20 S2</p>
 
-> Excellent tutor. Goes out of his way to help students. Incredibly easy to approach.
-> <p style="text-align: right">- Student from AY2021/22 S2</p>
-
 > Eric keeps the sessions informal and casual, an environment where the best learning takes place in my opinion. By keeping the
 knowledge–sharing lighthearted, he is able to retain the attention of students well while keeping it entertaining and engaging. Very
 few TAs have been able to do that in my experience and it makes him stand apart as an educator.
 > <p style="text-align: right">- Student from AY2021/22 S2</p>
 
+> He was the only reason why I was able to keep up and understand the course content (while the lecturer is not as great in
+teaching)
+> <p style="text-align: right">- Student from AY2022/23 S1</p>
+
 ### Effectiveness
 
 Academic Year | Code | Module Name | Score | Nomination | Type
 :-:|-:|:-|:-:|:-:|-:
+AY2022/23 S1 | CS3243 | Introduction to Artificial Intelligence | 4.8/5.0 | 8/25 (32%) | Tutorial
 AY2021/22 S2 | CS3243 | Introduction to Artificial Intelligence | 4.5/5.0 | 12/39 (31%) | Tutorial
 AY2021/22 S2 | CS3217 | Software Engineering on Modern Application Platforms | 3.8/5.0 | 0/6 (0%) | Tutorial
 AY2021/22 S1 | CS3203 | Software Engineering Project | 3.7/5.0 | 5/161 (3%) | Lecture
