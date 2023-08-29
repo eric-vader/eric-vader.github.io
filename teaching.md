@@ -23,17 +23,6 @@ Appointed since 8/Aug/18, roles performed:
 1. **CS2109s - Introduction to AI and Machine Learning (4MC)** 
     1. _AY2023/24 S1_: Teach tutorials.
         * W3 - Tutorial 1: [Slides](#slides), [Notes](#notes)
-        <!-- 
-        * W4 - Tutorial 2: [Slides](/teaching/AY2223S1/CS3243/T02_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T02_Tutorial.pdf)
-        * W5 - Tutorial 3: [Slides](/teaching/AY2223S1/CS3243/T03_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T03_Tutorial.pdf)
-        * W6 - Tutorial 4: [Slides](/teaching/AY2223S1/CS3243/T04_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T04_Tutorial.pdf)
-        * W7 - Tutorial 5: [Slides](/teaching/AY2223S1/CS3243/T05_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T05_Tutorial.pdf)
-        * W8 - Tutorial 6: [Slides](/teaching/AY2223S1/CS3243/T06_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T06_Tutorial.pdf)
-        * W9 - Midterms: [Slides](/teaching/AY2223S1/CS3243/Midterm_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/Midterm_Tutorial.pdf)
-        * W10 - Tutorial 7: [Slides](/teaching/AY2223S1/CS3243/T07_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T07_Tutorial.pdf)
-        * W11 - Tutorial 8: [Slides](/teaching/AY2223S1/CS3243/T08_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T08_Tutorial.pdf)
-        * W12 - Tutorial 9: [Slides](/teaching/AY2223S1/CS3243/T09_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T09_Tutorial.pdf)
-        * W13 - Tutorial 10: [Slides](/teaching/AY2223S1/CS3243/Revision_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/Revision_Tutorial.pdf) -->
 1. **CS3217 - Software Engineering on Modern Application Platforms (4MC)** 
     1. _AY2021/22 S2_: Teach tutorials.
 1. **CS3243 - Introduction to Artificial Intelligence (4MC)** 
@@ -103,3 +92,16 @@ AY2018/19 S1 | CS3203 | Software Engineering Project | 3.3/5.0 | 1/3 (33%) | Rec
     * Tutorial 3 has no slides.
     * [Tutorial 4 Slides](/teaching/AY2122S2/CS3217/T04_Tutorial_Slides.pdf)
     * [Tutorial 5 Slides](/teaching/AY2122S2/CS3217/T05_Tutorial_Slides.pdf) -->
+
+
+<!-- 
+* W4 - Tutorial 2: [Slides](/teaching/AY2223S1/CS3243/T02_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T02_Tutorial.pdf)
+* W5 - Tutorial 3: [Slides](/teaching/AY2223S1/CS3243/T03_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T03_Tutorial.pdf)
+* W6 - Tutorial 4: [Slides](/teaching/AY2223S1/CS3243/T04_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T04_Tutorial.pdf)
+* W7 - Tutorial 5: [Slides](/teaching/AY2223S1/CS3243/T05_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T05_Tutorial.pdf)
+* W8 - Tutorial 6: [Slides](/teaching/AY2223S1/CS3243/T06_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T06_Tutorial.pdf)
+* W9 - Midterms: [Slides](/teaching/AY2223S1/CS3243/Midterm_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/Midterm_Tutorial.pdf)
+* W10 - Tutorial 7: [Slides](/teaching/AY2223S1/CS3243/T07_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T07_Tutorial.pdf)
+* W11 - Tutorial 8: [Slides](/teaching/AY2223S1/CS3243/T08_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T08_Tutorial.pdf)
+* W12 - Tutorial 9: [Slides](/teaching/AY2223S1/CS3243/T09_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T09_Tutorial.pdf)
+* W13 - Tutorial 10: [Slides](/teaching/AY2223S1/CS3243/Revision_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/Revision_Tutorial.pdf) -->
