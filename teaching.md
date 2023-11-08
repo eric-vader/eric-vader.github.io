@@ -30,6 +30,7 @@ Appointed since 8/Aug/18, roles performed:
         * W9 - Tutorial 6: [Slides](/teaching/AY2324S1/CS2109s/T06_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T06_Tutorial.pdf)
         * W10 - Tutorial 7: [Slides](/teaching/AY2324S1/CS2109s/T07_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T07_Tutorial.pdf)
         * W11 - Tutorial 8: [Slides](/teaching/AY2324S1/CS2109s/T08_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T08_Tutorial.pdf)
+        * W12 - Tutorial 9: [Slides](/teaching/AY2324S1/CS2109s/T09_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T09_Tutorial.pdf)
 1. **CS3217 - Software Engineering on Modern Application Platforms (4MC)** 
     1. _AY2021/22 S2_: Teach tutorials.
 1. **CS3243 - Introduction to Artificial Intelligence (4MC)** 
