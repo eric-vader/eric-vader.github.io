@@ -20,19 +20,20 @@ Appointed since 8/Aug/18, roles performed:
 
 ## Modules Taught
 
+<!-- * W3 - Tutorial 1: [Slides](/teaching/AY2324S1/CS2109s/T01_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T01_Tutorial.pdf)
+* W4 - Tutorial 2: [Slides](/teaching/AY2324S1/CS2109s/T02_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T02_Tutorial.pdf)
+* W5 - Tutorial 3: [Slides](/teaching/AY2324S1/CS2109s/T03_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T03_Tutorial.pdf)
+* W6 - Tutorial 4: [Slides](/teaching/AY2324S1/CS2109s/T04_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T04_Tutorial.pdf)
+* W8 - Tutorial 5: [Slides](/teaching/AY2324S1/CS2109s/T05_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T05_Tutorial.pdf)
+* W9 - Tutorial 6: [Slides](/teaching/AY2324S1/CS2109s/T06_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T06_Tutorial.pdf)
+* W10 - Tutorial 7: [Slides](/teaching/AY2324S1/CS2109s/T07_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T07_Tutorial.pdf)
+* W11 - Tutorial 8: [Slides](/teaching/AY2324S1/CS2109s/T08_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T08_Tutorial.pdf)
+* W12 - Tutorial 9: [Slides](/teaching/AY2324S1/CS2109s/T09_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T09_Tutorial.pdf)
+* W13 - Tutorial 10: [Slides](/teaching/AY2324S1/CS2109s/T10_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T10_Tutorial.pdf) -->
+
 1. **CS2109s - Introduction to AI and Machine Learning (4MC)** 
     1. _AY2023/24 S1_: Teach tutorials, grading, designing exam questions.
     1. _AY2023/24 S2_: Teach tutorials.
-        <!-- * W3 - Tutorial 1: [Slides](/teaching/AY2324S1/CS2109s/T01_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T01_Tutorial.pdf)
-        * W4 - Tutorial 2: [Slides](/teaching/AY2324S1/CS2109s/T02_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T02_Tutorial.pdf)
-        * W5 - Tutorial 3: [Slides](/teaching/AY2324S1/CS2109s/T03_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T03_Tutorial.pdf)
-        * W6 - Tutorial 4: [Slides](/teaching/AY2324S1/CS2109s/T04_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T04_Tutorial.pdf)
-        * W8 - Tutorial 5: [Slides](/teaching/AY2324S1/CS2109s/T05_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T05_Tutorial.pdf)
-        * W9 - Tutorial 6: [Slides](/teaching/AY2324S1/CS2109s/T06_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T06_Tutorial.pdf)
-        * W10 - Tutorial 7: [Slides](/teaching/AY2324S1/CS2109s/T07_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T07_Tutorial.pdf)
-        * W11 - Tutorial 8: [Slides](/teaching/AY2324S1/CS2109s/T08_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T08_Tutorial.pdf)
-        * W12 - Tutorial 9: [Slides](/teaching/AY2324S1/CS2109s/T09_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T09_Tutorial.pdf)
-        * W13 - Tutorial 10: [Slides](/teaching/AY2324S1/CS2109s/T10_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S1/CS2109s/T10_Tutorial.pdf) -->
 1. **CS3217 - Software Engineering on Modern Application Platforms (4MC)** 
     1. _AY2021/22 S2_: Teach tutorials.
 1. **CS3243 - Introduction to Artificial Intelligence (4MC)** 
