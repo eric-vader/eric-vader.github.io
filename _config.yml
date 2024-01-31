@@ -1,5 +1,5 @@
-title: Eric Han
-description: A PhD Students' resume, Research Notes and Teaching Notes.
+title: "Dr. Eric Han"
+description: A PhD's resume, Research Notes and Teaching Notes.
 author: Eric Han
 url: "https://eric-han.com"
 baseurl: ""
@@ -42,8 +42,8 @@ nav:
    link: "research"
  - name: "Teaching"
    link: "teaching"
- - name: "Gallery"
-   link: "gallery"
+#  - name: "Gallery"
+#    link: "gallery"
 
 collections:
   steps:

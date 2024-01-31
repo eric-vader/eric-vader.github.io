@@ -6,7 +6,7 @@ layout: default
 
 <img class="profile-picture" src="{{site.img_path}}/profile-pic.png">
 
-Hey! I am a 3rd year PhD. Student at [National University of Singapore](http://nus.edu.sg/), [School of Computing](https://www.comp.nus.edu.sg/). The webpage serves as my own personal portal for my research and teaching growth as well as an online resume. You are welcome to check out any of the research articles in the research section. You may want to check out my [Linkedin Profile](https://www.linkedin.com/in/eric-han-lw/).
+Hey! I am a PhD. graduate from [National University of Singapore](http://nus.edu.sg/), [School of Computing](https://www.comp.nus.edu.sg/). The webpage serves as my own personal portal for my research and teaching growth as well as an online resume. You are welcome to check out any of the research articles in the research section. You may want to check out my [Linkedin Profile](https://www.linkedin.com/in/eric-han-lw/).
 
 ## Useful links for conference/journal:
 
@@ -22,12 +22,13 @@ Hey! I am a 3rd year PhD. Student at [National University of Singapore](http://n
 
 ## Research
 
-I am interested in scaling machine learning towards higher dimensions in Bayesian Optimization, Gaussian Processes, Convex and non-convex optimization and Reinforcement Learning.
+I am interested in scaling machine learning towards higher dimensions in Bayesian Optimization, Gaussian Processes, Convex and non-convex optimization and Reinforcement Learning. I am also interested in robustness concerns in machine learning.
 
 ### Publications
 
 Date | Title | Venue | Organization |
 ----:|-----------|:----------:|:-:|
+Jan.2024 | Structured Dimensionality Reduction Methods for Black-Box Adversarial Attacks with Bayesian Optimization <br /> **Eric Han**, Jonathan Scarlett | Ongoing/Under-review | 
 Jul.2022 | [Adversarial Attacks on Gaussian Process Bandits](https://proceedings.mlr.press/v162/han22f.html) ([arXiv](https://arxiv.org/abs/2110.08449), [slides](publications/Adversarial Attacks on Gaussian Process Bandits/slides_Jun23.pdf), [poster](publications/Adversarial Attacks on Gaussian Process Bandits/poster_2Jul.pdf))<br /> **Eric Han**, Jonathan Scarlett | [Proc. of the 39th International Conference on Machine Learning](https://icml.cc/Conferences/2022) | [![ICML]({{site.img_path}}/icml_logo.svg){:class="small-logo"}](https://icml.cc/)
 Feb.2021| [High-Dimensional Bayesian Optimization via Tree-Structured Additive Models](https://ojs.aaai.org/index.php/AAAI/article/view/16933) ([arXiv](https://arxiv.org/abs/2012.13088), [slides](publications/High-Dimensional Bayesian Optimization via Tree-Structured Additive Models/slides.pdf), [poster](publications/High-Dimensional Bayesian Optimization via Tree-Structured Additive Models/poster.pdf))<br /> **Eric Han**, Ishank Arora, Jonathan Scarlett | [Proc. of the 35th AAAI Conference on Artificial Intelligence](https://aaai.org/Conferences/AAAI-21/) |[![AAAI]({{site.img_path}}/aaai_logo.svg){:class="small-logo"}](https://aaai.org/)
 
@@ -42,7 +43,7 @@ Date | Activity | Organization
 
 Period | Degree | Institution
 ----:|-----------|:---:
-13.Aug.18 - 2023 (expected) | [Doctor in Philosophy (PhD) in Computer Science](https://www.comp.nus.edu.sg/programmes/pg/phdcs/) ([Current CAP: 4.92/5.00](https://www.nus.edu.sg/registrar/academic-information-policies/graduate/graduate-continuation-and-graduation-requirements))| [![National University of Singapore]({{site.img_path}}/nus_logo.svg){:class="small-logo"}](http://nus.edu.sg/)
+13.Aug.18 - 16.Jan.24 | [Doctor in Philosophy (PhD) in Computer Science](https://www.comp.nus.edu.sg/programmes/pg/phdcs/) | [![National University of Singapore]({{site.img_path}}/nus_logo.svg){:class="small-logo"}](http://nus.edu.sg/)
 12.Aug.13 - 31.Jan.18 | [Bachelor of Computing (Computer Science) with Honours](https://www.comp.nus.edu.sg/cugresource/per-cohort/cs/cs-13-14/) ([Highest Distinction](http://www.nus.edu.sg/nusbulletin/faculty-of-science/undergraduate-education/degree-requirements/curriculum-structure-and-graduation-requirements/degree-classification/)) | [![National University of Singapore]({{site.img_path}}/nus_logo.svg){:class="small-logo"}](http://nus.edu.sg/)
 11.Jan.16 - 11.May.16 | [Student Exchange to USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ([GPA: 4.0/4.0](https://arr.usc.edu/services/grades/gradinghandbook/gradingpolicies.html)) | [![University of Southern California]({{site.img_path}}/usc_logo.svg){:class="small-logo"}](https://www.usc.edu/)
 
@@ -61,7 +62,7 @@ Date | Award | Category
 
 Period | Position | Project/Role | Organization
 ----:|------------|------|:----------:
-Since 8.Aug.18 | Graduate Tutor | Teach lectures, tutorials and consultations; Managed tutors and gradings; Developed module tools. ([See teaching](teaching)) | [![National University of Singapore]({{site.img_path}}/nus_logo.svg){:class="small-logo"}](http://nus.edu.sg/)
+Since 8.Aug.18 | Graduate Tutor / Teaching Assistant | Teach lectures, tutorials and consultations; Managed tutors and gradings; Developed module tools. ([See teaching](teaching)) | [![National University of Singapore]({{site.img_path}}/nus_logo.svg){:class="small-logo"}](http://nus.edu.sg/)
 Since 2011 | Church Volunteer | Head Of Information Technology, Cell Group Leader, Tutor. | [![Impact Life Chrch]({{site.img_path}}/ilc.png){:class="small-logo"}](http://www.impactlife.sg)
 1.Dec.17 - 26.Apr.18 | Project | Quality Control IT Project (Webapp, Android) | [![Scanteak]({{site.img_path}}/scanteak_logo.png){:class="small-logo"}](http://scanteak.com.sg)
 27.May.16 - 19.Aug.16 | Software Engineering Intern | Designed and deployed Church Management System (CHMS) | [![Church of Singapore Bukit Timah]({{site.img_path}}/cosbt_logo.png){:class="small-logo"}](http://www.cosbt.org.sg/)
