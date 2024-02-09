@@ -35,6 +35,7 @@ Appointed since 8/Aug/18, roles performed:
     1. _AY2023/24 S1_: Teach tutorials, grading, designing exam questions.
     1. _AY2023/24 S2_: Teach tutorials
         * W3 - Tutorial 1: [Slides](/teaching/AY2324S2/CS2109s/T01_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S2/CS2109s/T01_Tutorial.pdf)
+        * W4 - Tutorial 2: [Slides](/teaching/AY2324S2/CS2109s/T02_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S2/CS2109s/T02_Tutorial.pdf)
 1. **CS3217 - Software Engineering on Modern Application Platforms (4MC)** 
     1. _AY2021/22 S2_: Teach tutorials.
 1. **CS3243 - Introduction to Artificial Intelligence (4MC)** 
