@@ -63,7 +63,7 @@ Date | Award | Category
 Period | Position | Project/Role | Organization
 ----:|------------|------|:----------:
 Since 8.Aug.18 | Graduate Tutor / Teaching Assistant | Teach lectures, tutorials and consultations; Managed tutors and gradings; Developed module tools. ([See teaching](teaching)) | [![National University of Singapore]({{site.img_path}}/nus_logo.svg){:class="small-logo"}](http://nus.edu.sg/)
-Since 2011 | Church Volunteer | Head Of Information Technology, Cell Group Leader, Tutor. | [![Impact Life Chrch]({{site.img_path}}/ilc.png){:class="small-logo"}](http://www.impactlife.sg)
+2011 - 2023 | Church Volunteer | Head Of IT, Cell Group Leader, Tutor. | [![Impact Life Chrch]({{site.img_path}}/ilc.png){:class="small-logo"}](http://www.impactlife.sg)
 1.Dec.17 - 26.Apr.18 | Project | Quality Control IT Project (Webapp, Android) | [![Scanteak]({{site.img_path}}/scanteak_logo.png){:class="small-logo"}](http://scanteak.com.sg)
 27.May.16 - 19.Aug.16 | Software Engineering Intern | Designed and deployed Church Management System (CHMS) | [![Church of Singapore Bukit Timah]({{site.img_path}}/cosbt_logo.png){:class="small-logo"}](http://www.cosbt.org.sg/)
 6.May.15 - 31.Dec.15|Research Intern ([DC Group](https://www.a-star.edu.sg/ihpc)) | Autonomous Machine Learning using HPC Approaches / A Cloud-based Collaborative Model Building Platform | [![A*STAR IHPC]({{site.img_path}}/ihpc_logo.png){:class="small-logo"}](https://www.a-star.edu.sg/ihpc) 
