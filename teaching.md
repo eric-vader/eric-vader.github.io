@@ -78,7 +78,7 @@ teaching)
 
 Academic Year | Code | Module Name | Score | Nomination | Type
 :-:|-:|:-|:-:|:-:|-:
-AY2022/23 S2 | CS2109s | Introduction to AI and Machine Learning | 4.6/5.0 | 4/13 (30%) | Tutorial
+AY2023/24 S1 | CS2109s | Introduction to AI and Machine Learning | 4.6/5.0 | 4/13 (30%) | Tutorial
 AY2022/23 S1 | CS3243 | Introduction to Artificial Intelligence | 4.8/5.0 | 8/25 (32%) | Tutorial
 AY2021/22 S2 | CS3243 | Introduction to Artificial Intelligence | 4.5/5.0 | 12/39 (31%) | Tutorial
 AY2021/22 S2 | CS3217 | Software Engineering on Modern Application Platforms | 3.8/5.0 | 0/6 (0%) | Tutorial
