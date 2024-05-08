@@ -8,7 +8,7 @@ layout: default
 
 Hey! I am a PhD. graduate from [National University of Singapore](http://nus.edu.sg/), [School of Computing](https://www.comp.nus.edu.sg/). The webpage serves as my own personal portal for my research and teaching growth as well as an online resume. You are welcome to check out any of the research articles in the research section. You may want to check out my [Linkedin Profile](https://www.linkedin.com/in/eric-han-lw/).
 
-## Useful links for conference/journal:
+## Useful links for conference/journal/research:
 
 1. Conference Rankings:
     1. [Internal SoC Conference Rankings](https://mysoc.nus.edu.sg/pg/current-list-of-cs-conferences/)
@@ -19,6 +19,7 @@ Hey! I am a PhD. graduate from [National University of Singapore](http://nus.edu
     1. [Scimago Journal & Country Rank](https://www.scimagojr.com/journalrank.php)
 1. [Conference call for paper deadlines](https://jackietseng.github.io/conference_call_for_paper/conferences.html)
 1. [ML Paper Tweets - AK @_akhaliq](https://twitter.com/_akhaliq)
+1. [./sunday_science.sh](https://jousef.substack.com/)
 
 ## Research
 
