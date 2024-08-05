@@ -6,7 +6,7 @@ layout: default
 
 <img class="profile-picture" src="{{site.img_path}}/profile-pic.png">
 
-Hey! I am a PhD. graduate from [National University of Singapore](http://nus.edu.sg/), [School of Computing](https://www.comp.nus.edu.sg/). The webpage serves as my own personal portal for my research and teaching growth as well as an online resume. You are welcome to check out any of the research articles in the research section. You may want to check out my [Linkedin Profile](https://www.linkedin.com/in/eric-han-lw/).
+Hey! I am a Lecturer in [National University of Singapore](http://nus.edu.sg/), [School of Computing](https://www.comp.nus.edu.sg/). The webpage serves as my own personal portal for my research and teaching growth as well as an online resume. You are welcome to check out any of the research articles in the research section. You may want to check out my [Linkedin Profile](https://www.linkedin.com/in/eric-han-lw/).
 
 ## Useful links for conference/journal/research:
 

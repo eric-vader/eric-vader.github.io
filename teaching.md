@@ -8,9 +8,13 @@ title: Teaching
 
 My philosophy of education is that students who are inquisitive and curious about the subject are effective learners. I believe effective learning is primarily driven by an innate desire to learn the subject rather than a need to learn (secondary). Hence, I am very focused on creating an environment that fosters each student's desire to learn. Specifically, I believe three elements foster a learning-positive environment: (1) Creating a relaxed and safe environment. (2) Engaging students to facilitate learning in and after class. (3) Creating equal opportunities for all students to learn. 
 
+# Lecturer
+
+Appointed since 1/July/2024.
+
 # Graduate Tutor / Teaching Assistant
 
-Appointed since 8/Aug/18, roles performed:
+Appointed from 8/Aug/18 - 30/June/24, roles performed:
 
 1. Teach tutorials
 2. Managed recitations
@@ -49,6 +53,9 @@ Appointed since 8/Aug/18, roles performed:
     1. _AY2018/19 S1_: Teach tutorials and recitations.
 1. **CS2030/CS2030S - Programming Methodology II (4MC)** 
     1. _AY2020/21 S1_: Supported Labs and developed module tools; Created sub-flavor of Fedora Linux for virtual exam needs due to COVID-19.
+1. **CS1010 - Programming Methodology (4MC)** 
+    1. _AY2024/25 S1_:
+        * W0 - Introduction to Unix/Linux: [Slides](/teaching/tools/nix_slides.pdf)
 
 ## Teaching Feedback
 
