@@ -55,7 +55,7 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
     1. _AY2020/21 S1_: Supported Labs and developed module tools; Created sub-flavor of Fedora Linux for virtual exam needs due to COVID-19.
 1. **CS1010 - Programming Methodology (4MC)** 
     1. _AY2024/25 S1_:
-        * W0 - Introduction to Unix/Linux: [Slides](/teaching/tools/nix_slides.pdf)
+        * W0 - Introduction to Unix/Linux: [Slides](/teaching/tools/nix_slides.pdf) [Video](https://youtu.be/975JMI9zP-8)
 
 ## Teaching Feedback
 
