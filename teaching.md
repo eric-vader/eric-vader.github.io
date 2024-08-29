@@ -40,6 +40,8 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
 1. **CS2109s - Introduction to AI and Machine Learning (4MC)** 
     1. _AY2023/24 S1_: Teach tutorials, grading, designing exam questions.
     1. _AY2023/24 S2_: Teach tutorials, grading.
+    1. _AY2024/25 S1_: 
+        * W3 - Tutorial 1: [Slides](/teaching/AY2425S1/CS2109s/T01_slides_29aug2024.pdf)
 1. **CS3217 - Software Engineering on Modern Application Platforms (4MC)** 
     1. _AY2021/22 S2_: Teach tutorials.
 1. **CS3243 - Introduction to Artificial Intelligence (4MC)** 
