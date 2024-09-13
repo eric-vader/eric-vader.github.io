@@ -43,6 +43,7 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
     1. _AY2024/25 S1_: 
         * W3 - Tutorial 1: [Slides](/teaching/AY2425S1/CS2109s/T01_slides_29aug2024.pdf)
         * W4 - Tutorial 2: [Slides](/teaching/AY2425S1/CS2109s/T02.tutorial-2_slides_06sep2024.pdf)
+        * W5 - Tutorial 3: [Slides](/teaching/AY2425S1/CS2109s/T03.tutorial-3_slides_11sep2024.pdf)
 1. **CS3217 - Software Engineering on Modern Application Platforms (4MC)** 
     1. _AY2021/22 S2_: Teach tutorials.
 1. **CS3243 - Introduction to Artificial Intelligence (4MC)** 
