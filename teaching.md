@@ -60,6 +60,7 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
 1. **CS1010 - Programming Methodology (4MC)** 
     1. _AY2024/25 S1_:
         * W0 - Introduction to Unix/Linux: [Slides](/teaching/tools/nix_slides.pdf) [Video](https://youtu.be/975JMI9zP-8)
+        * W7 - Tutorial 5: [Slides](/teaching/AY2425S1/CS1010/T05_slides.pdf), [Notes](/teaching/AY2425S1/CS1010/T05_notes.pdf)
 
 ## Teaching Feedback
 
