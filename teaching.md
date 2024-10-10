@@ -41,10 +41,11 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
     1. _AY2023/24 S1_: Teach tutorials, grading, designing exam questions.
     1. _AY2023/24 S2_: Teach tutorials, grading.
     1. _AY2024/25 S1_: 
-        * W3 - Tutorial 1: [Slides](/teaching/AY2425S1/CS2109s/T01_slides_29aug2024.pdf)
-        * W4 - Tutorial 2: [Slides](/teaching/AY2425S1/CS2109s/T02.tutorial-2_slides_06sep2024.pdf)
-        * W5 - Tutorial 3: [Slides](/teaching/AY2425S1/CS2109s/T03.tutorial-3_slides_11sep2024.pdf)
-        * W6 - Tutorial 4: [Slides](/teaching/AY2425S1/CS2109s/T04.tutorial-4_slides_20sep2024.pdf)
+        * W3 - Tutorial 1: [Slides](/teaching/AY2425S1/CS2109s/T01.week-3_slides_10oct2024.pdf)
+        * W4 - Tutorial 2: [Slides](/teaching/AY2425S1/CS2109s/T02.week-4_slides_10oct2024.pdf)
+        * W5 - Tutorial 3: [Slides](/teaching/AY2425S1/CS2109s/T03.week-5_slides_10oct2024.pdf)
+        * W6 - Tutorial 4: [Slides](/teaching/AY2425S1/CS2109s/T04.week-6_slides_10oct2024.pdf)
+        * W8 - Tutorial 5: [Slides](/teaching/AY2425S1/CS2109s/T05.week-8_slides_10oct2024.pdf)
 1. **CS3217 - Software Engineering on Modern Application Platforms (4MC)** 
     1. _AY2021/22 S2_: Teach tutorials.
 1. **CS3243 - Introduction to Artificial Intelligence (4MC)** 
