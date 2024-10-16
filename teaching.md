@@ -68,7 +68,7 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
         * W6 - WIP
         * W7 - Tutorial 5: [Slides](/teaching/AY2425S1/CS1010/T05_slides.pdf), [Notes](/teaching/AY2425S1/CS1010/T05_notes.pdf)
         * W8 - Tutorial 6: [Notes](/teaching/AY2425S1/CS1010/T06_notes.pdf)
-        * W9 - Tutorial 7: [P20.1](/teaching/AY2425S1/CS1010/P20.1.html) [Notes](/teaching/AY2425S1/CS1010/T07_notes.pdf)
+        * W9 - Tutorial 7: [P20.1](/teaching/AY2425S1/CS1010/P20.1.html), [Notes](/teaching/AY2425S1/CS1010/T07_notes.pdf)
 
 ## Teaching Feedback
 
