@@ -46,6 +46,7 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
         * W5 - Tutorial 3: [Slides](/teaching/AY2425S1/CS2109s/T03.week-5_slides_10oct2024.pdf)
         * W6 - Tutorial 4: [Slides](/teaching/AY2425S1/CS2109s/T04.week-6_slides_10oct2024.pdf)
         * W8 - Tutorial 5: [Slides](/teaching/AY2425S1/CS2109s/T05.week-8_slides_10oct2024.pdf)
+        * W8 - Tutorial 6: [Ridge vs Lasso](/teaching/AY2425S1/CS2109s/T06.week-9_regularization-and-validation_ridge-lasso.gif)
 1. **CS3217 - Software Engineering on Modern Application Platforms (4MC)** 
     1. _AY2021/22 S2_: Teach tutorials.
 1. **CS3243 - Introduction to Artificial Intelligence (4MC)** 
