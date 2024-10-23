@@ -65,7 +65,7 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
         * W0 - Introduction to Unix/Linux: [Slides](/teaching/tools/nix_slides.pdf) [Video](https://youtu.be/975JMI9zP-8)
         * W3 - Tutorial 1: [Notes](/teaching/AY2425S1/CS1010/T01_notes.pdf)
         * W4 - Tutorial 2: [Notes](/teaching/AY2425S1/CS1010/T02_notes.pdf)
-        * W5 - WIP
+        * W5 - Tutorial 3: [Notes](/teaching/AY2425S1/CS1010/T03_notes.pdf)
         * W6 - WIP
         * W7 - Tutorial 5: [Slides](/teaching/AY2425S1/CS1010/T05_slides.pdf), [Notes](/teaching/AY2425S1/CS1010/T05_notes.pdf)
         * W8 - Tutorial 6: [Notes](/teaching/AY2425S1/CS1010/T06_notes.pdf)
