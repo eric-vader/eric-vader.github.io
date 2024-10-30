@@ -72,7 +72,8 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
         * W8 - Tutorial 6: [Notes](/teaching/AY2425S1/CS1010/T06_notes.pdf)
         * W9 - Tutorial 7: [P20.1](/teaching/AY2425S1/CS1010/P20.1.html), [Notes](/teaching/AY2425S1/CS1010/T07_notes.pdf)
         * W10 - Tutorial 8: [problem21.c](https://gist.github.com/eric-vader/24154d2a088f1b38177739662df01389), [problem22.1.c](https://gist.github.com/eric-vader/6bfda71ad233e262d7e076cc3cdcf5d0), [problem22.2.c](https://gist.github.com/eric-vader/0cff72d2f14f97e63af4333435109466), [Notes](/teaching/AY2425S1/CS1010/T08_notes.pdf)
-        
+        * W11 - Tutorial 9: [problem24.1.c](https://gist.github.com/eric-vader/e4fff61ebac3614339f5de9a95f56fb9) [Notes](/teaching/AY2425S1/CS1010/T09_notes.pdf)
+
 ## Teaching Feedback
 
 {% include carousel.html height="35" unit="%" duration="7" %}
