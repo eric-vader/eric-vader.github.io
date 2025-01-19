@@ -20,9 +20,9 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
 2. Managed recitations
 3. Marking students' code and examinations
 4. Assist with lecturer in lectures
-4. Developed module tools
+4. Developed course tools
 
-## Modules Taught
+## Courses Taught
 
 <!-- 
         * W3 - Tutorial 1: [Slides](/teaching/AY2324S2/CS2109s/T01_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S2/CS2109s/T01_Tutorial.pdf)
@@ -40,17 +40,7 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
 1. **CS2109s - Introduction to AI and Machine Learning (4MC)** 
     1. _AY2023/24 S1_: Teach tutorials, grading, designing exam questions.
     1. _AY2023/24 S2_: Teach tutorials, grading.
-    1. _AY2024/25 S1_: 
-        * W3 - Tutorial 1: [Slides](/teaching/AY2425S1/CS2109s/T01.week-3_slides_10oct2024.pdf)
-        * W4 - Tutorial 2: [Slides](/teaching/AY2425S1/CS2109s/T02.week-4_slides_10oct2024.pdf)
-        * W5 - Tutorial 3: [Slides](/teaching/AY2425S1/CS2109s/T03.week-5_slides_10oct2024.pdf)
-        * W6 - Tutorial 4: [Slides](/teaching/AY2425S1/CS2109s/T04.week-6_slides_10oct2024.pdf)
-        * W8 - Tutorial 5: [Slides](/teaching/AY2425S1/CS2109s/T05.week-8_slides_10oct2024.pdf)
-        * W9 - Tutorial 6: [Ridge vs Lasso](/teaching/AY2425S1/CS2109s/T06.week-9_regularization-and-validation_ridge-lasso.gif), [Slides](/teaching/AY2425S1/CS2109s/T06.week-9_slides_17oct2024.pdf)
-        * W10 - Tutorial 7: [Slides](/teaching/AY2425S1/CS2109s/T07.week-10_slides_24oct2024.pdf)
-        * W11 - Tutorial 8: [Slides](/teaching/AY2425S1/CS2109s/T08.week-11_slides_31oct2024.pdf)
-        * W12 - Tutorial 9: [Slides](/teaching/AY2425S1/CS2109s/T09.week-12_slides_07nov2024.pdf)
-        * W13 - Tutorial 10: [Slides](/teaching/AY2425S1/CS2109s/T10.week-13_slides_14nov2024.pdf)
+    1. _AY2024/25 S1_: Teach tutorials, grading, designed Contest, designing exam questions.
 1. **CS3217 - Software Engineering on Modern Application Platforms (4MC)** 
     1. _AY2021/22 S2_: Teach tutorials.
 1. **CS3243 - Introduction to Artificial Intelligence (4MC)** 
@@ -63,10 +53,10 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
     1. _AY2018/19 S2_: Teach tutorials, recitations and support lectures.
     1. _AY2018/19 S1_: Teach tutorials and recitations.
 1. **CS2030/CS2030S - Programming Methodology II (4MC)** 
-    1. _AY2020/21 S1_: Supported Labs and developed module tools; Created sub-flavor of Fedora Linux for virtual exam needs due to COVID-19.
+    1. _AY2020/21 S1_: Supported Labs and developed course tools; Created sub-flavor of Fedora Linux for virtual exam needs due to COVID-19.
 1. **CS1010 - Programming Methodology (4MC)** 
-    1. _AY2024/25 S1_:
-        * W0 - Introduction to Unix/Linux: [Slides](/teaching/tools/nix_slides.pdf) [Video](https://youtu.be/975JMI9zP-8)
+    1. _AY2024/25 S1_: Teach tutorials, ran "Introduction to Unix/Linux" workshop.
+        <!-- * W0 - Introduction to Unix/Linux: [Slides](/teaching/tools/nix_slides.pdf) [Video](https://youtu.be/975JMI9zP-8)
         * W3 - Tutorial 1: [Notes](/teaching/AY2425S1/CS1010/T01_notes.pdf)
         * W4 - Tutorial 2: [Notes](/teaching/AY2425S1/CS1010/T02_notes.pdf)
         * W5 - Tutorial 3: [Notes](/teaching/AY2425S1/CS1010/T03_notes.pdf)
@@ -76,7 +66,7 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
         * W9 - Tutorial 7: [P20.1](/teaching/AY2425S1/CS1010/P20.1.html), [Notes](/teaching/AY2425S1/CS1010/T07_notes.pdf)
         * W10 - Tutorial 8: [problem21.c](https://gist.github.com/eric-vader/24154d2a088f1b38177739662df01389), [problem22.1.c](https://gist.github.com/eric-vader/6bfda71ad233e262d7e076cc3cdcf5d0), [problem22.2.c](https://gist.github.com/eric-vader/0cff72d2f14f97e63af4333435109466), [Notes](/teaching/AY2425S1/CS1010/T08_notes.pdf)
         * W11 - Tutorial 9: [problem24.1.c](https://gist.github.com/eric-vader/e4fff61ebac3614339f5de9a95f56fb9), [Notes](/teaching/AY2425S1/CS1010/T09_notes.pdf)
-        * W12 - Tutorial 10: [Notes](/teaching/AY2425S1/CS1010/finals.pdf)
+        * W12 - Tutorial 10: [Notes](/teaching/AY2425S1/CS1010/finals.pdf) -->
 
 ## Teaching Feedback
 
@@ -85,25 +75,35 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
 > The best TA i have ever met in my 3 years in NUS. He go above and beyond what is expected of him by the students. He is concern about our wellbeing and often encourage us to do better. 
 > <p style="text-align: right">- Student from AY2018/19 S2</p>
 
-> Eric is a very caring tutor who is always looking out for us and consistently motivate us to excel further. Not only is he very approach, he also teaches very effectively. I was able to learn effectively through his patient and sophisticated guidance. I feel that I could not ask for a better tutor.
-> <p style="text-align: right">- Student from AY2019/20 S2</p>
-
 > Eric keeps the sessions informal and casual, an environment where the best learning takes place in my opinion. By keeping the
 knowledge–sharing lighthearted, he is able to retain the attention of students well while keeping it entertaining and engaging. Very
 few TAs have been able to do that in my experience and it makes him stand apart as an educator.
 > <p style="text-align: right">- Student from AY2021/22 S2</p>
 
-> He was the only reason why I was able to keep up and understand the course content (while the lecturer is not as great in
-teaching)
-> <p style="text-align: right">- Student from AY2022/23 S1</p>
-
 > What sets Eric apart is not just his expertise, but his genuine enthusiasm for teaching and his dedication to his students' learning. He consistently goes beyond the traditional lecture format, incorporating real–world examples and hands–on projects that enhance learning outcomes and keep the class intriguing and relevant. His patience and willingness to answer questions, provide feedback, and offer encouragement have created a supportive and stimulating learning environment.
 > <p style="text-align: right">- Student from AY2023/24 S2</p>
 
+> Eric shows exceptional care for all his students and is always willing to provide additional help if one makes the effort to consult
+with him. He actively reaches out to those who are absent to ensure that they are doing ok.
+> <p style="text-align: right">- CS1010 Student from AY2024/25 S1</p>
+
+> This tutor always goes out of his way in every tutorial class to ensure that everyone understands the content. His grading of
+participation is very clear and transparent. He is always available for questions and explains them with the most patient attitude. He
+even prepares extra practices for us to stregthen our understanding of the topic. you can really feel his love for teaching and for the
+subject.
+> <p style="text-align: right">- CS2109s Student from AY2024/25 S1</p>
+
+> Extremely passionate, fun and clear. He understands what appeals to the students in terms of combining current affairs with the
+content taught. Teaches without making things overwhelming. Could listen to his lectures all day and continue being engaged.
+> <p style="text-align: right">- CS3244 Student from AY2024/25 S1</p>
+
 ### Effectiveness
 
-Academic Year | Code | Module Name | Score | Nomination | Type
+Academic Year | Code | Course Name | Score | Nomination | Type
 :-:|-:|:-|:-:|:-:|-:
+AY2024/25 S1 | CS3244 | Machine Learning | 4.2/5.0 | 11/110 (10%) | Lectures
+AY2024/25 S1 | CS1010 | Programming Methodology | 4.4/5.0 | 9/35 (26%) | Tutorial
+AY2024/25 S1 | CS2109s | Introduction to AI and Machine Learning | 4.8/5.0 | 29/17 (29%) | Tutorial
 AY2023/24 S2 | CS2109s | Introduction to AI and Machine Learning | 4.8/5.0 | 17/36 (47%) | Tutorial
 AY2023/24 S1 | CS2109s | Introduction to AI and Machine Learning | 4.6/5.0 | 4/13 (30%) | Tutorial
 AY2022/23 S1 | CS3243 | Introduction to Artificial Intelligence | 4.8/5.0 | 8/25 (32%) | Tutorial
@@ -116,38 +116,8 @@ AY2018/19 S2 | CS3203 | Software Engineering Project | 4.8/5.0 | 11/18 (61%) | R
 AY2018/19 S1 | CS3203 | Software Engineering Project | 4.1/5.0 | 2/20 (10%) | Tutorial
 AY2018/19 S1 | CS3203 | Software Engineering Project | 3.3/5.0 | 1/3 (33%) | Recitation
 
-<!-- 
-        * [W3 - Tutorial 1 Slides](/teaching/AY2122S2/CS3243/T01_Tutorial_Slides.pdf)
-        * [W4 - Tutorial 2 Slides](/teaching/AY2122S2/CS3243/T02_Tutorial_Slides.pdf)
-        * [W5 - Tutorial 3 Slides](/teaching/AY2122S2/CS3243/T03_Tutorial_Slides.pdf)
-        * [W6 - Tutorial 4 Slides](/teaching/AY2122S2/CS3243/T04_Tutorial_Slides.pdf)
-        * [W7 - Tutorial 5 Slides](/teaching/AY2122S2/CS3243/T05_Tutorial_Slides.pdf)
-        * [W8 - Midterm Solutions Slides](/teaching/AY2122S2/CS3243/Midterm_Tutorial_Slides.pdf)
-        * [W9 - Tutorial 6 Slides](/teaching/AY2122S2/CS3243/T06_Tutorial_Slides.pdf)
-        * [W10 - Tutorial 7 Slides](/teaching/AY2122S2/CS3243/T07_Tutorial_Slides.pdf)
-        * [W11 - Tutorial 8 Slides](/teaching/AY2122S2/CS3243/T08_Tutorial_Slides.pdf)
-        * [W12 - Tutorial 9 Slides](/teaching/AY2122S2/CS3243/T09_Tutorial_Slides.pdf)
-        * W13 - Revision Tutorial:
-            * [Slides](/teaching/AY2122S2/CS3243/Revision_Tutorial_Slides.pdf)
-            * [Recording](https://youtu.be/LRUJ_4WdmLc)
--->
+### Course Rating
 
-<!-- 
-    * [Tutorial 1 Slides](/teaching/AY2122S2/CS3217/T01_Tutorial_Slides.pdf)
-    * [Tutorial 2 Slides](/teaching/AY2122S2/CS3217/T02_Tutorial_Slides.pdf)
-    * Tutorial 3 has no slides.
-    * [Tutorial 4 Slides](/teaching/AY2122S2/CS3217/T04_Tutorial_Slides.pdf)
-    * [Tutorial 5 Slides](/teaching/AY2122S2/CS3217/T05_Tutorial_Slides.pdf) -->
-
-
-<!-- 
-* W4 - Tutorial 2: [Slides](/teaching/AY2223S1/CS3243/T02_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T02_Tutorial.pdf)
-* W5 - Tutorial 3: [Slides](/teaching/AY2223S1/CS3243/T03_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T03_Tutorial.pdf)
-* W6 - Tutorial 4: [Slides](/teaching/AY2223S1/CS3243/T04_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T04_Tutorial.pdf)
-* W7 - Tutorial 5: [Slides](/teaching/AY2223S1/CS3243/T05_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T05_Tutorial.pdf)
-* W8 - Tutorial 6: [Slides](/teaching/AY2223S1/CS3243/T06_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T06_Tutorial.pdf)
-* W9 - Midterms: [Slides](/teaching/AY2223S1/CS3243/Midterm_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/Midterm_Tutorial.pdf)
-* W10 - Tutorial 7: [Slides](/teaching/AY2223S1/CS3243/T07_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T07_Tutorial.pdf)
-* W11 - Tutorial 8: [Slides](/teaching/AY2223S1/CS3243/T08_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T08_Tutorial.pdf)
-* W12 - Tutorial 9: [Slides](/teaching/AY2223S1/CS3243/T09_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/T09_Tutorial.pdf)
-* W13 - Tutorial 10: [Slides](/teaching/AY2223S1/CS3243/Revision_Tutorial_Slides.pdf), [Notes](/teaching/AY2223S1/CS3243/Revision_Tutorial.pdf) -->
+Academic Year | Code | Course Name | Score | Improvement | Past Ratings
+:-:|-:|:-|:-:|:-:|-:
+AY2024/25 S1 | CS3244 | Machine Learning | 3.8/5.0 | +0.1 | 3.7,
