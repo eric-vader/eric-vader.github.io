@@ -16,8 +16,8 @@ Appointed since 1/July/2024.
 
 Appointed from 8/Aug/18 - 30/June/24, roles performed:
 
-1. Teach tutorials
-2. Managed recitations
+1. Tutorials
+2. Recitations
 3. Marking students' code and examinations
 4. Assist with lecturer in lectures
 4. Developed course tools
@@ -37,36 +37,33 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
         * W13 - Tutorial 10: [Slides](/teaching/AY2324S2/CS2109s/T10_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S2/CS2109s/T10_Tutorial.pdf) 
 -->
 
+1. **CS3230 - Design and Analysis of Algorithms (4MC)** 
+    1. _AY2024/25 S2_: 
+        * [Practical Repo](https://github.com/eric-vader/nus-cs3230-practical)
+        * W2 - Tutorial 1: [Slides](/teaching/AY2425S2/CS3230/T01.introduction-and-asymptotic-analysis_slides_19jan2025.pdf)
+1. **CS2103/T - Design and Analysis of Algorithms (4MC)** 
+    1. _AY2024/25 S2_
+1. **CS3244 - Machine Learning (4MC)** 
+    1. _AY2024/25 S1_: Lecture, grading, exams.
 1. **CS2109s - Introduction to AI and Machine Learning (4MC)** 
-    1. _AY2023/24 S1_: Teach tutorials, grading, designing exam questions.
-    1. _AY2023/24 S2_: Teach tutorials, grading.
-    1. _AY2024/25 S1_: Teach tutorials, grading, designed Contest, designing exam questions.
+    1. _AY2023/24 S1_: Tutorials, grading, designing exam questions.
+    1. _AY2023/24 S2_: Tutorials, grading.
+    1. _AY2024/25 S1_: Tutorials, grading, designed Contest, exams.
+1. **CS1010 - Programming Methodology (4MC)** 
+    1. _AY2024/25 S1_: Tutorials, ran "Introduction to Unix/Linux" workshop, exams.
 1. **CS3217 - Software Engineering on Modern Application Platforms (4MC)** 
-    1. _AY2021/22 S2_: Teach tutorials.
+    1. _AY2021/22 S2_: Tutorials.
 1. **CS3243 - Introduction to Artificial Intelligence (4MC)** 
-    1. _AY2022/23 S1_: Teach tutorials, review of learning materials, designing exam questions.
-    1. _AY2021/22 S2_: Teach tutorials, grading, organize tutors for assignment grading, designing assignment grading rubrics, designing exam questions.
+    1. _AY2022/23 S1_: Tutorials, review of learning materials, designing exam questions.
+    1. _AY2021/22 S2_: Tutorials, grading, organize tutors for assignment grading, designing assignment grading rubrics, designing exam questions.
 1. **CS3203 - Software Engineering Project (8MC)** 
-    1. _AY2021/22 S1_: Support lectures, teach recitations, organize tutors, grading, improve grading rubrics and improve testing tools.
-    1. _AY2020/21 S2_: Support lectures, teach recitations, organize tutors, grading, maintain testing tools.
-    1. _AY2019/20 S2_: Support lectures, teach recitations and develop testing tools.
-    1. _AY2018/19 S2_: Teach tutorials, recitations and support lectures.
-    1. _AY2018/19 S1_: Teach tutorials and recitations.
+    1. _AY2021/22 S1_: Recitations, support lectures, organize tutors, grading, improve grading rubrics and improve testing tools.
+    1. _AY2020/21 S2_: Recitations, support lectures, organize tutors, grading, maintain testing tools.
+    1. _AY2019/20 S2_: Recitations support lectures, and develop testing tools.
+    1. _AY2018/19 S2_: Tutorials, recitations and support lectures.
+    1. _AY2018/19 S1_: Tutorials and recitations.
 1. **CS2030/CS2030S - Programming Methodology II (4MC)** 
     1. _AY2020/21 S1_: Supported Labs and developed course tools; Created sub-flavor of Fedora Linux for virtual exam needs due to COVID-19.
-1. **CS1010 - Programming Methodology (4MC)** 
-    1. _AY2024/25 S1_: Teach tutorials, ran "Introduction to Unix/Linux" workshop.
-        <!-- * W0 - Introduction to Unix/Linux: [Slides](/teaching/tools/nix_slides.pdf) [Video](https://youtu.be/975JMI9zP-8)
-        * W3 - Tutorial 1: [Notes](/teaching/AY2425S1/CS1010/T01_notes.pdf)
-        * W4 - Tutorial 2: [Notes](/teaching/AY2425S1/CS1010/T02_notes.pdf)
-        * W5 - Tutorial 3: [Notes](/teaching/AY2425S1/CS1010/T03_notes.pdf)
-        * W6 - Tutorial 4: [Notes](/teaching/AY2425S1/CS1010/T04_notes.pdf)
-        * W7 - Tutorial 5: [Slides](/teaching/AY2425S1/CS1010/T05_slides.pdf), [Notes](/teaching/AY2425S1/CS1010/T05_notes.pdf)
-        * W8 - Tutorial 6: [Notes](/teaching/AY2425S1/CS1010/T06_notes.pdf)
-        * W9 - Tutorial 7: [P20.1](/teaching/AY2425S1/CS1010/P20.1.html), [Notes](/teaching/AY2425S1/CS1010/T07_notes.pdf)
-        * W10 - Tutorial 8: [problem21.c](https://gist.github.com/eric-vader/24154d2a088f1b38177739662df01389), [problem22.1.c](https://gist.github.com/eric-vader/6bfda71ad233e262d7e076cc3cdcf5d0), [problem22.2.c](https://gist.github.com/eric-vader/0cff72d2f14f97e63af4333435109466), [Notes](/teaching/AY2425S1/CS1010/T08_notes.pdf)
-        * W11 - Tutorial 9: [problem24.1.c](https://gist.github.com/eric-vader/e4fff61ebac3614339f5de9a95f56fb9), [Notes](/teaching/AY2425S1/CS1010/T09_notes.pdf)
-        * W12 - Tutorial 10: [Notes](/teaching/AY2425S1/CS1010/finals.pdf) -->
 
 ## Teaching Feedback
 
