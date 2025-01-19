@@ -70,18 +70,16 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
 
 ## Teaching Feedback
 
-{% include carousel.html height="35" unit="%" duration="7" %}
-
 > The best TA i have ever met in my 3 years in NUS. He go above and beyond what is expected of him by the students. He is concern about our wellbeing and often encourage us to do better. 
-> <p style="text-align: right">- Student from AY2018/19 S2</p>
+> <p style="text-align: right">- CS3203 Student from AY2018/19 S2</p>
 
 > Eric keeps the sessions informal and casual, an environment where the best learning takes place in my opinion. By keeping the
 knowledge–sharing lighthearted, he is able to retain the attention of students well while keeping it entertaining and engaging. Very
 few TAs have been able to do that in my experience and it makes him stand apart as an educator.
-> <p style="text-align: right">- Student from AY2021/22 S2</p>
+> <p style="text-align: right">- CS3243 Student from AY2021/22 S2</p>
 
 > What sets Eric apart is not just his expertise, but his genuine enthusiasm for teaching and his dedication to his students' learning. He consistently goes beyond the traditional lecture format, incorporating real–world examples and hands–on projects that enhance learning outcomes and keep the class intriguing and relevant. His patience and willingness to answer questions, provide feedback, and offer encouragement have created a supportive and stimulating learning environment.
-> <p style="text-align: right">- Student from AY2023/24 S2</p>
+> <p style="text-align: right">- CS2109s Student from AY2023/24 S2</p>
 
 > Eric shows exceptional care for all his students and is always willing to provide additional help if one makes the effort to consult
 with him. He actively reaches out to those who are absent to ensure that they are doing ok.
@@ -120,4 +118,4 @@ AY2018/19 S1 | CS3203 | Software Engineering Project | 3.3/5.0 | 1/3 (33%) | Rec
 
 Academic Year | Code | Course Name | Score | Improvement | Past Ratings
 :-:|-:|:-|:-:|:-:|-:
-AY2024/25 S1 | CS3244 | Machine Learning | 3.8/5.0 | +0.1 | 3.7,
+AY2024/25 S1 | CS3244 | Machine Learning | 3.8/5.0 | +0.1 | 3.7,3.7,3.6
