@@ -37,11 +37,12 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
         * W13 - Tutorial 10: [Slides](/teaching/AY2324S2/CS2109s/T10_Tutorial_Slides.pdf), [Notes](/teaching/AY2324S2/CS2109s/T10_Tutorial.pdf) 
 -->
 
-<!-- * W2 - Tutorial 1: [Slides](/teaching/AY2425S2/CS3230/T01.introduction-and-asymptotic-analysis_slides_19jan2025.pdf) -->
+
 
 1. **CS3230 - Design and Analysis of Algorithms (4MC)** 
     1. _AY2024/25 S2_: 
         * [Practical Repo](https://github.com/eric-vader/nus-cs3230-practical)
+        * W2 - Tutorial 1: [Slides](/teaching/AY2425S2/CS3230/T01.introduction-and-asymptotic-analysis_slides_20jan2025.pdf)
 1. **CS2103/T - Design and Analysis of Algorithms (4MC)** 
     1. _AY2024/25 S2_
 1. **CS3244 - Machine Learning (4MC)** 
