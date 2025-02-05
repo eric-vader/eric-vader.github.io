@@ -43,6 +43,8 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
     1. _AY2024/25 S2_: 
         * [Practical Repo](https://github.com/eric-vader/nus-cs3230-practical)
         * W2 - Tutorial 1: [Slides](/teaching/AY2425S2/CS3230/T01.introduction-and-asymptotic-analysis_slides_20jan2025.pdf)
+        * W3 - Tutorial 2: [Slides](/teaching/AY2425S2/CS3230/T02.recurrences-and-master-theorem_slides_30jan2025.pdf)
+        * W4 - Tutorial 3: [Slides](/teaching/AY2425S2/CS3230/T03.assignment-1-and-2-review_slides_03feb2025.pdf)
 1. **CS2103/T - Design and Analysis of Algorithms (4MC)** 
     1. _AY2024/25 S2_
 1. **CS3244 - Machine Learning (4MC)** 
