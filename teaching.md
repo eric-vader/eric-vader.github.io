@@ -47,7 +47,7 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
         * W4 - Tutorial 3: [Slides](/teaching/AY2425S2/CS3230/T03.assignment-1-and-2-review_slides_03feb2025.pdf)
         * W5 - Tutorial 4: [Slides](/teaching/AY2425S2/CS3230/T04.correctness-and-divide-and-conquer_slides_10feb2025.pdf)
         * W6 - Tutorial 5: [Slides](/teaching/AY2425S2/CS3230/T05.d-c-sorting-and-average-case-analysis_slides_17feb2025.pdf)
-        * W7 - Tutorial 6: [Slides](/teaching/AY2425S2/CS3230/T06.randomized-algorithms_slides_26feb2025.pdf)
+        * W7 - Tutorial 6: [Slides](/teaching/AY2425S2/CS3230/T06.randomized-algorithms_slides_03mar2025.pdf)
 1. **CS2103/T - Design and Analysis of Algorithms (4MC)** 
     1. _AY2024/25 S2_
 1. **CS3244 - Machine Learning (4MC)** 
