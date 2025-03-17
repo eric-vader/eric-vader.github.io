@@ -49,6 +49,7 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
         * W6 - Tutorial 5: [Slides](/teaching/AY2425S2/CS3230/T05.d-c-sorting-and-average-case-analysis_slides_17feb2025.pdf)
         * W7 - Tutorial 6: [Slides](/teaching/AY2425S2/CS3230/T06.randomized-algorithms_slides_03mar2025.pdf)
         * W8 - Tutorial 7: [Slides](/teaching/AY2425S2/CS3230/T07.dynamic-programming_slides_10mar2025.pdf)
+        * W9 - Tutorial 8: [Slides](/teaching/AY2425S2/CS3230/T08.post-midterm-exam-discussion_slides_17mar2025.pdf)
 1. **CS2103/T - Design and Analysis of Algorithms (4MC)** 
     1. _AY2024/25 S2_
 1. **CS3244 - Machine Learning (4MC)** 
