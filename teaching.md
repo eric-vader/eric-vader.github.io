@@ -52,6 +52,7 @@ Appointed from 8/Aug/18 - 30/June/24, roles performed:
         * W9 - Tutorial 8: [Slides](/teaching/AY2425S2/CS3230/T08.post-midterm-exam-discussion_slides_17mar2025.pdf)
         * W10 - Tutorial 9: [Slides](/teaching/AY2425S2/CS3230/T09.greedy-algorithms_slides_24mar2025.pdf)
         * W12 - Tutorial 11: [Slides](/teaching/AY2425S2/CS3230/T11.reductions-and-computational-complexity_slides_07apr2025.pdf)
+        * W13 - Tutorial 12: [Slides](/teaching/AY2425S2/CS3230/T12.reductions-and-com-complexity-cont_slides_14apr2025.pdf)
 1. **CS2103/T - Design and Analysis of Algorithms (4MC)** 
     1. _AY2024/25 S2_
 1. **CS3244 - Machine Learning (4MC)** 
