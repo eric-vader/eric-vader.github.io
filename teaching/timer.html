@@ -4,19 +4,26 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Exam Clock</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
     :root{
         --bg:#fff;
         --fg:#000;
         --muted:#444;
         --accent:#000;
+        --bar-track:#eee;
+        --warn:#c00;
+        --font-info:  clamp(0.5rem, 3.5vw, 5rem);
+        --font-ui:    clamp(0.7rem, 1.1vw, 1.25rem);
     }
     html,body{
         height:100%;
         margin:0;
         background:var(--bg);
         color:var(--fg);
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono", "Courier New", monospace;
+        font-family: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, "Courier New", monospace;
     }
     .wrap{
         box-sizing:border-box;
@@ -33,19 +40,13 @@
         align-items:center;
         gap:12px;
     }
-    .info{
-        display:flex;
-        flex-direction:column;
-        gap:4px;
-    }
     .course{
-        font-weight:600;
-        font-size:20px;
-        letter-spacing:0.02em;
+        font-size:var(--font-info);
+        text-align:center;
     }
     .meta{
         color:var(--muted);
-        font-size:13px;
+        font-size:var(--font-ui);
     }
     .controls{
         display:flex;
@@ -56,8 +57,8 @@
         background:transparent;
         border:1px solid var(--muted);
         color:var(--fg);
-        padding:8px 12px;
-        font-size:13px;
+        padding:0.5em 0.8em;
+        font-size:var(--font-ui);
         border-radius:6px;
         cursor:pointer;
     }
@@ -70,30 +71,44 @@
         text-align:center;
         flex:1 1 auto;
     }
+    .stage{
+        width:70%;
+        container-type:inline-size;
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+        align-items:stretch;
+    }
     .time{
-        font-size:10em;
+        font-size:clamp(2rem, 20cqw, 20rem);
         font-weight:700;
         letter-spacing:0.02em;
+        text-align:center;
     }
     .status{
         color:var(--muted);
-        font-size:18px;
+        font-size:var(--font-info);
     }
     .secondary{
         display:flex;
         gap:24px;
         color:var(--muted);
-        font-size:16px;
+        font-size:var(--font-info);
         flex-wrap:wrap;
         justify-content:center;
     }
+    .bar-wrap{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        gap:6px;
+    }
     .bar{
         height:8px;
-        background:#eee;
+        background:var(--bar-track);
         border-radius:6px;
         overflow:hidden;
         width:100%;
-        max-width:900px;
     }
     .bar > i{
         display:block;
@@ -101,42 +116,50 @@
         background:var(--accent);
         width:0%;
     }
+    .bar-labels{
+        display:flex;
+        justify-content:space-between;
+        color:var(--muted);
+        font-size:var(--font-info);
+    }
     footer{
         color:var(--muted);
-        font-size:13px;
+        font-size:var(--font-ui);
         text-align:center;
     }
     input{
-        height:36px;padding:6px 12px;border-radius:6px;border:1px solid var(--muted);font-size:13px;box-sizing:border-box;background:transparent;color:inherit;
+        height:2.5em;padding:0.4em 0.8em;border-radius:6px;border:1px solid var(--muted);font-size:var(--font-ui);box-sizing:border-box;background:transparent;color:inherit;
     }
+    .warn{ color:var(--warn) !important; }
     @media (max-width:600px){
-        .time{ font-size:56px; }
-        .course{font-size:16px;}
+        .stage{ width:90%; }
     }
 </style>
 </head>
 <body>
 <div class="wrap">
     <header>
-        <div class="info">
-            <div class="course" id="course">Course</div>
-        </div>
-        <div class="controls">
-            <button id="pauseBtn">Pause</button>
-            <button id="fsBtn">Enter Fullscreen</button>
-        </div>
+        <button id="pauseBtn">Pause</button>
+        <button id="fsBtn">Enter Fullscreen</button>
     </header>
 
     <main>
-        <div class="time" id="mainTime">00:00:00</div>
+        <div class="stage">
+            <div class="course" id="course">Course</div>
+            <div class="time" id="mainTime">00:00:00</div>
+            <div class="bar-wrap">
+                <div class="bar"><i id="progress"></i></div>
+                <div class="bar-labels">
+                    <span id="started">—</span>
+                    <span id="ends">—</span>
+                </div>
+            </div>
+        </div>
         <div class="status" id="status">Status</div>
         <div class="secondary" id="secondary">
-            <div id="started">Start: —</div>
-            <div id="ends">End: —</div>
             <div id="elapsed">Elapsed: —</div>
             <div id="remaining">Remaining: —</div>
         </div>
-        <div class="bar" aria-hidden="true"><i id="progress"></i></div>
     </main>
 
     <footer id="queryBuilder" >
@@ -314,9 +337,16 @@
         const prog = $('progress');
 
         mainTime.textContent = formatClock(now);
+        started.textContent = start ? formatClock(start) : '—';
+        ends.textContent   = end   ? formatClock(end)   : '—';
 
-        started.textContent = 'Start: ' + (start ? formatClock(start) : '—');
-        ends.textContent = 'End: '   + (end ? formatClock(end) : '—');
+        if(paused){
+            status.textContent = 'Paused';
+            document.title = 'Paused — ' + (course || 'Exam');
+            return;
+        }
+
+        mainTime.classList.remove('warn');
 
         if(start && now < start){
             const toStart = (start.getTime() - now.getTime())/1000;
@@ -324,6 +354,7 @@
             elapsed.textContent = 'Until start: ' + formatTimeHMS(toStart);
             remaining.textContent = 'Remaining: —';
             prog.style.width = '0%';
+            document.title = 'Starting in ' + formatTimeHMS(toStart) + ' — ' + (course || 'Exam');
         } else if(end){
             const totalSpan = start ? (end.getTime() - start.getTime())/1000 : null;
             const elapsedSec = start ? (now.getTime() - start.getTime())/1000 : null;
@@ -333,7 +364,9 @@
                 elapsed.textContent = start ? ('Elapsed: ' + formatTimeHMS(totalSpan)) : 'Elapsed: —';
                 remaining.textContent = 'Remaining: 00:00';
                 prog.style.width = '100%';
+                document.title = 'Finished — ' + (course || 'Exam');
             } else {
+                if(remainingSec <= 60) mainTime.classList.add('warn');
                 status.textContent = 'In progress';
                 elapsed.textContent = start ? ('Elapsed: ' + formatTimeHMS(elapsedSec)) : 'Elapsed: —';
                 remaining.textContent = 'Remaining: ' + formatTimeHMS(remainingSec);
@@ -341,9 +374,9 @@
                     const pct = Math.min(100, Math.max(0, (elapsedSec/totalSpan)*100));
                     prog.style.width = pct + '%';
                 } else {
-                    // if no start, show indeterminate-ish progress
                     prog.style.width = '0%';
                 }
+                document.title = formatTimeHMS(remainingSec) + ' left — ' + (course || 'Exam');
             }
         } else {
             // no end provided
@@ -351,16 +384,26 @@
             elapsed.textContent = start ? ('Elapsed: ' + formatTimeHMS((now.getTime() - start.getTime())/1000)) : 'Elapsed: —';
             remaining.textContent = 'Remaining: —';
             prog.style.width = '0%';
+            document.title = course || 'Exam Clock';
         }
     }
 
-    // initial focus: allow immediate FS with key
-    window.addEventListener('load', ()=>{ document.body.focus(); });
+    // Wake Lock: prevent screen/sleep while page is active
+    let wakeLock = null;
+    async function requestWakeLock(){
+        if('wakeLock' in navigator){
+            try{
+                wakeLock = await navigator.wakeLock.request('screen');
+            }catch(e){ /* silently ignore if denied */ }
+        }
+    }
+    requestWakeLock();
+    // Re-acquire on tab visibility regain (wake lock is released when tab hides)
+    document.addEventListener('visibilitychange', ()=>{
+        if(document.visibilityState === 'visible') requestWakeLock();
+    });
 
-    // Make sure clocks update every second even when paused (so UI stays current)
-    setInterval(()=> {
-        update();
-    }, 1000);
+    setInterval(update, 1000);
     update();
 
 })();
